@@ -1,0 +1,24 @@
+# Môi trường ảo Python
+.venv/
+venv/
+ENV/
+env/
+
+# Bytecode Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Hệ điều hành
+Thumbs.db
+Desktop.ini
+.DS_Store
