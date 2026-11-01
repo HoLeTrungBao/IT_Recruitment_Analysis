@@ -1,0 +1,3105 @@
+﻿skill_id,skill_name
+1,&
+2,'.NET
+3,'.NET'
+4,'.NET']
+5,'.NET'] ['Microservices'
+6,'.Net
+7,'.Net'
+8,'.Net']
+9,'.Net'] ['Kubernetes'
+10,'1Password']
+11,'3D
+12,'3ds
+13,'A-spice'
+14,'A/B
+15,'ABAP']
+16,'ABB'
+17,'ABB']
+18,'ACF'
+19,'AD'
+20,'ADC'
+21,'ADF']
+22,'ADO.NET'
+23,'ADO.NET']
+24,'AFNetworking'
+25,'AI
+26,'AI'
+27,'AI']
+28,'AI/ML']
+29,'AJAX'
+30,'AJAX']
+31,'AKKA'
+32,'AKS'
+33,'AM'
+34,'AMQP'
+35,'API
+36,'API'
+37,'API']
+38,'APIs'
+39,'APIs']
+40,'APL'
+41,'APM'
+42,'APM']
+43,'AR/VR'
+44,'ARM
+45,'ASIC'
+46,'ASP.NET
+47,'ASP.NET'
+48,'ASP.NET']
+49,'ASP.Net
+50,'ASPICE'
+51,'AUTOSAR'
+52,'AV'
+53,'AWS
+54,'AWS CodeArtifacts'
+55,'AWS'
+56,'AWS']
+57,'Acronis'
+58,'Active
+59,'ActiveMQ'
+60,'Activiti'
+61,'AdMob'
+62,'Admob']
+63,'Adobe
+64,'After
+65,'Agile'
+66,'Agile']
+67,'Agile/Scrum']
+68,'Airbyte'
+69,'Airflow'
+70,'Airflow']
+71,'Airtable'
+72,'Ajax'
+73,'Alamofire'
+74,'Alembic'
+75,'Alembic']
+76,'Alerta']
+77,'Alfresco'
+78,'Algolia'
+79,'Amazon
+80,'Amazon'
+81,'Android
+82,'Android'
+83,'Android']
+84,'Angular
+85,'Angular'
+86,'Angular']
+87,'Angular.js']
+88,'AngularJS'
+89,'AngularJs'
+90,'Ansible'
+91,'Ansible']
+92,'Ant
+93,'AntDesign'
+94,'Antd
+95,'Antd'
+96,'Anti-DDoS'
+97,'Apache
+98,'Apache'
+99,'Apache']
+100,'Apache-Spark'
+101,'Apollo
+102,'Apollo'
+103,'App
+104,'App Store Optimization'
+105,'AppDynamics'
+106,'Appium'
+107,'Appium']
+108,'Apple
+109,'Application
+110,'Applitools'
+111,'Arbitrum'
+112,'Argo
+113,'ArgoCD'
+114,'ArtCAM'
+115,'Artifactory']
+116,'Aruba'
+117,'Asana'
+118,'AssetBundles']
+119,'Asynchronous Programming']
+120,'Atlassian'
+121,'Audio'
+122,'Aura'] ['Salesforce'
+123,'Aurora
+124,'Auth0']
+125,'Auto
+126,'AutoCAD']
+127,'AutoLayout'
+128,'Autocad']
+129,'Autofac'
+130,'Automated
+131,'Automation
+132,'Automation'
+133,'Automation']
+134,'Autonomous
+135,'Autoruns'
+136,'Axios'
+137,'Axure'
+138,'Azure
+139,'Azure'
+140,'Azure']
+141,'BFGMiner']
+142,'BI'
+143,'BI']
+144,'BIM'
+145,'BLE'
+146,'BLE']
+147,'BNB
+148,'BSP
+149,'BSP'
+150,'BW/BO'
+151,'Babel'
+152,'Babel']
+153,'Backbone
+154,'Backend
+155,'Backlog'
+156,'Backup
+157,'Backup'
+158,'Balsamiq'
+159,'Bash'
+160,'Bash']
+161,'Bash'] ['Kubernetes'
+162,'Beam'
+163,'Beaver
+164,'Benchmarking'
+165,'Big
+166,'BigQuery'
+167,'BigQuery']
+168,'BitLocker']
+169,'Bitbucket'
+170,'Bitbucket']
+171,'Bizagi'
+172,'Black
+173,'BlackDuck
+174,'BlackDuck'
+175,'Blazor'
+176,'Blender'
+177,'Bloc'
+178,'Blockchain'
+179,'Blockchain']
+180,'BloodHound'
+181,'Boost'
+182,'Bootstrap'
+183,'Bootstrap']
+184,'BrowserStack'
+185,'Bubble'
+186,'Bugzilla'
+187,'BullMQ'
+188,'Burp
+189,'Business Intelligence']
+190,'BytePlus
+191,'BytePlus'
+192,'C#'
+193,'C#']
+194,'C#'] ['Cocos2d-JS'
+195,'C#'] ['TensorFlow'
+196,'C'
+197,'C']
+198,'C++'
+199,'C++']
+200,'C++'] ['Automotive'
+201,'C++'] ['MATLAB/Simulink'
+202,'C++'] ['Microcontrollers'
+203,'C++'] ['Microservices'
+204,'C++'] ['TensorFlow'
+205,'C/C++'
+206,'C/C++']
+207,'C/C++'] ['TensorFlow'
+208,'CAM'
+209,'CAN
+210,'CAN'
+211,'CANalyzer'
+212,'CANoe'
+213,'CCNA'
+214,'CDN'
+215,'CDS
+216,'CGMiner'
+217,'CI/CD'
+218,'CI/CD']
+219,'CICD'
+220,'CICD']
+221,'CISSP']
+222,'CMAKE']
+223,'CMMI'
+224,'CMMi'
+225,'CMMi']
+226,'CMS'
+227,'CMake'
+228,'CNC'
+229,'CNC']
+230,'COBIT'
+231,'CPI'
+232,'CRM'
+233,'CRM']
+234,'CSS
+235,'CSS'
+236,'CSS']
+237,'CSS'] ['PostgreSQL'
+238,'CSS-in-JS'
+239,'CSS3'
+240,'CSS3']
+241,'CSV'
+242,'CUDA'
+243,'CURL'
+244,'CWE'
+245,'CWE']
+246,'Caching
+247,'Cacti'
+248,'Cad']
+249,'Caffe'
+250,'CakePHP'
+251,'CakePHP']
+252,'CameraX']
+253,'Camunda'
+254,'Canva'
+255,'Canvas'
+256,'CapCut
+257,'Carthage'
+258,'Cassandra'
+259,'Cassandra']
+260,'Celery'
+261,'CentOS']
+262,'Chai'
+263,'Charles
+264,'ChatGPT'
+265,'ChatGPT']
+266,'Chatwork'
+267,'CheckPoint']
+268,'Chopper'
+269,'Ci/CD'
+270,'Cimatron']
+271,'Circle
+272,'CircleCI'
+273,'CircleCI']
+274,'CircleCi'
+275,'Cisco
+276,'Cisco'
+277,'Clean Architecture'
+278,'Clean Architecture']
+279,'Clerk'
+280,'ClickHouse'
+281,'ClickUp'
+282,'Clickhouse']
+283,'Cloud
+284,'Cloud Infrastructure']
+285,'Cloud Technologies']
+286,'Cloud'
+287,'Cloud']
+288,'Cloud-Native'
+289,'Cloud-native architectures']
+290,'Cloud-native solutions']
+291,'Cloud-native'
+292,'CloudFormation'
+293,'CloudFormation']
+294,'CloudWatch']
+295,'Cloudflare'
+296,'CockroachDB'
+297,'CocoaLumberjack'
+298,'CocoaPods'
+299,'Cocoapods'
+300,'Cocos
+301,'Cocos2d-x'
+302,'Cocos2dx'
+303,'CodeBuild'
+304,'CodeIgniter'
+305,'CodeIgniter']
+306,'CodePipeline'
+307,'CodePush'
+308,'Codelgniter']
+309,'Combine'
+310,'Command
+311,'CompTIA'
+312,'Compose
+313,'Compose Multiplatform'
+314,'Compose'
+315,'Composer']
+316,'Computer
+317,'Configuration Manager'
+318,'Confluence'
+319,'Confluence']
+320,'Confluent'
+321,'Container'
+322,'Containerization'
+323,'Containers'
+324,'Context
+325,'Continuous
+326,'Core
+327,'CoreAnimation'
+328,'CoreData'
+329,'CoreData']
+330,'CoreML'
+331,'Corebank
+332,'Corgi
+333,'Coroutine'
+334,'Coroutines'
+335,'Cosmos'
+336,'Coverity'
+337,'Cpanel'
+338,'Crashlytics'
+339,'Crashlytics']
+340,'Cribl'
+341,'Crypto
+342,'Cryptography'
+343,'Crystal
+344,'Cucumber'
+345,'CucumberJS'
+346,'Cyber
+347,'Cybersecurity Engineering'
+348,'Cybersecurity'
+349,'Cypress'
+350,'Cypress']
+351,'D365'
+352,'DASH'
+353,'DASHCAM'
+354,'DAST'
+355,'DAST']
+356,'DApps']
+357,'DB2'
+358,'DBT'
+359,'DBWeaver'
+360,'DGL'
+361,'DHCP'
+362,'DL4J']
+363,'DLMS
+364,'DLP'
+365,'DMS'
+366,'DMS']
+367,'DNS'
+368,'DOORs'
+369,'DRM'
+370,'DRP']
+371,'Dapper'
+372,'Dart'
+373,'Dart']
+374,'Data
+375,'Data visualization'
+376,'DataOps'
+377,'Database
+378,'Database']
+379,'Databricks'
+380,'Databricks']
+381,'Datadog'
+382,'Datadog']
+383,'Datastage'
+384,'Dataverse'
+385,'Davinci'
+386,'Dbt'
+387,'DeFi']
+388,'Debian'
+389,'Decentralized Applications']
+390,'Deep
+391,'Dell'
+392,'Delta
+393,'Dependency
+394,'Design
+395,'DevExpress'
+396,'DevExtreme'
+397,'DevOps
+398,'DevOps'
+399,'DevOps']
+400,'DevSecOps'
+401,'Dialogflow'
+402,'Diffusion
+403,'DigitalOcean'
+404,'Dio'
+405,'DirectAdmin'
+406,'DirectX'
+407,'Divi'
+408,'Django'
+409,'Django']
+410,'Docker
+411,'Docker'
+412,'Docker']
+413,'Domain'
+414,'Domain-Driven Design'
+415,'Draw.io'
+416,'Dremio'
+417,'Dropshipping']
+418,'Drupal'
+419,'DynamoDB'
+420,'DynamoDB']
+421,'Dynatrace'
+422,'E-commerce'
+423,'EDR'
+424,'EFK'
+425,'EJB'
+426,'EKS'
+427,'ELK
+428,'ELK'
+429,'ELK']
+430,'ELK/Loki'
+431,'ELT'
+432,'ELV'
+433,'ENS'
+434,'EPP'
+435,'ERP'
+436,'ERP']
+437,'ES6'
+438,'ESLint'
+439,'ESP-IDF']
+440,'ESP32'
+441,'ETAS'
+442,'ETL'
+443,'ETL']
+444,'EVM'
+445,'Eclipse
+446,'Eclipse'
+447,'Eclipse']
+448,'Edge
+449,'ElastiCache'
+450,'Elastic
+451,'Elastic'
+452,'ElasticSearch'
+453,'ElasticSearch']
+454,'Elasticsearch'
+455,'Elasticsearch']
+456,'Electron.js'
+457,'ElectronJs'
+458,'ElectronJs']
+459,'Element
+460,'Elementor'
+461,'Elementor']
+462,'Email
+463,'Email'
+464,'Embedded
+465,'Embedded'
+466,'Emulate3D']
+467,'Encryption'
+468,'End-to-end
+469,'Endpoint
+470,'English']
+471,'Entity
+472,'Entra
+473,'Enzyme'
+474,'Eplan'
+475,'Eslint'
+476,'Espresso'
+477,'Ether']
+478,'Ethernet
+479,'Ethernet'
+480,'Ethernet']
+481,'Ethers.js'
+482,'Event-driven architecture'
+483,'Excel'
+484,'Excel']
+485,'Exchange
+486,'Exchange']
+487,'Expo'
+488,'Express'
+489,'Express']
+490,'Express.js'
+491,'ExpressJS'
+492,'ExpressJs'
+493,'EyeShot']
+494,'F#'
+495,'FAISS'
+496,'FFMPEG']
+497,'FFmpeg'
+498,'FME'
+499,'FOTA'
+500,'FW'
+501,'Facebook']
+502,'Facial
+503,'Faktory'
+504,'Fanuc']
+505,'Fast
+506,'FastAPI'
+507,'FastAPI']
+508,'Fastlane'
+509,'Figma'
+510,'Figma']
+511,'File
+512,'Fiori
+513,'Fiori'
+514,'FireBase'
+515,'Firebase
+516,'Firebase'
+517,'Firebase']
+518,'Fireflies'
+519,'Firestore'
+520,'Firewall'
+521,'Firewalls'
+522,'FitNesse'
+523,'Flash
+524,'Flask'
+525,'Flask']
+526,'Flexbox'
+527,'Flink'
+528,'Flow'
+529,'Flutter'
+530,'Flutter']
+531,'Flux'
+532,'Fortify'
+533,'Fortigate'
+534,'Fortinet'
+535,'Fortinet']
+536,'Foundation'
+537,'Foundry'
+538,'Framework']
+539,'FreeIPA']
+540,'FreeRTOS'
+541,'FreeRTOS']
+542,'Functional
+543,'Fusion
+544,'G
+545,'GA360'
+546,'GA4'
+547,'GCD'
+548,'GCP'
+549,'GCP']
+550,'GDB'
+551,'GIMP'
+552,'GIT'
+553,'GIT']
+554,'GPO'
+555,'GRPC'
+556,'GStreamer'
+557,'Game Development']
+558,'Gatsby'
+559,'Gcore'
+560,'Gemma'
+561,'GenAI'
+562,'GeoPandas'
+563,'GeoServer'
+564,'Geoserver'
+565,'GetX'
+566,'GetX']
+567,'Gherkin'
+568,'Git
+569,'Git'
+570,'Git']
+571,'GitHub
+572,'GitHub'
+573,'GitHub']
+574,'GitLab
+575,'GitLab'
+576,'GitLab']
+577,'GitOps'
+578,'Github'
+579,'Github']
+580,'Gitlab'
+581,'Glue'
+582,'Go
+583,'Go'
+584,'Go']
+585,'Go'] ['Blockchain'
+586,'Go'] ['Express.js'
+587,'Go'] ['Kubernetes'
+588,'Go'] ['Microservices'
+589,'Go'] ['PostgreSQL'
+590,'Go'] ['TensorFlow'
+591,'Godot']
+592,'Golang'
+593,'Golang']
+594,'Golang'] ['Microservices'
+595,'Golang'] ['PostgreSQL'
+596,'GoldenGate'
+597,'Google
+598,'Google'
+599,'GoogleAppScript'
+600,'Gradio'
+601,'Gradle'
+602,'Gradle']
+603,'Grafana'
+604,'Grafana']
+605,'Grafana/Prometheus']
+606,'GraphQL
+607,'GraphQL'
+608,'GraphQL']
+609,'Graphana']
+610,'Graphical
+611,'Graylog']
+612,'Groovy']
+613,'Group
+614,'Gulp'
+615,'Gulp']
+616,'HANA
+617,'HAProxy']
+618,'HBase']
+619,'HDFS'
+620,'HFS']
+621,'HLS'
+622,'HLS.js'
+623,'HMI'
+624,'HP'
+625,'HPE'
+626,'HTML'
+627,'HTML']
+628,'HTML/CSS'
+629,'HTML/CSS']
+630,'HTML/CSS'] ['PostgreSQL'
+631,'HTML5'
+632,'HTML5']
+633,'HTMX'
+634,'HTTP
+635,'HTTP'
+636,'HTTP']
+637,'HTTP/2'
+638,'HTTP2'
+639,'HTTPS'
+640,'Hadoop'
+641,'Hadoop']
+642,'Halcon'
+643,'Hapi'
+644,'Hardhat'
+645,'Hardware
+646,'Havoc']
+647,'Hazelcast']
+648,'Hbase'
+649,'Helm
+650,'Helm'
+651,'Hibernate'
+652,'Hibernate']
+653,'Hibernate/JPA'
+654,'Hive'
+655,'Hooks'
+656,'HubSpot'
+657,'Hugging
+658,'Hugging Face Transformers'
+659,'HuggingFace Transformers'
+660,'HuggingFace'
+661,'Hyper-V']
+662,'Hyperledger'
+663,'I2C'
+664,'IAM'
+665,'IAM']
+666,'IAP']
+667,'IAST'
+668,'IBM
+669,'ICE'
+670,'IDS/IPS'
+671,'IDS/IPS/Firewall'
+672,'IIS'
+673,'INTERRUPT']
+674,'IOS']
+675,'IOT'
+676,'IOT']
+677,'IPC'
+678,'IPFS'
+679,'IPS'
+680,'ISO'
+681,'ISO26262'
+682,'ISO27001'
+683,'ISTIO']
+684,'ITIL'
+685,'ITIL']
+686,'ITSM']
+687,'IaC'
+688,'Iceberg'
+689,'Illustrator'
+690,'Illustrator']
+691,'InVision'
+692,'InVision']
+693,'Industrial
+694,'Information
+695,'Infrastructure as Code'
+696,'Infrastructure as Code']
+697,'Inovance']
+698,'IntelliJ
+699,'Intellij'
+700,'Internet
+701,'Intune'
+702,'Inventor']
+703,'IoT'
+704,'IoT']
+705,'Ionic'
+706,'Isar'
+707,'Istio'
+708,'J2EE'
+709,'JFrog'
+710,'JIRA'
+711,'JIRA']
+712,'JMeter'
+713,'JPA'
+714,'JPA2'
+715,'JQuery'
+716,'JQuery']
+717,'JSF'
+718,'JSON'
+719,'JSON']
+720,'JSON-RPC'
+721,'JSP
+722,'JSP'
+723,'JSP']
+724,'JUnit'
+725,'JUnit']
+726,'JWT'
+727,'Jakarta
+728,'Jasmine'
+729,'Java
+730,'Java Spring-Framework'
+731,'Java'
+732,'Java']
+733,'Java'] ['Elasticsearch'
+734,'Java'] ['PostgreSQL'
+735,'Java'] ['TensorFlow'
+736,'JavaEE'
+737,'JavaFX'
+738,'JavaScript'
+739,'JavaScript']
+740,'JavaScript'] ['.NET Core'
+741,'JavaScript'] ['.NET MVC'
+742,'JavaScript'] ['.NET'
+743,'JavaScript'] ['.NET']
+744,'JavaScript'] ['ASP.NET MVC'
+745,'JavaScript'] ['ASP.NET'
+746,'JavaScript'] ['ASP.NET']
+747,'JavaScript'] ['AWS'
+748,'JavaScript'] ['Angular'
+749,'JavaScript'] ['AngularJS'
+750,'JavaScript'] ['Apache Spark'
+751,'JavaScript'] ['Azure'
+752,'JavaScript'] ['CI/CD'
+753,'JavaScript'] ['CS-Cart'
+754,'JavaScript'] ['CodeIgniter'
+755,'JavaScript'] ['Cucumber'
+756,'JavaScript'] ['Databricks'
+757,'JavaScript'] ['Docker'
+758,'JavaScript'] ['Docker']
+759,'JavaScript'] ['ERP'
+760,'JavaScript'] ['FastAPI'
+761,'JavaScript'] ['Figma'
+762,'JavaScript'] ['Flask'
+763,'JavaScript'] ['Flutter'
+764,'JavaScript'] ['GCP'
+765,'JavaScript'] ['Git'
+766,'JavaScript'] ['HTML'
+767,'JavaScript'] ['HTML/CSS'
+768,'JavaScript'] ['HTML5'
+769,'JavaScript'] ['JIRA'
+770,'JavaScript'] ['Java Spring'
+771,'JavaScript'] ['Jira'
+772,'JavaScript'] ['Kubernetes'
+773,'JavaScript'] ['Laravel'
+774,'JavaScript'] ['Linux'
+775,'JavaScript'] ['Linux']
+776,'JavaScript'] ['Magento 2'
+777,'JavaScript'] ['MySQL'
+778,'JavaScript'] ['NestJS'
+779,'JavaScript'] ['Node.js'
+780,'JavaScript'] ['Odoo'
+781,'JavaScript'] ['Oracle'
+782,'JavaScript'] ['PostgreSQL'
+783,'JavaScript'] ['Primefaces'
+784,'JavaScript'] ['RESTful APIs'
+785,'JavaScript'] ['React Native'
+786,'JavaScript'] ['React'
+787,'JavaScript'] ['React']
+788,'JavaScript'] ['Restful APIs'
+789,'JavaScript'] ['SAP BTP'
+790,'JavaScript'] ['SASS'
+791,'JavaScript'] ['SQL Server'
+792,'JavaScript'] ['SVN'
+793,'JavaScript'] ['Salesforce'
+794,'JavaScript'] ['Selenium'
+795,'JavaScript'] ['Spring Boot'
+796,'JavaScript'] ['Spring'
+797,'JavaScript'] ['Symfony'
+798,'JavaScript'] ['TensorFlow'
+799,'JavaScript'] ['UML'
+800,'JavaScript'] ['Unity'
+801,'JavaScript'] ['Vue.js'
+802,'JavaScript'] ['Web3.js'
+803,'JavaScript'] ['WordPress'
+804,'JavaScript'] []
+805,'Jboss
+806,'Jboss'
+807,'Jboss']
+808,'Jenkins'
+809,'Jenkins']
+810,'Jest'
+811,'Jest']
+812,'JetPack'
+813,'Jetpack
+814,'Jetpack'
+815,'Jetson
+816,'Jetson'
+817,'Jetty'
+818,'Jira'
+819,'Jira']
+820,'Jquery'
+821,'Juniper'
+822,'Junit'
+823,'Jupyter
+824,'KACE'
+825,'KVM'
+826,'KVM']
+827,'Kafka'
+828,'Kafka']
+829,'Kanban'
+830,'Karate'
+831,'Karma'
+832,'Katalon
+833,'Katalon'
+834,'Kendo
+835,'Keras'
+836,'Keras']
+837,'Keyence'
+838,'Kibana'
+839,'Koa.js']
+840,'Kotlin Multiplatform Mobile'
+841,'Kotlin Multiplatform'
+842,'Kotlin'
+843,'Kotlin']
+844,'Kubeflow'
+845,'Kubeflow']
+846,'Kubernetes'
+847,'Kubernetes']
+848,'Kysely'
+849,'Kysely']
+850,'LAN'
+851,'LEAN']
+852,'LESS'
+853,'LESS']
+854,'LIN'
+855,'LINQ'
+856,'LLDB'
+857,'LLM']
+858,'LLMs'
+859,'LLamaIndex']
+860,'LSTM'
+861,'LWC'
+862,'LangChain'
+863,'LangGraph'
+864,'Langchain'
+865,'Langflow'
+866,'Laravel
+867,'Laravel'
+868,'Laravel']
+869,'Legacy 3-tier architecture'
+870,'Lerna'
+871,'Less'
+872,'Liferay'
+873,'Lift
+874,'Linux'
+875,'Linux']
+876,'Linux/Unix'
+877,'Linux/Unix']
+878,'Liquid'
+879,'LiveData']
+880,'LlamaIndex'
+881,'LlamaIndex']
+882,'Load
+883,'Load/Performance testing'
+884,'LoadRunner'
+885,'Logging'
+886,'Looker
+887,'Lora/LoraWAN'
+888,'Lua
+889,'Lua'] ['Cocos2d-x']
+890,'Lucidchart']
+891,'Luigi'
+892,'Luigi']
+893,'M700'
+894,'M850']
+895,'MDM']
+896,'MDVR']
+897,'MES'
+898,'MES']
+899,'MFA'
+900,'MFC'
+901,'ML'
+902,'MLFlow'
+903,'MLOps'
+904,'MLOps']
+905,'MLflow'
+906,'MLflow']
+907,'MMDetection']
+908,'MML'
+909,'MODBUS
+910,'MPC'
+911,'MQTT'
+912,'MQTT']
+913,'MS
+914,'MS-SQL'
+915,'MSCA'
+916,'MSSQL
+917,'MSSQL'
+918,'MUI'
+919,'MVC
+920,'MVC'
+921,'MVC3'
+922,'MVC5'
+923,'MVI Architecture']
+924,'MVI'
+925,'MVP'
+926,'MVVC']
+927,'MVVM'
+928,'MVVM']
+929,'Mac
+930,'Mac']
+931,'Machine
+932,'Machinery'
+933,'MagicPod'
+934,'Make'
+935,'Make']
+936,'Mantis'
+937,'Manual
+938,'Mapbox'
+939,'MariaDB'
+940,'MariaDB']
+941,'MasterCAM'
+942,'MasterCAM']
+943,'MasterCam2020'
+944,'Mastercam
+945,'Mastercam'
+946,'Mastercam']
+947,'Material
+948,'Material'
+949,'MaterialUI'
+950,'Maven'
+951,'Maven']
+952,'Maya'
+953,'Memcached'
+954,'Memcached']
+955,'Mermaid.js'
+956,'Message
+957,'MessageQueue'
+958,'Metabase'
+959,'MicroStation'
+960,'Microcontrollers'
+961,'Microfrontend'
+962,'Microservices'
+963,'Microservices']
+964,'Microsoft
+965,'Microsoft'
+966,'Milvus'
+967,'MinIO'
+968,'Miro'
+969,'Miro']
+970,'Mirror']
+971,'Mitsu'
+972,'Mitsubishi
+973,'Mitsubishi'
+974,'MobX'
+975,'Mobile
+976,'Mobile Applications'
+977,'Mobile']
+978,'Mocha'
+979,'Mockito'
+980,'Modbus'
+981,'Modbus']
+982,'Modularization']
+983,'Monday'
+984,'MongoDB'
+985,'MongoDB']
+986,'Mongoose'
+987,'Monitoring
+988,'Monitoring'
+989,'MyBatis'
+990,'MySQL'
+991,'MySQL']
+992,'N8N'
+993,'NAC'
+994,'NAS'
+995,'NAS']
+996,'NGINX'
+997,'NHibernate'
+998,'NIST
+999,'NIST'
+1000,'NIST']
+1001,'NLP'
+1002,'NLP']
+1003,'NPM'
+1004,'NServiceBus'
+1005,'NTP'
+1006,'NUnit'
+1007,'NX'
+1008,'Nagios'
+1009,'Natural
+1010,'Neo4j'
+1011,'Neo4j']
+1012,'Nessus']
+1013,'Nest
+1014,'Nest.js'
+1015,'NestJS'
+1016,'NetSecOps'
+1017,'NetSuite'
+1018,'NetSuite']
+1019,'Network
+1020,'Network'
+1021,'Networking'
+1022,'Networking']
+1023,'Neural
+1024,'New
+1025,'NewRelic'
+1026,'Next.js'
+1027,'Next.js']
+1028,'NextJS'
+1029,'NextJs'
+1030,'Nexus'
+1031,'Nexus']
+1032,'Nginx'
+1033,'Nginx']
+1034,'NiFi']
+1035,'Nifi'
+1036,'No-SQL']
+1037,'NoSQL'
+1038,'NoSQL']
+1039,'Node.js'
+1040,'Node.js']
+1041,'Node.js'] ['Microservices'
+1042,'Node.js'] ['PostgreSQL'
+1043,'NodeJS'
+1044,'NodeJS']
+1045,'NodeJs'
+1046,'Nordic
+1047,'Not
+1048,'NotebookLM'
+1049,'Notion
+1050,'Notion'
+1051,'Notion']
+1052,'NumPy'
+1053,'Nuxt.js'
+1054,'Nuxt.js']
+1055,'NuxtJS'
+1056,'Nx'
+1057,'OAuth
+1058,'OAuth'
+1059,'OAuth2'
+1060,'OBD'
+1061,'OCR']
+1062,'ODI'
+1063,'OData'
+1064,'OIDC'
+1065,'OKHTTP'
+1066,'ONNX']
+1067,'OOP'
+1068,'OOP']
+1069,'ORM'
+1070,'OSINT'
+1071,'OWASP'
+1072,'Oauth2'
+1073,'Objective
+1074,'Objective-C'
+1075,'Objective-C']
+1076,'Objective-C'] ['Agile'
+1077,'Objective-C'] ['Alamofire'
+1078,'Objective-C'] ['Git'
+1079,'Objective-C'] ['UIKit'
+1080,'Objective-C'] ['Web3.js'
+1081,'Objective-C'] ['Xcode'
+1082,'Objective-C'] []
+1083,'Observable'
+1084,'Odoo'
+1085,'Odoo']
+1086,'Office
+1087,'OkHttp'
+1088,'Omron'
+1089,'Onesignal'
+1090,'Onnx'
+1091,'Open
+1092,'OpenAI
+1093,'OpenAI'
+1094,'OpenAPI Specification'
+1095,'OpenAPI'
+1096,'OpenCV'
+1097,'OpenCV']
+1098,'OpenGL'
+1099,'OpenID
+1100,'OpenSearch'
+1101,'OpenShift'
+1102,'OpenStack']
+1103,'Operating
+1104,'Opsgenie'
+1105,'Optimism'
+1106,'Oracle
+1107,'Oracle'
+1108,'Oracle']
+1109,'Outsystems'
+1110,'P2P'
+1111,'PAL'
+1112,'PAM'
+1113,'PC
+1114,'PCB'
+1115,'PCHunter']
+1116,'PCI
+1117,'PCIDSS'
+1118,'PDB']
+1119,'PDM']
+1120,'PGSQL'
+1121,'PHP
+1122,'PHP'
+1123,'PHP']
+1124,'PHP'] ['Kubernetes'
+1125,'PHPUnit'
+1126,'PI/PO'
+1127,'PID'
+1128,'PKI']
+1129,'PL
+1130,'PL/SQL'
+1131,'PL/SQL']
+1132,'PLM'
+1133,'PLSQL'
+1134,'PLSQL']
+1135,'PMI']
+1136,'PMP']
+1137,'PRTG'
+1138,'PTC'
+1139,'PWM'
+1140,'PaaS'
+1141,'Packer'
+1142,'Pact']
+1143,'PaddleOCR']
+1144,'Palo
+1145,'Pandas'
+1146,'Parcel'
+1147,'PayPal'
+1148,'Pen
+1149,'Penetration
+1150,'Pentaho'
+1151,'Pentesting'
+1152,'Perfecto'
+1153,'Performance
+1154,'Perl'
+1155,'Perplexity'
+1156,'Phaser'
+1157,'PhaserJS']
+1158,'PhoneGap'
+1159,'Photo'
+1160,'Photon'
+1161,'Photoshop'
+1162,'Photoshop']
+1163,'Pigma']
+1164,'Pillow']
+1165,'Pipedream'
+1166,'PixiJS'
+1167,'PlantUML'
+1168,'Playable
+1169,'Playwright'
+1170,'Playwright']
+1171,'Poe']
+1172,'Polyspace'
+1173,'PostgreSQL'
+1174,'PostgreSQL']
+1175,'PostgreSQL'] ['Odoo'
+1176,'Postgres'
+1177,'Postgres']
+1178,'Postgresql']
+1179,'Postman'
+1180,'Postman']
+1181,'Power
+1182,'PowerBI'
+1183,'PowerBI']
+1184,'PowerShell'
+1185,'PowerShell'] ['Red Team'
+1186,'Powerbuilder'
+1187,'Powermill'
+1188,'Powershell'
+1189,'Prettier']
+1190,'PrimeFaces'
+1191,'Prisma'
+1192,'Procexp'
+1193,'Progress
+1194,'Project
+1195,'Prometheus'
+1196,'Prometheus']
+1197,'Prosemirror']
+1198,'Protobuf'
+1199,'Protopie'
+1200,'Protractor'
+1201,'Provider'
+1202,'Proxmox'
+1203,'Proxmox']
+1204,'ProxySQL']
+1205,'Pub/Sub'
+1206,'Public Key Infrastructure'
+1207,'Pulumi']
+1208,'Puppeteer'
+1209,'Push Notification'
+1210,'Push Notification']
+1211,'PyG'
+1212,'PyTorch
+1213,'PyTorch'
+1214,'PyTorch']
+1215,'Pydantic'
+1216,'Pylon']
+1217,'Python'
+1218,'Python']
+1219,'Python'] ['Blockchain'
+1220,'Python'] ['Kubernetes'
+1221,'Python'] ['Microservices'
+1222,'Python'] ['Playwright'
+1223,'Python'] ['PostgreSQL'
+1224,'Python'] ['ServiceNow'
+1225,'Python'] ['TensorFlow'
+1226,'Pytorch'
+1227,'QA']
+1228,'QGIS'
+1229,'QTest'
+1230,'Qase'
+1231,'Qdrant']
+1232,'Qlik']
+1233,'Qt'
+1234,'Quality
+1235,'Quarkus'
+1236,'R'
+1237,'R']
+1238,'RAG'
+1239,'RAG']
+1240,'RDBMS'
+1241,'RDS'
+1242,'REST
+1243,'REST'
+1244,'REST']
+1245,'REST-assured'
+1246,'REST/SOAP
+1247,'RESTful
+1248,'RESTful'
+1249,'ROS'
+1250,'RPA'
+1251,'RS232'
+1252,'RS485'
+1253,'RTCP'
+1254,'RTOS'
+1255,'RTP'
+1256,'RTSP'
+1257,'RabbitMQ'
+1258,'RabbitMQ']
+1259,'Radix-UI']
+1260,'Rails']
+1261,'Rancher'
+1262,'Random
+1263,'Rasa'
+1264,'Rasp
+1265,'Raspberry
+1266,'React
+1267,'React'
+1268,'React']
+1269,'React-Router'
+1270,'React.js'
+1271,'React.js']
+1272,'ReactJS'
+1273,'ReactJS']
+1274,'ReactNative'
+1275,'Real
+1276,'Real-time
+1277,'Realm'
+1278,'Realm']
+1279,'Realtime
+1280,'Reanimated'
+1281,'Recoil']
+1282,'Redis'
+1283,'Redis']
+1284,'Redmine'
+1285,'Redmine']
+1286,'Redshift'
+1287,'Redteam']
+1288,'Redux
+1289,'Redux'
+1290,'Redux']
+1291,'Redux-Saga'
+1292,'RegeX']
+1293,'Regression
+1294,'Relational
+1295,'Requests'
+1296,'Reselect'
+1297,'Responsive
+1298,'Rest
+1299,'RestAssured'
+1300,'Restful
+1301,'Restful'
+1302,'Retrofit'
+1303,'Revenue
+1304,'Revit'
+1305,'Revit']
+1306,'Rive'
+1307,'Riverpod'
+1308,'Roblox'
+1309,'Roboelectric'
+1310,'Robot
+1311,'Robot'
+1312,'RocksDB'
+1313,'Rollbar'
+1314,'Rollup'
+1315,'Room'
+1316,'Router'
+1317,'Ruby
+1318,'Ruby'
+1319,'Ruby']
+1320,'Ruby'] ['Express.js'
+1321,'Ruckus'
+1322,'Rust'
+1323,'Rust']
+1324,'Rust'] ['Microservices'
+1325,'Rx'
+1326,'RxJS'
+1327,'RxJava'
+1328,'RxSwift'
+1329,'S3'
+1330,'S3']
+1331,'SAFe
+1332,'SAN
+1333,'SAP
+1334,'SAP'
+1335,'SAP']
+1336,'SAPUI5'
+1337,'SAS']
+1338,'SASS'
+1339,'SASS']
+1340,'SASS/SCSS']
+1341,'SAST'
+1342,'SCA'
+1343,'SCM'
+1344,'SCRUM'
+1345,'SCRUM']
+1346,'SCSS'
+1347,'SCTP'
+1348,'SDL'
+1349,'SDLC
+1350,'SDLC'
+1351,'SDLC']
+1352,'SEO'
+1353,'SIEM'
+1354,'SIEM']
+1355,'SIP'
+1356,'SNPE'
+1357,'SOA'
+1358,'SOAP'
+1359,'SOAP']
+1360,'SOAR'
+1361,'SOLID'
+1362,'SOQL'] ['Salesforce'
+1363,'SPC'
+1364,'SPI'
+1365,'SPSS'
+1366,'SQL
+1367,'SQL'
+1368,'SQL']
+1369,'SQL'] ['Microservices'
+1370,'SQL'] ['Playwright'
+1371,'SQL'] ['PostgreSQL'
+1372,'SQL'] ['Salesforce'
+1373,'SQL'] ['TensorFlow'
+1374,'SQLAlchemy'
+1375,'SQLAlchemy']
+1376,'SQLDelight'
+1377,'SQLServer'
+1378,'SQLServer']
+1379,'SQLite'
+1380,'SQLite']
+1381,'SRT'
+1382,'SRTP'
+1383,'SSIS'
+1384,'SSO'
+1385,'SSO']
+1386,'STAAD
+1387,'STM32'
+1388,'STUN'
+1389,'SVN'
+1390,'SVN']
+1391,'SaaS'
+1392,'SaaS']
+1393,'Salesforce'
+1394,'Samsung
+1395,'Sass'
+1396,'Scala'
+1397,'Scala']
+1398,'Scikit'
+1399,'Scikit-learn'
+1400,'Scikit-learn']
+1401,'Scratch'
+1402,'Scratch']
+1403,'Screaming
+1404,'Scrum'
+1405,'Scrum']
+1406,'Search
+1407,'Secure
+1408,'Security
+1409,'Security'
+1410,'Selenium'
+1411,'Selenium']
+1412,'Semgrep'
+1413,'Sensor
+1414,'Sentry'
+1415,'Sentry']
+1416,'Serenity
+1417,'Server configuration']
+1418,'Server'
+1419,'Serverless Architecture'
+1420,'Serverless'
+1421,'Serverless']
+1422,'Servers'
+1423,'Service
+1424,'ServiceNow']
+1425,'Servicenow']
+1426,'Servlet'
+1427,'Servlets'
+1428,'Servo
+1429,'Servo'
+1430,'Shader/Shader Graph'
+1431,'ShaderLab']
+1432,'Shaders'
+1433,'Shapely'
+1434,'SharePoint'
+1435,'SharePoint']
+1436,'Shared
+1437,'Shell
+1438,'Shell'
+1439,'Shell'] ['Kubernetes'
+1440,'Shiftleft
+1441,'Siemen']
+1442,'Siemens
+1443,'Siemens'
+1444,'SignalR'
+1445,'Sigrid'
+1446,'Sinon'
+1447,'Six
+1448,'Sketch'
+1449,'Sketch']
+1450,'SketchUp']
+1451,'Slack'
+1452,'Slack']
+1453,'Sliver'
+1454,'Smart
+1455,'SnapKit']
+1456,'Snowflake'
+1457,'Snyk
+1458,'SoCs'
+1459,'Soap
+1460,'SoapUI'
+1461,'SoapUI']
+1462,'Socket
+1463,'Socket'
+1464,'Software Development']
+1465,'Solana
+1466,'Solana'
+1467,'SolarWinds'
+1468,'Solarwinds'
+1469,'SolidCAM'
+1470,'SolidCAM']
+1471,'SolidWorks'
+1472,'Solidity'
+1473,'Solidworks'
+1474,'Solidworks']
+1475,'Solr'
+1476,'SonarQube'
+1477,'SonarQube']
+1478,'Sonarqube'
+1479,'Spark'
+1480,'Spark']
+1481,'Specflow'
+1482,'Splunk'
+1483,'Splunk']
+1484,'Spring
+1485,'Spring'
+1486,'Spring']
+1487,'SpringBoot'
+1488,'Starlark']
+1489,'State
+1490,'Stepping
+1491,'Storage'
+1492,'StoreKit'
+1493,'StoreKit2'
+1494,'Storm'
+1495,'Storyboard'
+1496,'Storybook'
+1497,'Streamlit'
+1498,'Stripe'
+1499,'Structured
+1500,'Strut'
+1501,'Struts'
+1502,'Styled
+1503,'Styled-components']
+1504,'Substance
+1505,'Supabase'
+1506,'Svelte'
+1507,'Swagger'
+1508,'Swagger']
+1509,'Swift
+1510,'Swift'
+1511,'Swift']
+1512,'SwiftPM'
+1513,'SwiftUI'
+1514,'SwiftUI']
+1515,'Switch'
+1516,'Switches']
+1517,'Sybase'
+1518,'Symfony'
+1519,'Synapse'
+1520,'Synapse']
+1521,'Syslog'
+1522,'System
+1523,'T-SQL']
+1524,'TARA']
+1525,'TCP/IP'
+1526,'TCPDump'
+1527,'TCPView'
+1528,'TCServer'
+1529,'TDD']
+1530,'TFlite'
+1531,'TIMER'
+1532,'TLS'
+1533,'TURN'
+1534,'Tableau'
+1535,'Tableau']
+1536,'Tabnine'
+1537,'Tabular']
+1538,'Tailwind
+1539,'Tailwind'
+1540,'Tailwind']
+1541,'TailwindCSS'
+1542,'Talend'
+1543,'TanStack
+1544,'Team
+1545,'TeamCity'
+1546,'TeamCity']
+1547,'Tenable.io'
+1548,'Tensor
+1549,'TensorFlow
+1550,'TensorFlow'
+1551,'TensorFlow']
+1552,'TensorRT'
+1553,'Tensorflow'
+1554,'Terraform'
+1555,'Terraform']
+1556,'Terragrunt'
+1557,'Tesseract'
+1558,'Test
+1559,'Test Driven Development']
+1560,'TestFlight'
+1561,'TestNG'
+1562,'TestRail'
+1563,'TestRail']
+1564,'Testcafe'
+1565,'Testlink']
+1566,'Testrail']
+1567,'Text-to-SQL'
+1568,'Textract'
+1569,'The
+1570,'Themeleaf'
+1571,'Threat
+1572,'Three.js']
+1573,'Thymeleaf']
+1574,'Ticketing
+1575,'Tiktok']
+1576,'Tomcat'
+1577,'Trac'
+1578,'Tracing']
+1579,'Trello'
+1580,'Trello']
+1581,'TritonServer'
+1582,'TrustZone']
+1583,'Turbo'
+1584,'Turnstile
+1585,'Tuxedo
+1586,'Twig'
+1587,'TypeORM'
+1588,'TypeScript'
+1589,'TypeScript']
+1590,'TypeScript'] ['.NET Core'
+1591,'TypeScript'] ['.NET'
+1592,'TypeScript'] ['API'
+1593,'TypeScript'] ['AWS'
+1594,'TypeScript'] ['Angular']
+1595,'TypeScript'] ['Blockchain'
+1596,'TypeScript'] ['Cocos'
+1597,'TypeScript'] ['Django'
+1598,'TypeScript'] ['Flask'
+1599,'TypeScript'] ['Flutter'
+1600,'TypeScript'] ['GCP'
+1601,'TypeScript'] ['Laravel'
+1602,'TypeScript'] ['NestJS'
+1603,'TypeScript'] ['Next.js'
+1604,'TypeScript'] ['Node.js'
+1605,'TypeScript'] ['Playwright'
+1606,'TypeScript'] ['React Native'
+1607,'TypeScript'] ['React'
+1608,'TypeScript'] ['Redux'
+1609,'TypeScript'] ['SQLite'
+1610,'TypeScript'] ['Selenium'
+1611,'TypeScript'] ['Shopify'
+1612,'TypeScript'] ['Spring Boot'
+1613,'TypeScript'] ['TensorFlow'
+1614,'TypeScript'] ['Vue.js'
+1615,'TypeScript'] ['WebGL'
+1616,'Typeform']
+1617,'UART'
+1618,'UART']
+1619,'UDP'
+1620,'UDS'
+1621,'UDSonCAN'
+1622,'UI
+1623,'UI-UX']
+1624,'UIKit'
+1625,'UML'
+1626,'UML']
+1627,'UNIX'
+1628,'UR
+1629,'USART'
+1630,'USB'
+1631,'UWP'
+1632,'UX/UI'
+1633,'UX/UI']
+1634,'Ubuntu'
+1635,'Ubuntu']
+1636,'UiPath'
+1637,'Unit
+1638,'Unity
+1639,'Unity'
+1640,'Unity']
+1641,'Unix
+1642,'Unix'
+1643,'Unix']
+1644,'Unix/Linux'
+1645,'Unix/Linux']
+1646,'Unreal
+1647,'Unreal'
+1648,'Unreal']
+1649,'UserDefaults'
+1650,'VB.NET'
+1651,'VB.NET']
+1652,'VB.Net'
+1653,'VCL'
+1654,'VLAN'
+1655,'VMWare
+1656,'VMware
+1657,'VMware'
+1658,'VMware']
+1659,'VNPAY'
+1660,'VPN'
+1661,'VR'
+1662,'VR/AR'
+1663,'VS
+1664,'VSCode'
+1665,'VSTS'
+1666,'Valgrind'
+1667,'Valgrind']
+1668,'Vector
+1669,'Vector']
+1670,'Vercel'
+1671,'Vericut']
+1672,'Verilog'
+1673,'Vert.x'
+1674,'Vertex
+1675,'ViTest'
+1676,'Video'
+1677,'Video.js'
+1678,'Viem'
+1679,'Viem']
+1680,'Virtualization'
+1681,'Virtuozzo'
+1682,'Visi'
+1683,'Visily'
+1684,'Visio'
+1685,'Vision'
+1686,'Visual
+1687,'Visualforce'
+1688,'Visualization Tools']
+1689,'Vite'
+1690,'Vite']
+1691,'VoIP'
+1692,'Vscode'
+1693,'Vue
+1694,'Vue'
+1695,'Vue']
+1696,'Vue.js'
+1697,'Vue.js']
+1698,'VueJS'
+1699,'Vuetify'
+1700,'Vuex'
+1701,'W3C
+1702,'WAF'
+1703,'WAN'
+1704,'WAS']
+1705,'WCF'
+1706,'WDIO'
+1707,'WEB
+1708,'WEB'
+1709,'WMS'
+1710,'WPF'
+1711,'WPF']
+1712,'Wagmi'
+1713,'WalletConnect']
+1714,'Waterfall'
+1715,'Waterfall']
+1716,'Watermarking']
+1717,'Weaviate'
+1718,'Web
+1719,'Web Applications'
+1720,'Web3'
+1721,'Web3']
+1722,'Web3.js'
+1723,'WebAssembly'
+1724,'WebGL'
+1725,'WebGPU'
+1726,'WebRTC'
+1727,'WebRTC']
+1728,'WebSocket'
+1729,'WebSocket']
+1730,'WebSockets'
+1731,'WebdriverIO'
+1732,'WebdriverIO']
+1733,'Webflow']
+1734,'Webhook'
+1735,'Webpack'
+1736,'Webpack']
+1737,'Webservices'
+1738,'Websocket'
+1739,'Websphere'
+1740,'Weight
+1741,'WiFi'
+1742,'Wifi'
+1743,'Wildfly'
+1744,'Win Form Application']
+1745,'WinForms'
+1746,'WinUI'
+1747,'WinUI3']
+1748,'WindIdea'
+1749,'Windows
+1750,'Windows'
+1751,'Wireshark'
+1752,'Wireshark']
+1753,'WooCommerce'
+1754,'WordPress'
+1755,'Workday']
+1756,'XCode'
+1757,'XDR'
+1758,'XDebug'
+1759,'XGBoost'
+1760,'XGboost'
+1761,'XML'
+1762,'XML-RPC'
+1763,'XPath']
+1764,'XUnit'
+1765,'Xcode'
+1766,'XcodeBuild'
+1767,'Xen
+1768,'YARN'
+1769,'Yarn'
+1770,'Yaskawa'
+1771,'Yii
+1772,'Yii'
+1773,'Yocto
+1774,'Yocto'
+1775,'Yocto']
+1776,'ZK'
+1777,'Zabbix'
+1778,'Zapier'
+1779,'Zapier']
+1780,'ZenHub'
+1781,'Zend'
+1782,'Zephyr'
+1783,'Zephyr']
+1784,'Zeplin'
+1785,'Zeplin']
+1786,'Zigbee']
+1787,'Zod'
+1788,'Zoom'
+1789,'Zustand'
+1790,'[Not
+1791,'aaPanel'
+1792,'analystic']
+1793,'automation
+1794,'axios']
+1795,'black
+1796,'blockchain'
+1797,'bug-tracking systems']
+1798,'cPanel'
+1799,'cloud
+1800,'cloud'
+1801,'cloud-native architectures']
+1802,'cloud-native'
+1803,'cocoapods'
+1804,'containerization'
+1805,'core
+1806,'data lake/warehouse']
+1807,'dbt'
+1808,'docker'
+1809,'etherCat'
+1810,'ethers.js'
+1811,'fetch'
+1812,'figma']
+1813,'firewall'
+1814,'firewalls']
+1815,'functional
+1816,'gRPC'
+1817,'gRPC']
+1818,'git'
+1819,'gitlab'
+1820,'iOS'
+1821,'iOS']
+1822,'jBOSS']
+1823,'jBPM'
+1824,'jQuery'
+1825,'jQuery']
+1826,'jUnit']
+1827,'kubernetes']
+1828,'low-code']
+1829,'macOS'
+1830,'manual
+1831,'microservice'
+1832,'n8n'
+1833,'network'
+1834,'no-code'
+1835,'noSQL']
+1836,'npm'
+1837,'openCV']
+1838,'performance
+1839,'regression
+1840,'robot
+1841,'robot'
+1842,'scikit-learn'
+1843,'scikit-learn']
+1844,'smart
+1845,'sqlite']
+1846,'storage'
+1847,'tRPC'
+1848,'vSAN'
+1849,'websocket']
+1850,'wifi']
+1851,'yarn'
+1852,'zkSync'
+1853,.NET
+1854,.Net Core
+1855,10'
+1856,11'
+1857,11g'
+1858,2'
+1859,2.0'
+1860,2018'
+1861,2019'
+1862,2021']
+1863,2022'
+1864,27001'
+1865,2D'
+1866,360'
+1867,365'
+1868,365']
+1869,3D'
+1870,3D']
+1871,3ds Max
+1872,4'
+1873,6+'
+1874,8'
+1875,9001'
+1876,A/B testing
+1877,ABAP
+1878,ABL/4GL'
+1879,AD'
+1880,AI
+1881,AI'
+1882,API
+1883,API'
+1884,API']
+1885,APIs'
+1886,APIs']
+1887,AS'
+1888,ASP.NET
+1889,AWS
+1890,AWS CloudFormation
+1891,AWS Glue
+1892,AWS Lambda
+1893,Access
+1894,Action'
+1895,Actions'
+1896,Actions']
+1897,Adobe
+1898,Adobe Illustrator
+1899,Adobe Photoshop
+1900,Adobe XD
+1901,Ads'
+1902,Agile
+1903,Agile'
+1904,Agile']
+1905,Airflow'
+1906,Airflow']
+1907,Airtable
+1908,Algorithms
+1909,Algorithms']
+1910,Alto
+1911,Amazon RDS
+1912,Analysis'
+1913,Analysis']
+1914,Analyst']
+1915,Analytics
+1916,Analytics'
+1917,Android
+1918,Android studio
+1919,Angular
+1920,AngularJS
+1921,Annie'
+1922,Ansible
+1923,Antivirus
+1924,Anywhere'
+1925,Apache Airflow
+1926,Apache HttpClient
+1927,Apache Spark
+1928,Apex
+1929,Apex'
+1930,Api'
+1931,App']
+1932,Appium
+1933,Application Security
+1934,Application'
+1935,Apps'
+1936,Assurance']
+1937,Assured'
+1938,Aurora'
+1939,AutoCAD
+1940,Automate'
+1941,Automate']
+1942,Automation Test
+1943,Axure
+1944,Azure
+1945,Azure'
+1946,Azure']
+1947,BDD'
+1948,BI
+1949,BI'
+1950,BI']
+1951,BPMN
+1952,BRD
+1953,BTP'
+1954,Balancer'
+1955,Balancing'
+1956,Balsamiq
+1957,Bash Shell
+1958,Basic'
+1959,Bedrock'
+1960,Biases'
+1961,Big Data
+1962,BigCommerce
+1963,Black box testing
+1964,Blazor
+1965,Blender
+1966,Blockchain
+1967,Blockchain']
+1968,Boot
+1969,Boot'
+1970,Boot']
+1971,Bootloader'
+1972,Bootstrap
+1973,Box
+1974,Bricks'
+1975,Bridge Engineer
+1976,Build
+1977,Builder'
+1978,Bus'
+1979,Bus']
+1980,Business
+1981,Business Analysis
+1982,Business Intelligence
+1983,C language
+1984,C#
+1985,C'
+1986,C']
+1987,C++
+1988,C++']
+1989,CAD']
+1990,CANoe'
+1991,CAP'
+1992,CD'
+1993,CDN'
+1994,CI'
+1995,CI']
+1996,CI/CD
+1997,CI/CD'
+1998,CLI'
+1999,CLI']
+2000,COBOL
+2001,CRM
+2002,CSF/RMF'
+2003,CSS
+2004,CSS 3
+2005,CSS'
+2006,CSS']
+2007,Cabling'
+2008,CakePHP
+2009,Calendar'
+2010,Cat'
+2011,Center']
+2012,Central'
+2013,Chain'
+2014,Charts']
+2015,Chinese
+2016,Cisco
+2017,Citrix'
+2018,City'
+2019,Clean Architecture
+2020,Cloud
+2021,Cloud Security
+2022,Cloud'
+2023,Cloud']
+2024,Cloud-native Architecture
+2025,CloudFormation
+2026,CloudWatch'
+2027,Cocos
+2028,Code'
+2029,Code']
+2030,Cognito'
+2031,Complete'
+2032,Component'
+2033,Components']
+2034,Compose'
+2035,Computer
+2036,Computer Vision
+2037,Computing'
+2038,Config'
+2039,Connect'
+2040,Console'
+2041,Container Security
+2042,Contracts'
+2043,Contracts']
+2044,Control'
+2045,Copilot'
+2046,Core'
+2047,Core']
+2048,Creative
+2049,Creator'
+2050,Creator']
+2051,Cryptocurrency
+2052,Cryptography
+2053,Cucumber
+2054,Cybersecurity
+2055,Cypress
+2056,DB']
+2057,DB2'
+2058,DBA
+2059,DBT
+2060,DDoS Protection
+2061,DNS Security
+2062,DSS'
+2063,Dart
+2064,Data
+2065,Data Analysis
+2066,Data Engineer
+2067,Data Privacy / Compliance
+2068,Data Quality Tools
+2069,Data Science
+2070,Data Warehousing
+2071,Data modeling
+2072,Data'
+2073,Data']
+2074,Data-driven
+2075,Database
+2076,Database'
+2077,Databricks
+2078,Deep Learning
+2079,Delivery'
+2080,Delivery']
+2081,Deployment']
+2082,Design
+2083,Design Systems
+2084,Design'
+2085,Design']
+2086,DevOps
+2087,DevOps'
+2088,DevOps']
+2089,DevSecOps
+2090,Developer'
+2091,Development'
+2092,Devices'
+2093,Devops'
+2094,Digital tokens
+2095,Directory'
+2096,Directory']
+2097,Django
+2098,Docker
+2099,Domain-Driven Design
+2100,Driven
+2101,Driving'
+2102,Druid']
+2103,Drupal
+2104,Dusk']
+2105,Dynamics'
+2106,EBS'
+2107,ECR'
+2108,EDR
+2109,EE'
+2110,ELT
+2111,ERP
+2112,ESXi'
+2113,ETL
+2114,Effects']
+2115,Elasticsearch
+2116,Electron
+2117,Elements'
+2118,Elixir
+2119,Embedded
+2120,Embedded Android
+2121,Embedded C
+2122,Encryption Key Management
+2123,Endpoint'
+2124,Engine'
+2125,Engine']
+2126,Engineer'
+2127,English
+2128,Enterprise Architecture
+2129,Entity Framework
+2130,Entity Framework Core
+2131,Event
+2132,Event-Driven Architecture
+2133,Excel'
+2134,Exchange
+2135,Express
+2136,ExpressJS
+2137,FRS
+2138,Fabric'
+2139,Face'
+2140,Factory'
+2141,FastAPI
+2142,Fiber
+2143,Figma
+2144,Firebase
+2145,Firebase'
+2146,Firestore'
+2147,Firewall
+2148,Firmware
+2149,Flask
+2150,Flexcube']
+2151,Flink'
+2152,Flow'
+2153,Flutter
+2154,Forest'
+2155,Form'
+2156,Forms'
+2157,Forwarder'
+2158,Foundry'
+2159,Framework'
+2160,Framework']
+2161,French
+2162,Frog'
+2163,Fullstack
+2164,Functional specifications
+2165,Functions'
+2166,GCP
+2167,Galaxy
+2168,Game'
+2169,Games
+2170,Gateway'
+2171,Generative AI
+2172,Gin
+2173,Git
+2174,GitHub
+2175,GitHub Actions
+2176,GitLab
+2177,GitLab CI
+2178,Glue'
+2179,Go
+2180,Golang
+2181,Google BigQuery
+2182,Google Cloud
+2183,Google Cloud SQL
+2184,Governance
+2185,Grafana
+2186,Grails
+2187,Graph'
+2188,GraphQL
+2189,GraphQL'
+2190,Groovy
+2191,HDFS
+2192,HRM / HCM
+2193,HTML
+2194,HTML5
+2195,HTTP
+2196,Hadoop
+2197,Hardware Troubleshooting
+2198,Hardware'
+2199,Hibernate
+2200,Hook
+2201,Hook']
+2202,Hooks'
+2203,Hooks']
+2204,Hub'
+2205,Hub']
+2206,Hubs'
+2207,Hugging Face Transformers
+2208,Hyper-V
+2209,Hyperledger Fabric
+2210,IAM
+2211,IBM DB2
+2212,ID'
+2213,IDEA'
+2214,IDS/IPS
+2215,IIS']
+2216,ISO 27001
+2217,IT Audit
+2218,IT Communication/Translation
+2219,IT Governance
+2220,IT Support
+2221,ITIL Foundation
+2222,Identity
+2223,Illustrator
+2224,Illustrator'
+2225,Incident Response
+2226,Industrial Automation
+2227,InfluxDB
+2228,Information Security
+2229,Injection'
+2230,Insights'
+2231,Integration test
+2232,Integration'
+2233,Interface'
+2234,Interface']
+2235,Intune'
+2236,IoT
+2237,IoTCore'
+2238,Ionic
+2239,J2EE
+2240,JIRA
+2241,JQuery
+2242,JS'
+2243,JS']
+2244,JSON
+2245,JUnit
+2246,Japanese
+2247,Japanese IT Communication
+2248,Java
+2249,JavaScript
+2250,Jenkins
+2251,Jest
+2252,Jetpack'
+2253,Jira
+2254,Jmeter
+2255,Joomla
+2256,Juniper
+2257,Kafka
+2258,Kafka'
+2259,Kafka']
+2260,Kanban
+2261,Katalon
+2262,Keras
+2263,Keyword
+2264,Korean
+2265,Kotlin
+2266,Kubernetes
+2267,LINQ
+2268,LLM
+2269,Lake'
+2270,Lake']
+2271,Language
+2272,Laravel
+2273,Laravel'
+2274,Launchpad'
+2275,Layout'
+2276,Leadership
+2277,Lean Project Management
+2278,Learning
+2279,Learning'
+2280,Learning']
+2281,Library'
+2282,Line
+2283,Linux
+2284,Linux'
+2285,Lite'
+2286,Live2D
+2287,M70'
+2288,MFC
+2289,MLOps
+2290,MQ'
+2291,MVC
+2292,MVC'
+2293,MVC']
+2294,MVP
+2295,MVVM
+2296,Machine
+2297,Machine Learning
+2298,Magento
+2299,Maintenance'
+2300,Management
+2301,Management'
+2302,Management']
+2303,Manager'
+2304,Manager']
+2305,Maps
+2306,Maps'
+2307,MariaDB
+2308,Market research
+2309,Matlab
+2310,Maven
+2311,Max']
+2312,Maya
+2313,Meet'
+2314,Meet']
+2315,Memory'
+2316,Mesh'
+2317,Metabase
+2318,Microservices
+2319,Microservices Architecture
+2320,Microsoft Azure SQL Database
+2321,Microsoft Dynamics 365
+2322,Microsoft Power Apps
+2323,Microsoft SQL Server
+2324,Middleware']
+2325,Mining'
+2326,Miro
+2327,Mobile Apps
+2328,Mobile']
+2329,Mockups
+2330,Modeling'
+2331,Models']
+2332,Modules'
+2333,MongoDB
+2334,Monitor']
+2335,Monitoring
+2336,MySQL
+2337,NDK'
+2338,NLP
+2339,NX'
+2340,NX']
+2341,Native
+2342,Native'
+2343,Native']
+2344,NestJS
+2345,Network'
+2346,Networking
+2347,Networking'
+2348,Networks'
+2349,Next.js
+2350,NextJS
+2351,Nginx
+2352,NoSQL
+2353,Node.js
+2354,NodeJS
+2355,Notebook'
+2356,NumPy
+2357,Nuxt.js
+2358,OCR
+2359,OOP
+2360,OS'
+2361,OS']
+2362,OWASP
+2363,Object'
+2364,Object']
+2365,Objective C
+2366,Odoo
+2367,Office'
+2368,Office']
+2369,OpenAI'
+2370,OpenCV
+2371,OpenEdge'
+2372,OpenGL
+2373,OpenStack
+2374,Operating
+2375,Oracle
+2376,OutSystems
+2377,Outlook']
+2378,PCI DSS
+2379,PHP
+2380,PL/SQL
+2381,PL/SQL'
+2382,PQA
+2383,Package
+2384,Painter'
+2385,Pandas
+2386,Paradigm']
+2387,Patterns'
+2388,Patterns']
+2389,Penetration Testing
+2390,Pentaho'
+2391,Pentest
+2392,Persistence
+2393,Phoenix
+2394,Pi'
+2395,Pipeline']
+2396,Pipelines'
+2397,Planner'
+2398,Platform'
+2399,Platform']
+2400,Playwright
+2401,Plus'
+2402,Policy'
+2403,PostgreSQL
+2404,PostgreSQL'
+2405,PostgreSql
+2406,Postman
+2407,Power
+2408,Power Automate
+2409,Power BI
+2410,PowerShell
+2411,Presale
+2412,Printing']
+2413,Pro'
+2414,Processing'
+2415,Product Design
+2416,Product Management
+2417,Product Metrics
+2418,Product Owner
+2419,Product roadmap
+2420,Product strategy
+2421,Programming'
+2422,Project Management
+2423,Project'
+2424,Prometheus
+2425,Prompt Engineering
+2426,Protocol'
+2427,Protocol']
+2428,Protocols'
+2429,Prototyping
+2430,Proxy']
+2431,PyTorch
+2432,Python
+2433,QA QC
+2434,Qt
+2435,Query'
+2436,Queue'
+2437,Queues'
+2438,QuickSight'
+2439,R
+2440,RCP'
+2441,RDS'
+2442,REST
+2443,REST Assured
+2444,RPA
+2445,RTOS
+2446,RTU'
+2447,Rails'
+2448,Rails']
+2449,React
+2450,React Native
+2451,ReactJS
+2452,Recognition'
+2453,Redhat
+2454,Redis
+2455,Redshift'
+2456,Redshift']
+2457,Redux
+2458,Relic'
+2459,Relic']
+2460,Report'
+2461,Responsive Design
+2462,Retrofit
+2463,Risk & Compliance
+2464,Risk Assessment / BCP
+2465,Risk Management
+2466,Robot Framework
+2467,Robotic Process Automation (RPA)
+2468,Rocket
+2469,Route']
+2470,Router'
+2471,Ruby
+2472,Ruby on Rails
+2473,Rust
+2474,S3'
+2475,SAP
+2476,SAP BusinessObjects
+2477,SDK'
+2478,SDK']
+2479,SIEM
+2480,SOAP
+2481,SOAR
+2482,SOLID Principles
+2483,SQL
+2484,SQL'
+2485,SQL']
+2486,SQLite
+2487,Saga'
+2488,Salesforce
+2489,Sass
+2490,Scala
+2491,Script'
+2492,Scripts']
+2493,Scrum
+2494,Search'
+2495,Search']
+2496,Secure
+2497,Security
+2498,Security'
+2499,Security']
+2500,Selenium
+2501,Server'
+2502,Server']
+2503,Service
+2504,Service'
+2505,ServiceNow
+2506,Services'
+2507,Services']
+2508,Serving']
+2509,Servlet'
+2510,Sharepoint
+2511,Sheet'
+2512,Sheets']
+2513,Shell']
+2514,Shopify
+2515,Sigma'
+2516,Sigma']
+2517,Simulink
+2518,Six sigma
+2519,Sketch
+2520,Smart contracts
+2521,Snowflake
+2522,SoapUI
+2523,Software Architecture
+2524,Software'
+2525,Solidity
+2526,Solr'
+2527,Solution Architecture
+2528,Source'
+2529,Spark
+2530,Spark'
+2531,Specified']
+2532,Specified]']
+2533,Splunk
+2534,Spring
+2535,Spring Boot
+2536,Stack'
+2537,Stakeholder management
+2538,Statistical Analysis
+2539,Storage'
+2540,Storage']
+2541,Strategy planning
+2542,Strike'
+2543,Studio
+2544,Studio'
+2545,Studio']
+2546,Studio.NET'
+2547,Suite'
+2548,Suite']
+2549,Swarm'
+2550,Swift
+2551,Swing'
+2552,Symfony
+2553,Synapse'
+2554,System Admin
+2555,System Architecture
+2556,System'
+2557,System']
+2558,Systems'
+2559,Systems']
+2560,T24'
+2561,TCP/IP'
+2562,TOGAF
+2563,Table'
+2564,Tableau
+2565,Tailwind
+2566,Team Management
+2567,Teams'
+2568,Teams']
+2569,Technical Writing
+2570,Technology Roadmapping
+2571,Telemetry']
+2572,TensorFlow
+2573,Terraform
+2574,TestComplete
+2575,TestNG
+2576,Tester
+2577,Testing
+2578,Testing'
+2579,Testing']
+2580,Thinking'
+2581,Thinking']
+2582,ThreadX
+2583,Time
+2584,Tomcat'
+2585,Toolchain'
+2586,Tools'
+2587,Tools']
+2588,Topology'
+2589,Tower']
+2590,Travis CI
+2591,Trello
+2592,TypeScript
+2593,Typography
+2594,UCS'
+2595,UI'
+2596,UI-UX
+2597,UI5'
+2598,UML
+2599,Ui5
+2600,Unit test
+2601,Unity
+2602,Universal'
+2603,Unix
+2604,Unreal Engine
+2605,Usability testing
+2606,User
+2607,User Journey Mapping
+2608,User diagram
+2609,User flows
+2610,User story
+2611,VMware
+2612,VSCode
+2613,Vertex
+2614,View'
+2615,Vision
+2616,Vision'
+2617,Vision']
+2618,Visual
+2619,Visual Design
+2620,Vue
+2621,Vue.js
+2622,VueJS
+2623,WPF
+2624,Warehouse
+2625,Warehouse'
+2626,Warp'
+2627,Waterfall Methodology
+2628,Web
+2629,Web API
+2630,Web3.js
+2631,Web3.js'
+2632,WebSphere'
+2633,White box testing
+2634,WinForms
+2635,Windows
+2636,Windows Server
+2637,Wireframing
+2638,WooCommerce
+2639,Word'
+2640,Wordpress
+2641,Workflows']
+2642,Workplace']
+2643,Workspace'
+2644,X5'
+2645,XD'
+2646,XD']
+2647,XML
+2648,Zend
+2649,Zephyr
+2650,['.NET
+2651,['.NET'
+2652,['.NET']
+2653,['3D
+2654,['ABAP']
+2655,['ADAS'
+2656,['AEM'
+2657,['AI'
+2658,['AI']
+2659,['AI/ML'
+2660,['API
+2661,['API'
+2662,['API']
+2663,['APIs'
+2664,['AR'
+2665,['ASP.NET
+2666,['ASP.NET'
+2667,['ASP.Net
+2668,['ASP.Net'
+2669,['AUTOSAR'
+2670,['AWS
+2671,['AWS'
+2672,['AWS']
+2673,['Adobe
+2674,['Agile'
+2675,['Agile']
+2676,['Airflow'
+2677,['Android
+2678,['Android'
+2679,['Android']
+2680,['Angular'
+2681,['Angular']
+2682,['AngularJS'
+2683,['Apache
+2684,['Apex'
+2685,['Apex']
+2686,['Apex'] ['Salesforce']
+2687,['Appium'
+2688,['ArcGIS
+2689,['Arduino'
+2690,['Asteria
+2691,['Asterisk'
+2692,['Autify'
+2693,['AutoCAD'
+2694,['AutoCAD']
+2695,['AutoCad'
+2696,['Autocad']
+2697,['Automation
+2698,['Azure
+2699,['Azure'
+2700,['Azure']
+2701,['BI
+2702,['BLE'
+2703,['BPMN'
+2704,['Bash'
+2705,['Behave'
+2706,['Big
+2707,['Bluetooth'
+2708,['Boomi'
+2709,['C#'
+2710,['C#']
+2711,['C'
+2712,['C']
+2713,['C++
+2714,['C++'
+2715,['C++']
+2716,['CAD'
+2717,['CAD/CAM'
+2718,['CALS'
+2719,['CAM']
+2720,['CAN'
+2721,['CATIA'
+2722,['CCNA'
+2723,['CDN'
+2724,['CI/CD'
+2725,['CICD'
+2726,['CISAM'
+2727,['CMake'
+2728,['CNC'
+2729,['COBOL'
+2730,['COBOL']
+2731,['CREO']
+2732,['CSS'
+2733,['Canva
+2734,['Celery'
+2735,['Ceph'
+2736,['Charles'
+2737,['Cisco'
+2738,['ClickUp'
+2739,['Cloud
+2740,['Cloud'
+2741,['Cobalt
+2742,['Cocos
+2743,['Computer
+2744,['Confluent'
+2745,['Cyber
+2746,['Cypress'
+2747,['Dart'
+2748,['Dart']
+2749,['Data
+2750,['Database'
+2751,['DevOps'
+2752,['DevSecOps'
+2753,['Django'
+2754,['Django']
+2755,['Docker'
+2756,['Drupal'
+2757,['ERP'
+2758,['ERP']
+2759,['ESLint'
+2760,['ETL
+2761,['ETL'
+2762,['Embedded
+2763,['English']
+2764,['Entity
+2765,['Epicor'
+2766,['Ethereum'
+2767,['Excel'
+2768,['Express'
+2769,['FFmpeg'
+2770,['Facebook'
+2771,['FastAPI'
+2772,['Figma'
+2773,['Figma']
+2774,['Firebase'
+2775,['Firewall'
+2776,['Flask'
+2777,['Flutter'
+2778,['Flutter']
+2779,['Forguncy'
+2780,['FreeRTOS'
+2781,['Fusion
+2782,['G-code']
+2783,['GAN'
+2784,['GCP'
+2785,['Git'
+2786,['Git']
+2787,['GitHub'
+2788,['GitLab'
+2789,['Gitlab'
+2790,['Go'
+2791,['Go']
+2792,['Go'] ['PostgreSQL'
+2793,['Golang'
+2794,['Golang']
+2795,['Golang'] ['Microservices'
+2796,['Golang'] ['PostgreSQL'
+2797,['Google
+2798,['Gradle'
+2799,['GraphQL']
+2800,['HTML'
+2801,['HTML/CSS'
+2802,['HTML/CSS']
+2803,['HTTP'
+2804,['Hadoop'
+2805,['Hibernate'
+2806,['ISO
+2807,['ISO27001'
+2808,['IoT'
+2809,['Ionic'
+2810,['J2EE'
+2811,['JIRA'
+2812,['JMeter'
+2813,['JSP'
+2814,['Jakarta
+2815,['Java
+2816,['Java'
+2817,['Java']
+2818,['Java'] ['Microservices'
+2819,['Java'] ['PostgreSQL'
+2820,['JavaEE'
+2821,['JavaScript'
+2822,['JavaScript'] ['AWS'
+2823,['JavaScript'] ['Agile'
+2824,['JavaScript'] ['Angular'
+2825,['JavaScript'] ['AngularJS']
+2826,['JavaScript'] ['C++'
+2827,['JavaScript'] ['Cypress'
+2828,['JavaScript'] ['Express JS'
+2829,['JavaScript'] ['Flutter'
+2830,['JavaScript'] ['NestJS'
+2831,['JavaScript'] ['Next.js'
+2832,['JavaScript'] ['NextJS'
+2833,['JavaScript'] ['Node.js'
+2834,['JavaScript'] ['Node.js']
+2835,['JavaScript'] ['Postman'
+2836,['JavaScript'] ['React'
+2837,['JavaScript'] ['React']
+2838,['JavaScript'] ['SAP'
+2839,['JavaScript'] ['Vue.js'
+2840,['JavaScript'] []
+2841,['Jazz'
+2842,['Jenkins'
+2843,['Jetpack
+2844,['Jira
+2845,['Jira'
+2846,['Jira']
+2847,['Kafka'
+2848,['Katalon
+2849,['Katalon'
+2850,['Keycloak'
+2851,['Kotlin'
+2852,['Kotlin']
+2853,['Ktor'
+2854,['LangChain'
+2855,['Laravel'
+2856,['Lavarel'
+2857,['Linux'
+2858,['Linux']
+2859,['Llama
+2860,['Looker'
+2861,['Lua'
+2862,['MCU'
+2863,['MES'
+2864,['MFC'
+2865,['MLOps'
+2866,['MS
+2867,['MVC'
+2868,['MVVM'
+2869,['Machine
+2870,['Magento'
+2871,['Magento']
+2872,['Mastercam
+2873,['Mastercam'
+2874,['Maya'
+2875,['Microsoft
+2876,['MongoDB'
+2877,['MongoDB']
+2878,['Moodle']
+2879,['MySQL'
+2880,['MySQL']
+2881,['N8N'
+2882,['NFC'
+2883,['NX'
+2884,['NX']
+2885,['Nagios'
+2886,['NestJS'
+2887,['Network
+2888,['Network'
+2889,['Next.js'
+2890,['Node.js'
+2891,['Node.js']
+2892,['Node.js'] ['Kubernetes'
+2893,['NodeJS'
+2894,['NodeJS'] ['Microservices'
+2895,['Not
+2896,['NumPy'
+2897,['Nuxt'
+2898,['Nuxt.js'
+2899,['OData
+2900,['OWASP'
+2901,['Objective-C'
+2902,['Odoo'
+2903,['Odoo']
+2904,['Open
+2905,['OpenAI
+2906,['OpenAI'
+2907,['OpenCV'
+2908,['OpenGL'
+2909,['OpenVZ'
+2910,['Oracle
+2911,['Oracle'
+2912,['P2P'
+2913,['PHP'
+2914,['PHP']
+2915,['PHP'] ['CodeIgniter'
+2916,['PID'
+2917,['PL/SQL'
+2918,['PLC'
+2919,['Pandas'
+2920,['Photoshop'
+2921,['Postman'
+2922,['Power
+2923,['PowerApps'
+2924,['PowerShell'] ['AWS'
+2925,['PowerShell'] ['Azure'
+2926,['PowerShell'] ['Windows 11'
+2927,['Powershell'
+2928,['Progress
+2929,['PyQt'
+2930,['PySpark'
+2931,['PyTorch'
+2932,['PyTorch']
+2933,['Python'
+2934,['Python']
+2935,['Python'] ['Kubernetes'
+2936,['Python'] ['Microservices'
+2937,['Python'] ['PostgreSQL'
+2938,['Python'] ['TensorFlow'
+2939,['QML'
+2940,['Quarkus'
+2941,['R'
+2942,['REST
+2943,['REST']
+2944,['RESTful
+2945,['RTOS'
+2946,['RXSwift'
+2947,['Rails'
+2948,['Ranorex'
+2949,['React
+2950,['React'
+2951,['React']
+2952,['ReactJS'
+2953,['Redis'
+2954,['Restful
+2955,['Rhapsody'
+2956,['Robot
+2957,['Router'
+2958,['Ruby
+2959,['Ruby'
+2960,['Ruby']
+2961,['Ruby'] ['PostgreSQL'
+2962,['Rust'
+2963,['Rust']
+2964,['RxJS'
+2965,['RxSwift'
+2966,['SAP'
+2967,['SAP2000'
+2968,['SAST'
+2969,['SCADA']
+2970,['SDLC'
+2971,['SIEM'
+2972,['SQL
+2973,['SQL'
+2974,['SQL']
+2975,['SQL'] ['ClientTrack'
+2976,['SQL'] ['PostgreSQL'
+2977,['STM32'
+2978,['SaaS'
+2979,['Salesforce
+2980,['Scala'
+2981,['Scrum'
+2982,['Selenium'
+2983,['Selenium']
+2984,['Server'
+2985,['Shopify'
+2986,['Sketch'
+2987,['Sketchup'
+2988,['Sklearn'
+2989,['Smart
+2990,['Solana'
+2991,['Solidity'
+2992,['Spark'
+2993,['Splunk'
+2994,['Spring
+2995,['Spring'
+2996,['Spring']
+2997,['SpringMVC'
+2998,['Swift'
+2999,['Swift']
+3000,['Swift'] ['CocoaTouch'
+3001,['Swift'] ['Concurrency'
+3002,['SwiftUI'
+3003,['TCP/IP'
+3004,['TMĐT'
+3005,['Tableau'
+3006,['Talend'
+3007,['Terraform'
+3008,['Theia'
+3009,['TypeScript'
+3010,['TypeScript'] ['Angular'
+3011,['TypeScript'] ['NestJS'
+3012,['TypeScript'] ['Next.js'
+3013,['TypeScript'] ['Node.js'
+3014,['TypeScript'] ['Playwright'
+3015,['TypeScript'] ['React'
+3016,['TypeScript'] ['Vue.js'
+3017,['UIKit'
+3018,['UML'
+3019,['Ubuntu']
+3020,['UiPath'
+3021,['Unity
+3022,['Unity'
+3023,['Unity']
+3024,['Unreal
+3025,['Unreal'
+3026,['VB.NET'
+3027,['VBA']
+3028,['VMware'
+3029,['Vertx'
+3030,['Visual
+3031,['Vue.js'
+3032,['Vue.js']
+3033,['Vue3'
+3034,['WPF'
+3035,['WPF']
+3036,['Web
+3037,['Web'
+3038,['Web3'
+3039,['Webserver'
+3040,['WinForms'
+3041,['Windows
+3042,['Windows'
+3043,['Winforms']
+3044,['WordPress'
+3045,['Workato'
+3046,['Xcode'
+3047,['YAML'
+3048,['Zend'
+3049,['Zephyr'
+3050,['draw.io'
+3051,['firebase'
+3052,['gRPC'
+3053,['iOS'
+3054,['jQuery'
+3055,['mSQL']
+3056,['n8n'
+3057,['node.js'
+3058,['server'
+3059,['xCode'
+3060,[]
+3061,[] ['Automation'
+3062,[] ['Blockchain'
+3063,[] ['Illustrator'
+3064,[] ['Kubernetes'
+3065,[] ['Mastercam']
+3066,[] ['Playwright'
+3067,automation
+3068,banking'
+3069,box
+3070,chip'
+3071,client'
+3072,contract']
+3073,cylinder'
+3074,data'
+3075,databases'
+3076,design'
+3077,development'
+3078,encryption'
+3079,framework'
+3080,frameworks']
+3081,iOS
+3082,kotlinx.coroutines
+3083,lake']
+3084,macOS
+3085,management'
+3086,mechanisms']
+3087,motor'
+3088,on
+3089,platform'
+3090,platforms']
+3091,plugins'
+3092,pytest
+3093,robot'
+3094,script']
+3095,search'
+3096,server'
+3097,solutions']
+3098,system'
+3099,testing'
+3100,testing']
+3101,tools'
+3102,tools']
+3103,vb.net
+3104,warehouse'

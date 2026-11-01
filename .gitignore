@@ -18,6 +18,9 @@ __pycache__/
 *.swp
 *.swo
 
+# Data Warehouse (SQLite - tái tạo bằng pipeline)
+data/warehouse/*.db
+
 # Hệ điều hành
 Thumbs.db
 Desktop.ini
