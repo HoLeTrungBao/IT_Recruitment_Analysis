@@ -76,13 +76,22 @@ def _build_dim_company(df: pd.DataFrame) -> pd.DataFrame:
     })
 
 
+def _clean_skill_name(raw: str) -> str:
+    """Loại bỏ dấu ngoặc vuông, ngoặc đơn, khoảng trắng thừa khỏi tên kỹ năng."""
+    s = raw.strip()
+    # Xóa dấu ngoặc vuông và ngoặc đơn bao ngoài
+    s = s.strip("[]\'\"")
+    s = s.strip()
+    return s
+
+
 def _build_dim_skill(df: pd.DataFrame) -> pd.DataFrame:
     """Tạo bảng chiều DIM_SKILL (bóc tách từng kỹ năng riêng lẻ)."""
     all_skills = set()
     for skills_str in df["skills_list"].dropna():
-        for skill in str(skills_str).split(", "):
-            skill = skill.strip()
-            if skill:
+        for skill in str(skills_str).split(","):
+            skill = _clean_skill_name(skill)
+            if skill and skill != "[]":
                 all_skills.add(skill)
 
     skills_sorted = sorted(all_skills)
@@ -147,7 +156,8 @@ def _build_fact_job_skills(
     for _, row in df.iterrows():
         if pd.isna(row["skills_list"]) or not str(row["skills_list"]).strip():
             continue
-        skills = [s.strip() for s in str(row["skills_list"]).split(",") if s.strip()]
+        skills = [_clean_skill_name(s) for s in str(row["skills_list"]).split(",")]
+        skills = [s for s in skills if s and s != "[]"]
         for skill_name in skills:
             sid = skill_lookup.get(skill_name)
             if sid is None:
