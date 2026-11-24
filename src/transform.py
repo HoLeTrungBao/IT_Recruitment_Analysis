@@ -153,44 +153,68 @@ def standardize_city(val) -> str:
     return "Khác"
 
 
-def classify_role(title: str, original_role=None) -> str:
-    """Phân loại chức danh công việc về 12 nhóm vai trò IT chuẩn."""
-    combined = f"{str(original_role)} {str(title)}".lower()
+def classify_role(title: str, original_role=None, skills=None) -> str:
+    """Phân loại chức danh công việc về các nhóm vai trò IT chuẩn, không để lại nhóm Other IT Roles."""
+    t = f"{str(original_role)} {str(title)}".lower()
+    s = f"{t} {str(skills)}".lower()
 
-    if any(k in combined for k in ["fullstack", "full-stack", "full stack"]):
+    # 1. Fullstack
+    if any(k in t for k in ["fullstack", "full-stack", "full stack"]):
         return "Fullstack Developer"
-    if any(k in combined for k in ["mobile", "ios", "android", "flutter", "react native",
-                                    "swift", "kotlin"]):
+    # 2. Mobile
+    if any(k in t for k in ["mobile", "ios", "android", "flutter", "react native", "swift", "kotlin"]):
         return "Mobile Developer"
-    if any(k in combined for k in ["frontend", "front-end", "front end", "reactjs",
-                                    "react js", "vue", "angular"]):
+    # 3. Frontend & UI/UX
+    if any(k in t for k in ["frontend", "front-end", "front end", "reactjs", "react js", "vue", "angular", "ui/ux", "product designer", "web designer"]):
         return "Frontend Developer"
-    if any(k in combined for k in ["backend", "back-end", "back end", "java", "python",
-                                    "golang", "go dev", "php", ".net", "nodejs", "node.js"]):
+    # 4. Backend
+    if any(k in t for k in ["backend", "back-end", "back end", "java", "python", "golang", "go dev", "php", ".net", "c#", "nodejs", "node.js"]):
         return "Backend Developer"
-    if any(k in combined for k in ["qa", "qc", "tester", "testing", "test",
-                                    "quality assurance", "kiem thu", "kiểm thử"]):
+    # 5. QA / QC
+    if any(k in t for k in ["qa", "qc", "tester", "testing", "test", "quality assurance", "kiem thu", "kiểm thử"]):
         return "QA / QC / Tester"
-    if any(k in combined for k in ["devops", "cloud", "sre", "system", "sysadmin",
-                                    "infrastructure", "ha tang", "hạ tầng"]):
-        return "DevOps / Cloud / System"
-    if any(k in combined for k in ["data engineer", "data analyst", "data scientist", "ai",
-                                    "machine learning", "deep learning", "nlp", "llm",
-                                    "bi analyst", "du lieu", "dữ liệu"]):
-        return "Data / AI / Machine Learning"
-    if any(k in combined for k in ["security", "an toan thong tin", "an toàn thông tin",
-                                    "bao mat", "bảo mật", "cyber", "pentest"]):
+    # 6. Security
+    if any(k in t for k in ["security", "an toan thong tin", "an toàn thông tin", "bao mat", "bảo mật", "cyber", "pentest"]):
         return "Security / Network"
-    if any(k in combined for k in ["business analyst", "ba ", "po ", "product owner",
-                                    "project manager", "pm ", "scrum master"]):
+    # 7. DevOps & System & IT Support
+    if any(k in t for k in ["devops", "cloud", "sre", "system", "sysadmin", "infrastructure", "ha tang", "hạ tầng", "it support", "helpdesk", "nhân viên it", "kỹ sư it", "chuyên gia it", "corebanking", "dba", "database administrator", "database admin", "quản trị hệ thống", "mạng"]):
+        return "DevOps / Cloud / System"
+    # 8. Data / AI
+    if any(k in t for k in ["data engineer", "data analyst", "data scientist", "ai", "machine learning", "deep learning", "nlp", "llm", "bi analyst", "bi ", "business intelligence", "computer vision", "du lieu", "dữ liệu"]):
+        return "Data / AI / Machine Learning"
+    # 9. Management / Product / Solution Architect
+    if any(k in t for k in ["business analyst", "ba ", "po ", "product owner", "project manager", "pm ", "scrum master", "solution architect", "technical architect", "software architect", "architect", "it manager", "software development manager", "tech lead", "technical lead", "technical leader"]):
         return "BA / PM / Product"
-    if any(k in combined for k in ["embedded", "iot", "nhung", "nhúng", "firmware",
-                                    "hardware", "vi mach", "vi mạch"]):
+    # 10. Embedded & Tự động hóa
+    if any(k in t for k in ["embedded", "iot", "nhung", "nhúng", "firmware", "hardware", "vi mach", "vi mạch", "plc", "cnc", "tự động hóa", "tự động hoá", "cơ điện tử"]):
         return "Embedded / IoT"
-    if any(k in combined for k in ["software engineer", "lap trinh vien", "lập trình viên",
-                                    "developer", "engineer"]):
+    # 11. Software Engineer (Chung)
+    if any(k in t for k in ["software engineer", "lap trinh vien", "lập trình viên", "developer", "engineer", "kỹ sư phần mềm", "phần mềm", "lập trình", "thực tập sinh", "intern"]):
         return "Software Engineer (Chung)"
-    return "Other IT Roles"
+
+    # TẦNG 2: XÉT TIẾP QUA KỸ NĂNG NẾU TIÊU ĐỀ LÀ TỪ CHUNG CHUNG
+    if any(k in s for k in ["fullstack", "full-stack", "full stack"]):
+        return "Fullstack Developer"
+    if any(k in s for k in ["mobile", "ios", "android", "flutter", "react native", "swift", "kotlin"]):
+        return "Mobile Developer"
+    if any(k in s for k in ["frontend", "front-end", "react", "vue", "angular", "html", "css", "figma", "ui/ux"]):
+        return "Frontend Developer"
+    if any(k in s for k in ["backend", "back-end", "java", "python", "golang", "php", ".net", "c#", "node", "django", "laravel", "spring", "c++", "odoo"]):
+        return "Backend Developer"
+    if any(k in s for k in ["test", "qa", "qc", "selenium"]):
+        return "QA / QC / Tester"
+    if any(k in s for k in ["security", "bảo mật", "cyber"]):
+        return "Security / Network"
+    if any(k in s for k in ["aws", "azure", "docker", "kubernetes", "devops", "cloud", "linux", "system", "network", "admin"]):
+        return "DevOps / Cloud / System"
+    if any(k in s for k in ["sql", "data", "machine learning", "ai", "power bi", "analytics"]):
+        return "Data / AI / Machine Learning"
+    if any(k in s for k in ["agile", "scrum", "product", "manager", "leader"]):
+        return "BA / PM / Product"
+    if any(k in s for k in ["embedded", "iot", "hardware", "plc", "cnc"]):
+        return "Embedded / IoT"
+
+    return "Software Engineer (Chung)"
 
 
 def extract_experience_and_level(title: str, exp_text=None, level_text=None) -> tuple:
@@ -309,13 +333,12 @@ def _transform_itviec(df_raw: pd.DataFrame) -> pd.DataFrame:
 
     # Chuẩn hóa thành phố, vai trò, cấp bậc, kỹ năng
     df["city"] = df["locate_names"].apply(standardize_city)
-    df["role_category"] = [classify_role(t, p) for t, p in zip(df["job_names"], df["position_names"])]
+    df["skills_list"] = [parse_and_impute_skills(sk, t) for sk, t in zip(df["array_skills"], df["job_names"])]
+    df["role_category"] = [classify_role(t, p, sk) for t, p, sk in zip(df["job_names"], df["position_names"], df["skills_list"])]
 
     exp = [extract_experience_and_level(t, e) for t, e in zip(df["job_names"], df["exp_skills"])]
     df["exp_years_min"] = [e[0] for e in exp]
     df["job_level"] = [e[1] for e in exp]
-
-    df["skills_list"] = [parse_and_impute_skills(sk, t) for sk, t in zip(df["array_skills"], df["job_names"])]
     df["source"] = "ITViec"
     df["post_date"] = pd.to_datetime(
         df["post_dates_formatted"], format="%d/%m/%Y %H:%M", errors="coerce"
@@ -341,13 +364,12 @@ def _transform_topcv(df_raw: pd.DataFrame) -> pd.DataFrame:
     df["is_negotiable"] = [s[3] for s in sal]
 
     df["city"] = df["location"].apply(standardize_city)
-    df["role_category"] = [classify_role(t) for t in df["title"]]
+    df["skills_list"] = [parse_and_impute_skills(sk, t) for sk, t in zip(df["skills"], df["title"])]
+    df["role_category"] = [classify_role(t, skills=sk) for t, sk in zip(df["title"], df["skills_list"])]
 
     exp = [extract_experience_and_level(t, level_text=l) for t, l in zip(df["title"], df["level"])]
     df["exp_years_min"] = [e[0] for e in exp]
     df["job_level"] = [e[1] for e in exp]
-
-    df["skills_list"] = [parse_and_impute_skills(sk, t) for sk, t in zip(df["skills"], df["title"])]
     df["source"] = "TopCV"
     df["post_date"] = np.nan
 
@@ -377,16 +399,14 @@ def _transform_vietnamworks(df_raw: pd.DataFrame) -> pd.DataFrame:
 
     # Chuẩn hóa thành phố và vai trò
     df["city"] = df["location"].apply(standardize_city)
-    df["role_category"] = [classify_role(t) for t in df["title"]]
+    df["skills_list"] = [parse_and_impute_skills(sk, t) for sk, t in zip(df["skills"], df["title"])]
+    df["role_category"] = [classify_role(t, skills=sk) for t, sk in zip(df["title"], df["skills_list"])]
 
     # Chuẩn hóa cấp bậc & kinh nghiệm
     exp_col = df["experience_level"] if "experience_level" in df.columns else [None] * len(df)
     exp = [extract_experience_and_level(t, level_text=l) for t, l in zip(df["title"], exp_col)]
     df["exp_years_min"] = [e[0] for e in exp]
     df["job_level"] = [e[1] for e in exp]
-
-    # Chuẩn hóa kỹ năng
-    df["skills_list"] = [parse_and_impute_skills(sk, t) for sk, t in zip(df["skills"], df["title"])]
     df["source"] = "VietnamWorks"
 
     # Chuẩn hóa ngày đăng
@@ -412,16 +432,15 @@ def _transform_job_descriptions(df_raw: pd.DataFrame) -> pd.DataFrame:
     df["is_negotiable"] = True
 
     df["city"] = df["city"].apply(standardize_city)
-    df["role_category"] = [classify_role(t, r) for t, r in zip(df["title"], df["it_role_type"])]
-
-    exp = [extract_experience_and_level(t, exp_text=d) for t, d in zip(df["title"], df["description"])]
-    df["exp_years_min"] = [e[0] for e in exp]
-    df["job_level"] = [e[1] for e in exp]
-
     df["skills_list"] = [
         parse_and_impute_skills(f"{str(l)} {str(k)}", t)
         for l, k, t in zip(df["main_programming_languages"], df["key_technologies"], df["title"])
     ]
+    df["role_category"] = [classify_role(t, r, sk) for t, r, sk in zip(df["title"], df["it_role_type"], df["skills_list"])]
+
+    exp = [extract_experience_and_level(t, exp_text=d) for t, d in zip(df["title"], df["description"])]
+    df["exp_years_min"] = [e[0] for e in exp]
+    df["job_level"] = [e[1] for e in exp]
     df["source"] = df["site"].fillna("JobDescriptions")
     df["post_date"] = np.nan
 

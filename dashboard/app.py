@@ -501,17 +501,16 @@ with tab1:
         s = str(name).strip()
         mapping = {
             "Backend Developer": "Backend<br>Dev",
-            "Frontend Developer": "Frontend<br>Dev",
-            "Fullstack Developer": "Fullstack<br>Dev",
             "Software Engineer (Chung)": "Software<br>Engineer",
+            "Fullstack Developer": "Fullstack<br>Dev",
             "Data / AI / Machine Learning": "Data / AI<br>& ML",
+            "Frontend Developer": "Frontend<br>Dev",
+            "DevOps / Cloud / System": "DevOps<br>Cloud",
             "QA / QC / Tester": "QA / QC<br>Tester",
             "Mobile Developer": "Mobile<br>Dev",
-            "Other IT Roles": "Vị trí<br>khác",
-            "DevOps / Cloud Engineer": "DevOps<br>Cloud",
-            "IT Support / Helpdesk": "IT Support<br>Helpdesk",
-            "Project Manager / Product Owner": "PM / PO",
-            "System / Network Engineer": "System<br>Network",
+            "BA / PM / Product": "BA / PM<br>Product",
+            "Embedded / IoT": "Embedded<br>IoT",
+            "Security / Network": "Security<br>Network",
         }
         if s in mapping:
             return mapping[s]
@@ -612,9 +611,9 @@ with tab2:
     )
 
     top_available_roles = [
-        r for r in ["Backend Developer", "Frontend Developer", "Fullstack Developer", 
-                   "DevOps / Cloud Engineer", "Mobile Developer", "Data Engineer / AI", 
-                   "QA / QC / Tester"]
+        r for r in ["Backend Developer", "Software Engineer (Chung)", "Fullstack Developer", 
+                   "Data / AI / Machine Learning", "Frontend Developer", "DevOps / Cloud / System", 
+                   "QA / QC / Tester", "Mobile Developer", "BA / PM / Product", "Embedded / IoT", "Security / Network"]
         if r in filtered_jobs["role_name"].unique()
     ]
     if not top_available_roles:

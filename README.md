@@ -143,7 +143,7 @@ Kho dữ liệu được tổ chức theo mô hình ngôi sao (Star Schema), t�
 | **fact_job_skills** | Fact | **26.835** | Các cặp liên kết giữa tin tuyển dụng và kỹ năng yêu cầu |
 | **dim_company** | Dimension | **2.030** | Danh mục các doanh nghiệp công nghệ tuyển dụng |
 | **dim_skill** | Dimension | **3.078** | Danh mục từ điển kỹ năng/công nghệ chuẩn hóa |
-| **dim_role** | Dimension | **16** | Vai trò công việc chuyên môn (Backend, Frontend, AI/Data...) |
+| **dim_role** | Dimension | **11** | Vai trò công việc chuyên môn chuẩn hóa (Backend, Software Engineer, Fullstack, AI/Data, DevOps, Frontend, QA/QC, Mobile, PM/BA, IoT, Security) |
 | **dim_level** | Dimension | **5** | Cấp bậc chuẩn hóa: Intern/Fresher, Junior, Middle, Senior, Lead/Manager |
 | **dim_city** | Dimension | **4** | Khu vực tuyển dụng chính (TP.HCM, Hà Nội, Đà Nẵng, Khác) |
 | **dim_date** | Dimension | **-** | Chiều thời gian (Ngày, Tháng, Năm, Tháng/Năm) |
