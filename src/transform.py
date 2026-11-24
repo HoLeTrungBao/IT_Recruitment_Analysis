@@ -194,8 +194,13 @@ def classify_role(title: str, original_role=None) -> str:
 
 
 def extract_experience_and_level(title: str, exp_text=None, level_text=None) -> tuple:
-    """Trích xuất số năm kinh nghiệm tối thiểu và suy luận cấp bậc nghề nghiệp."""
-    combined = f"{str(title)} {str(exp_text)} {str(level_text)}".lower()
+    """Trích xuất số năm kinh nghiệm tối thiểu và suy luận cấp bậc nghề nghiệp chuẩn xác."""
+    title_str = str(title) if pd.notna(title) else ""
+    exp_str = str(exp_text) if pd.notna(exp_text) else ""
+    level_str = str(level_text) if pd.notna(level_text) else ""
+
+    title_lower = title_str.lower()
+    combined = f"{title_str} {exp_str} {level_str}".lower()
 
     years = None
     m = re.search(
@@ -208,32 +213,43 @@ def extract_experience_and_level(title: str, exp_text=None, level_text=None) -> 
         except ValueError:
             years = None
 
-    if any(k in combined for k in ["intern", "thực tập", "fresher", "trainee"]):
-        level = "Intern / Fresher"
-        if years is None:
-            years = 0.0
-    elif any(k in combined for k in ["lead", "trưởng nhóm", "manager", "quản lý",
-                                      "director", "architect", "giám đốc", "head"]):
+    # 1. Ưu tiên xét chức danh trên Tiêu đề công việc bằng từ nguyên vẹn (\b) để tránh bắt nhầm
+    # (Tránh "intern" bắt nhầm "international", "internal", "internet")
+    if re.search(r'\b(lead|manager|trưởng nhóm|quản lý|director|architect|giám đốc|head|principal|chuyên gia)\b', title_lower):
         level = "Lead / Manager"
-    elif any(k in combined for k in ["senior", "sr.", "chuyên gia"]):
+    elif re.search(r'\b(senior|sr\.?)\b', title_lower):
         level = "Senior"
-    elif any(k in combined for k in ["junior", "jr."]):
+    elif re.search(r'\b(junior|jr\.?)\b', title_lower):
         level = "Junior"
-    elif any(k in combined for k in ["middle", "mid-level", "mid level"]):
+    elif re.search(r'\b(intern|internship|thực tập|fresher|trainee)\b', title_lower):
+        level = "Intern / Fresher"
+    elif re.search(r'\b(middle|mid-level|mid level)\b', title_lower):
         level = "Middle"
+    # 2. Xét theo số năm kinh nghiệm rõ ràng
     elif years is not None:
         if years < 1:
             level = "Intern / Fresher"
-        elif years < 2:
+        elif years < 3:
             level = "Junior"
-        elif years < 4:
+        elif years < 5:
             level = "Middle"
-        elif years < 7:
+        elif years < 8:
             level = "Senior"
         else:
             level = "Lead / Manager"
+    # 3. Xét từ khóa nguyên vẹn trên toàn bộ mô tả
+    elif re.search(r'\b(intern|internship|thực tập sinh|thực tập|fresher|trainee)\b', combined):
+        level = "Intern / Fresher"
+    elif re.search(r'\b(lead|manager|trưởng nhóm|quản lý)\b', combined):
+        level = "Lead / Manager"
+    elif re.search(r'\b(senior)\b', combined):
+        level = "Senior"
+    elif re.search(r'\b(junior)\b', combined):
+        level = "Junior"
+    elif re.search(r'\b(middle|mid-level)\b', combined):
+        level = "Middle"
     else:
-        level = "Không xác định"
+        level = "Junior"
 
     return years, level
 

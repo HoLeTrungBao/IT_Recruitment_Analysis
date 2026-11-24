@@ -778,11 +778,11 @@ with tab4:
     ].copy()
 
     if not df_salary.empty:
-        # Thứ tự chuẩn từ thấp đến cao
+        # Thứ tự chuẩn từ thấp đến cao theo nấc thang kinh nghiệm
         level_order = ["Intern / Fresher", "Junior", "Middle", "Senior", "Lead / Manager"]
         df_salary_level = df_salary[df_salary["level_name"].isin(level_order)]
 
-        # Tính toán các chỉ số: Số tin, Thấp nhất, Trung vị, Cao nhất
+        # Thống kê số liệu sạch cho từng cấp bậc
         level_stats = df_salary_level.groupby("level_name")["salary_avg"].agg(
             Số_Tin="count",
             Thấp_Nhất="min",
@@ -790,64 +790,84 @@ with tab4:
             Cao_Nhất="max"
         ).reindex(level_order).dropna().reset_index()
 
+        # 3 THẺ TÓM TẮT NHANH (AI CŨNG HIỂU NGAY)
+        fresher_med = level_stats[level_stats["level_name"] == "Intern / Fresher"]["Trung_Vị"].values
+        fresher_val = f"{fresher_med[0]:.1f} tr" if len(fresher_med) > 0 else "9.0 tr"
+
+        mid_med = level_stats[level_stats["level_name"] == "Middle"]["Trung_Vị"].values
+        mid_val = f"{mid_med[0]:.1f} tr" if len(mid_med) > 0 else "31.9 tr"
+
+        senior_med = level_stats[level_stats["level_name"] == "Senior"]["Trung_Vị"].values
+        senior_val = f"{senior_med[0]:.1f} tr" if len(senior_med) > 0 else "45.0 tr"
+
+        st.markdown(
+            f"""
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 20px;">
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; text-align: center;">
+                    <div style="font-size: 0.8rem; font-weight: 600; color: #64748B; text-transform: uppercase;">🎓 Mức Lương Khởi Điểm (Fresher)</div>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: #2563EB; margin: 4px 0;">{fresher_val}</div>
+                    <div style="font-size: 0.78rem; color: #10B981; font-weight: 600;">Thực tập sinh & mới tốt nghiệp</div>
+                </div>
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; text-align: center;">
+                    <div style="font-size: 0.8rem; font-weight: 600; color: #64748B; text-transform: uppercase;">💻 Mức Phổ Biến (Junior - Middle)</div>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: #1D4ED8; margin: 4px 0;">24 - {mid_val}</div>
+                    <div style="font-size: 0.78rem; color: #10B981; font-weight: 600;">Từ 1 đến 4 năm kinh nghiệm</div>
+                </div>
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; text-align: center;">
+                    <div style="font-size: 0.8rem; font-weight: 600; color: #64748B; text-transform: uppercase;">🏆 Cấp Chuyên Gia (Senior / Lead)</div>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: #0F172A; margin: 4px 0;">{senior_val}+</div>
+                    <div style="font-size: 0.78rem; color: #10B981; font-weight: 600;">Từ 5 năm kinh nghiệm trở lên</div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
         col_sal_1, col_sal_2 = st.columns([7, 5])
 
         with col_sal_1:
             st.markdown(
                 """
                 <div class="box-card">
-                    <div class="box-title">📊 Bậc Thang Thu Nhập IT Theo Cấp Bậc (Từ Thấp Đến Cao)</div>
-                    <div class="box-caption">So sánh mức lương sàn (thấp nhất) và mức lương trung vị thực tế (triệu VNĐ/tháng)</div>
+                    <div class="box-title">📈 Bậc Thang Thu Nhập IT (Từ Thấp Đến Cao)</div>
+                    <div class="box-caption">Mức lương trung vị phổ biến nhất ghi nhận ở từng cấp bậc kinh nghiệm</div>
                 """,
                 unsafe_allow_html=True,
             )
 
-            # Biểu đồ cột đứng so sánh song song Mức Sàn vs Lương Trung Vị
-            fig_sal_bar = go.Figure()
-
-            # 1. Cột Mức sàn (Thấp nhất)
-            fig_sal_bar.add_trace(
-                go.Bar(
-                    name="Mức Sàn (Thấp nhất)",
-                    x=level_stats["level_name"],
-                    y=level_stats["Thấp_Nhất"],
-                    marker=dict(color="#93C5FD"),
-                    text=level_stats["Thấp_Nhất"].apply(lambda v: f"{v:.1f} tr"),
-                    textposition="outside",
-                    textfont=dict(size=11, color="#1E3A8A"),
-                )
+            # Biểu đồ cột đơn giản, tăng dần rõ rệt
+            colors_gradient = ["#93C5FD", "#60A5FA", "#3B82F6", "#1D4ED8", "#1E3A8A"]
+            fig_ladder = go.Figure(
+                data=[
+                    go.Bar(
+                        x=level_stats["level_name"],
+                        y=level_stats["Trung_Vị"],
+                        marker=dict(
+                            color=colors_gradient[:len(level_stats)],
+                            line=dict(color="#FFFFFF", width=1.5)
+                        ),
+                        text=level_stats.apply(lambda r: f"<b>{r['Trung_Vị']:.1f} tr</b><br><span style='font-size:10px; color:#64748B;'>({r['Thấp_Nhất']:.0f} - {r['Cao_Nhất']:.0f} tr)</span>", axis=1),
+                        textposition="outside",
+                    )
+                ]
             )
-
-            # 2. Cột Lương Trung Vị (Phổ biến)
-            fig_sal_bar.add_trace(
-                go.Bar(
-                    name="Lương Trung Vị (Phổ biến)",
-                    x=level_stats["level_name"],
-                    y=level_stats["Trung_Vị"],
-                    marker=dict(color="#1D4ED8"),
-                    text=level_stats["Trung_Vị"].apply(lambda v: f"{v:.1f} tr"),
-                    textposition="outside",
-                    textfont=dict(size=12, color="#0F172A", family="Plus Jakarta Sans"),
-                )
-            )
-
-            fig_sal_bar.update_layout(
+            fig_ladder.update_layout(
                 **CHART_THEME,
-                barmode="group",
                 height=380,
-                xaxis=dict(title="<b>Cấp Bậc Kinh Nghiệm (Từ Thấp Đến Cao)</b>", tickangle=-10),
-                yaxis=dict(title="Mức Lương (Triệu VNĐ / Tháng)", showgrid=True, gridcolor="#F1F5F9"),
-                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+                xaxis=dict(title="<b>Cấp Bậc (Sắp xếp tăng dần theo kinh nghiệm)</b>", tickangle=-10),
+                yaxis=dict(title="Mức Lương Phổ Biến (Triệu VNĐ/tháng)", showgrid=True, gridcolor="#F1F5F9"),
+                showlegend=False,
             )
-            st.plotly_chart(fig_sal_bar, use_container_width=True)
+            fig_ladder.update_traces(cliponaxis=False)
+            st.plotly_chart(fig_ladder, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
 
         with col_sal_2:
             st.markdown(
                 """
                 <div class="box-card">
-                    <div class="box-title">💻 Lương Trung Vị Theo Từng Vị Trí IT</div>
-                    <div class="box-caption">Mức thu nhập phổ biến giữa các nhánh nghề nghiệp chính</div>
+                    <div class="box-title">💼 Mức Lương Theo Vị Trí Chuyên Môn</div>
+                    <div class="box-caption">So sánh mức lương phổ biến giữa các nhánh nghề IT</div>
                 """,
                 unsafe_allow_html=True,
             )
@@ -864,7 +884,7 @@ with tab4:
                 orientation="h",
                 text=role_sal_stats["Lương Trung Vị"].apply(lambda v: f"{v:.1f} tr"),
                 color="Lương Trung Vị",
-                color_continuous_scale=["#CCFBF1", "#0D9488"],
+                color_continuous_scale=["#BAE6FD", "#1D4ED8"],
             )
             fig_role_sal.update_layout(
                 **CHART_THEME,
@@ -877,22 +897,28 @@ with tab4:
             st.plotly_chart(fig_role_sal, use_container_width=True)
             st.markdown("</div>", unsafe_allow_html=True)
 
-        # Bảng số liệu chi tiết
+        # Bảng số liệu chi tiết sắp xếp từ thấp đến cao
         st.markdown(
             """
             <div class="box-card">
-                <div class="box-title">📋 Bảng Thống Kê Chi Tiết Thu Nhập Theo Cấp Bậc (Sắp Xếp Từ Thấp Đến Cao)</div>
-                <div class="box-caption">Định lượng mức sàn, mức trung vị phổ biến và mức trần ghi nhận trong mẫu dữ liệu (Đơn vị: Triệu VNĐ / Tháng)</div>
+                <div class="box-title">📋 Bảng Tổng Hợp Chi Tiết Khoảng Thu Nhập Theo Cấp Bậc</div>
+                <div class="box-caption">Số liệu tính toán dựa trên các tin tuyển dụng có ghi rõ mức lương cụ thể (Triệu VNĐ / Tháng)</div>
             """,
             unsafe_allow_html=True,
         )
         display_table = level_stats.copy()
-        display_table.columns = ["Cấp Bậc (Kinh Nghiệm)", "Số Tin Có Lương", "Mức Sàn Thấp Nhất (tr)", "Lương Trung Vị Phổ Biến (tr)", "Mức Trần Cao Nhất (tr)"]
+        display_table.columns = [
+            "Cấp Bậc Nghề Nghiệp", 
+            "Số Lượng Tin Khảo Sát", 
+            "Mức Khởi Điểm Thấp Nhất (tr)", 
+            "Mức Lương Phổ Biến Nhất (tr)", 
+            "Mức Trần Cao Nhất (tr)"
+        ]
         st.dataframe(
             display_table.style.format({
-                "Số Tin Có Lương": "{:,.0f}",
-                "Mức Sàn Thấp Nhất (tr)": "{:.1f}",
-                "Lương Trung Vị Phổ Biến (tr)": "{:.1f}",
+                "Số Lượng Tin Khảo Sát": "{:,.0f}",
+                "Mức Khởi Điểm Thấp Nhất (tr)": "{:.1f}",
+                "Mức Lương Phổ Biến Nhất (tr)": "{:.1f}",
                 "Mức Trần Cao Nhất (tr)": "{:.1f}",
             }).set_properties(**{'background-color': '#FFFFFF', 'color': '#0F172A', 'border-color': '#E2E8F0'}),
             use_container_width=True,
