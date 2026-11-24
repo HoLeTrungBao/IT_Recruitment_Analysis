@@ -4,6 +4,7 @@ Giao diện: Thiết kế chuyên nghiệp, chữ to rõ ràng, độ tương ph
 Ngôn ngữ: Tiếng Việt chuẩn mực, không lạm dụng biểu tượng cảm xúc
 """
 
+import os
 import sqlite3
 import pandas as pd
 import numpy as np
@@ -175,8 +176,38 @@ st.markdown(
 # ========================================================
 DB_PATH = "data/warehouse/it_recruitment_dwh.db"
 
+def init_dwh_if_needed():
+    """Tự động khôi phục cơ sở dữ liệu SQLite từ các file CSV nếu chưa có bảng."""
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
+    cur = conn.cursor()
+    cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='fact_job_postings'")
+    table_exists = cur.fetchone() is not None
+    conn.close()
+
+    if not table_exists:
+        csv_dir = "data/warehouse"
+        table_files = {
+            "dim_city": "dim_city.csv",
+            "dim_company": "dim_company.csv",
+            "dim_date": "dim_date.csv",
+            "dim_level": "dim_level.csv",
+            "dim_role": "dim_role.csv",
+            "dim_skill": "dim_skill.csv",
+            "fact_job_postings": "fact_job_postings.csv",
+            "fact_job_skills": "fact_job_skills.csv",
+        }
+        conn = sqlite3.connect(DB_PATH)
+        for table_name, file_name in table_files.items():
+            file_path = os.path.join(csv_dir, file_name)
+            if os.path.exists(file_path):
+                df_t = pd.read_csv(file_path)
+                df_t.to_sql(table_name, conn, if_exists="replace", index=False)
+        conn.close()
+
 def load_all_data():
     """Tải toàn bộ dữ liệu từ kho dữ liệu SQLite trực tiếp không cache cũ."""
+    init_dwh_if_needed()
     conn = sqlite3.connect(DB_PATH)
 
     # 1. Bảng dữ liệu việc làm
