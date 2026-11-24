@@ -771,15 +771,6 @@ with tab3:
 # TAB 4: MỨC LƯƠNG THAM KHẢO
 # ========================================================
 with tab4:
-    st.markdown(
-        """
-        <div class="box-card">
-            <div class="box-title">💵 Mức Lương Tham Khảo Theo Cấp Bậc Kinh Nghiệm</div>
-            <div class="box-caption">Thống kê 3 mốc: Thấp nhất, Trung vị và Cao nhất trong các tin có công khai lương (Đơn vị: Triệu VNĐ / Tháng)</div>
-        """,
-        unsafe_allow_html=True,
-    )
-
     df_salary = filtered_jobs[
         (filtered_jobs["salary_avg"].notna()) & 
         (filtered_jobs["salary_avg"] > 0) & 
@@ -787,10 +778,11 @@ with tab4:
     ].copy()
 
     if not df_salary.empty:
-        level_order = ["Intern", "Fresher", "Junior", "Middle", "Senior", "Lead / Manager"]
+        # Thứ tự chuẩn từ thấp đến cao
+        level_order = ["Intern / Fresher", "Junior", "Middle", "Senior", "Lead / Manager"]
         df_salary_level = df_salary[df_salary["level_name"].isin(level_order)]
 
-        # Tính toán 3 mốc: Min, Median, Max
+        # Tính toán các chỉ số: Số tin, Thấp nhất, Trung vị, Cao nhất
         level_stats = df_salary_level.groupby("level_name")["salary_avg"].agg(
             Số_Tin="count",
             Thấp_Nhất="min",
@@ -798,54 +790,113 @@ with tab4:
             Cao_Nhất="max"
         ).reindex(level_order).dropna().reset_index()
 
-        # Biểu đồ thanh ngang thể hiện Lương Trung Vị kèm khoảng dao động
-        fig_sal_bar = go.Figure()
+        col_sal_1, col_sal_2 = st.columns([7, 5])
 
-        # Thêm cột lương trung vị
-        fig_sal_bar.add_trace(
-            go.Bar(
-                name="Lương Trung Vị Mẫu",
-                y=level_stats["level_name"],
-                x=level_stats["Trung_Vị"],
-                orientation="h",
-                marker=dict(color="#2563EB", opacity=0.9),
-                text=level_stats.apply(lambda r: f"Trung vị: {r['Trung_Vị']:.1f} tr (Thấp nhất: {r['Thấp_Nhất']:.0f} tr - Cao nhất: {r['Cao_Nhất']:.0f} tr)", axis=1),
-                textposition="inside",
-                insidetextanchor="middle",
-                textfont=dict(color="#FFFFFF", size=11, family="Plus Jakarta Sans"),
+        with col_sal_1:
+            st.markdown(
+                """
+                <div class="box-card">
+                    <div class="box-title">📊 Bậc Thang Thu Nhập IT Theo Cấp Bậc (Từ Thấp Đến Cao)</div>
+                    <div class="box-caption">So sánh mức lương sàn (thấp nhất) và mức lương trung vị thực tế (triệu VNĐ/tháng)</div>
+                """,
+                unsafe_allow_html=True,
             )
-        )
 
-        fig_sal_bar.update_layout(
-            **CHART_THEME,
-            height=360,
-            yaxis=dict(title="", autorange="reversed"),
-            xaxis=dict(title="Mức Lương (Triệu VNĐ / Tháng)", showgrid=True, gridcolor="#F1F5F9"),
-            showlegend=False,
-        )
-        st.plotly_chart(fig_sal_bar, use_container_width=True)
-        st.markdown("</div>", unsafe_allow_html=True)
+            # Biểu đồ cột đứng so sánh song song Mức Sàn vs Lương Trung Vị
+            fig_sal_bar = go.Figure()
+
+            # 1. Cột Mức sàn (Thấp nhất)
+            fig_sal_bar.add_trace(
+                go.Bar(
+                    name="Mức Sàn (Thấp nhất)",
+                    x=level_stats["level_name"],
+                    y=level_stats["Thấp_Nhất"],
+                    marker=dict(color="#93C5FD"),
+                    text=level_stats["Thấp_Nhất"].apply(lambda v: f"{v:.1f} tr"),
+                    textposition="outside",
+                    textfont=dict(size=11, color="#1E3A8A"),
+                )
+            )
+
+            # 2. Cột Lương Trung Vị (Phổ biến)
+            fig_sal_bar.add_trace(
+                go.Bar(
+                    name="Lương Trung Vị (Phổ biến)",
+                    x=level_stats["level_name"],
+                    y=level_stats["Trung_Vị"],
+                    marker=dict(color="#1D4ED8"),
+                    text=level_stats["Trung_Vị"].apply(lambda v: f"{v:.1f} tr"),
+                    textposition="outside",
+                    textfont=dict(size=12, color="#0F172A", family="Plus Jakarta Sans"),
+                )
+            )
+
+            fig_sal_bar.update_layout(
+                **CHART_THEME,
+                barmode="group",
+                height=380,
+                xaxis=dict(title="<b>Cấp Bậc Kinh Nghiệm (Từ Thấp Đến Cao)</b>", tickangle=-10),
+                yaxis=dict(title="Mức Lương (Triệu VNĐ / Tháng)", showgrid=True, gridcolor="#F1F5F9"),
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+            )
+            st.plotly_chart(fig_sal_bar, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        with col_sal_2:
+            st.markdown(
+                """
+                <div class="box-card">
+                    <div class="box-title">💻 Lương Trung Vị Theo Từng Vị Trí IT</div>
+                    <div class="box-caption">Mức thu nhập phổ biến giữa các nhánh nghề nghiệp chính</div>
+                """,
+                unsafe_allow_html=True,
+            )
+            top_roles_salary = df_salary["role_name"].value_counts().head(6).index.tolist()
+            df_role_sal = df_salary[df_salary["role_name"].isin(top_roles_salary)]
+            role_sal_stats = df_role_sal.groupby("role_name")["salary_avg"].median().reset_index()
+            role_sal_stats.columns = ["Vị Trí IT", "Lương Trung Vị"]
+            role_sal_stats = role_sal_stats.sort_values("Lương Trung Vị", ascending=True)
+
+            fig_role_sal = px.bar(
+                role_sal_stats,
+                x="Lương Trung Vị",
+                y="Vị Trí IT",
+                orientation="h",
+                text=role_sal_stats["Lương Trung Vị"].apply(lambda v: f"{v:.1f} tr"),
+                color="Lương Trung Vị",
+                color_continuous_scale=["#CCFBF1", "#0D9488"],
+            )
+            fig_role_sal.update_layout(
+                **CHART_THEME,
+                height=380,
+                yaxis=dict(title=""),
+                xaxis=dict(title="Triệu VNĐ / Tháng", showgrid=True, gridcolor="#F1F5F9"),
+                coloraxis_showscale=False,
+            )
+            fig_role_sal.update_traces(textposition="outside", cliponaxis=False)
+            st.plotly_chart(fig_role_sal, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
 
         # Bảng số liệu chi tiết
         st.markdown(
             """
             <div class="box-card">
-                <div class="box-title">📋 Bảng Thống Kê Mức Lương Theo Cấp Bậc Trong Mẫu Dữ Liệu</div>
-                <div class="box-caption">Tính toán từ các tin tuyển dụng có ghi rõ khoảng lương cụ thể trong tập thu thập</div>
+                <div class="box-title">📋 Bảng Thống Kê Chi Tiết Thu Nhập Theo Cấp Bậc (Sắp Xếp Từ Thấp Đến Cao)</div>
+                <div class="box-caption">Định lượng mức sàn, mức trung vị phổ biến và mức trần ghi nhận trong mẫu dữ liệu (Đơn vị: Triệu VNĐ / Tháng)</div>
             """,
             unsafe_allow_html=True,
         )
         display_table = level_stats.copy()
-        display_table.columns = ["Cấp Bậc", "Số Tin Có Lương", "Thấp Nhất (tr)", "Lương Trung Vị (tr)", "Cao Nhất (tr)"]
+        display_table.columns = ["Cấp Bậc (Kinh Nghiệm)", "Số Tin Có Lương", "Mức Sàn Thấp Nhất (tr)", "Lương Trung Vị Phổ Biến (tr)", "Mức Trần Cao Nhất (tr)"]
         st.dataframe(
             display_table.style.format({
                 "Số Tin Có Lương": "{:,.0f}",
-                "Thấp Nhất (tr)": "{:.1f}",
-                "Lương Trung Vị (tr)": "{:.1f}",
-                "Cao Nhất (tr)": "{:.1f}",
+                "Mức Sàn Thấp Nhất (tr)": "{:.1f}",
+                "Lương Trung Vị Phổ Biến (tr)": "{:.1f}",
+                "Mức Trần Cao Nhất (tr)": "{:.1f}",
             }).set_properties(**{'background-color': '#FFFFFF', 'color': '#0F172A', 'border-color': '#E2E8F0'}),
             use_container_width=True,
-            height=260,
+            height=240,
         )
         st.markdown("</div>", unsafe_allow_html=True)
     else:
