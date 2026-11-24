@@ -87,13 +87,10 @@ def load_all_data():
         f.salary_min,
         f.salary_max,
         f.salary_avg,
-        f.is_salary_negotiable,
+        f.is_negotiable,
         c.city_name,
-        c.region,
         r.role_name,
-        r.role_category,
         l.level_name,
-        l.standard_level,
         cp.company_name,
         d.full_date,
         d.month,
@@ -112,13 +109,34 @@ def load_all_data():
     query_skills = """
     SELECT 
         fs.job_id,
-        s.skill_name,
-        s.skill_category
+        s.skill_name
     FROM fact_job_skills fs
     JOIN dim_skill s ON fs.skill_id = s.skill_id
     """
     df_skills = pd.read_sql_query(query_skills, conn)
     conn.close()
+
+    # Phân loại nhóm kỹ năng tự động
+    def categorize_skill(skill):
+        s = str(skill).lower()
+        if any(k in s for k in ["aws", "azure", "docker", "kubernetes", "ci/cd", "devops", "cloud", "linux", "git"]):
+            return "Cloud & DevOps"
+        elif any(k in s for k in ["react", "vue", "angular", "html", "css", "javascript", "typescript", "frontend"]):
+            return "Frontend Web"
+        elif any(k in s for k in ["sql", "mysql", "postgres", "mongodb", "redis", "database", "oracle"]):
+            return "Cơ sở dữ liệu"
+        elif any(k in s for k in ["python", "machine learning", "data", "ai", "power bi", "deep learning", "nlp", "tableau"]):
+            return "AI & Dữ liệu"
+        elif any(k in s for k in ["ios", "android", "flutter", "react native", "swift", "kotlin", "mobile"]):
+            return "Lập trình Di động"
+        elif any(k in s for k in ["test", "qa", "qc", "selenium", "automation"]):
+            return "Kiểm thử (QA/QC)"
+        elif any(k in s for k in ["java", "spring", ".net", "c#", "php", "golang", "c++", "node", "django", "laravel", "backend"]):
+            return "Backend & Hệ thống"
+        else:
+            return "Kỹ năng khác"
+
+    df_skills["skill_category"] = df_skills["skill_name"].apply(categorize_skill)
 
     # Chuẩn hóa cột ngày tháng
     df_jobs["full_date"] = pd.to_datetime(df_jobs["full_date"], errors="coerce")
