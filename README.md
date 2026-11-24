@@ -168,23 +168,40 @@ Giao diện Web Dashboard được xây dựng hiện đại, thiết kế font 
 streamlit run dashboard/app.py
 ```
 
-### Các Phân Hệ Chức Năng (Tabs):
+### Các Phân Hệ Chức Năng & Hình Ảnh Trực Quan Thực Tế:
 
-1. **Tab 1: Tổng Quan Dữ Liệu:**
-   * 4 thẻ KPI tổng quát: Tổng tin tuyển dụng, Doanh nghiệp tham gia, Lương trung vị thị trường, Tỷ lệ công khai mức lương.
-   * Biểu đồ tròn Donut thể hiện thị phần dữ liệu giữa 4 nền tảng (ITViec, TopCV, VietnamWorks, LinkedIn).
-   * Biểu đồ thanh ngang phân bố việc làm theo Tỉnh/Thành phố lớn và Top vai trò CNTT trọng điểm.
-2. **Tab 2: Kỹ Năng Theo Vị Trí:**
-   * Top các công nghệ/ngôn ngữ được săn đón nhiều nhất trong toàn bộ tập mẫu (SQL, Java, Python, React, AWS...).
-   * Bộ lọc tương tác chuyên sâu cho từng vị trí CNTT (Backend, Frontend, Fullstack, DevOps, Data/AI, Mobile, QA/QC) kèm thẻ nhận định tự động tỷ lệ % yêu cầu.
-3. **Tab 3: Xu Hướng & Dự Báo:**
-   * Chuỗi thời gian trực quan mốc tháng/năm (`10/2025` đến tương lai).
-   * Tích hợp đường dữ liệu thực tế (xanh dương) nối tiếp đường dự báo Holt's Trend (cam nét đứt) và dải bóng mờ vùng dao động tin cậy.
-   * Tối ưu vị trí nhãn số liệu nằm ngang khoa học, không bị đường đồ thị đè lên chữ số.
-4. **Tab 4: Mức Lương Tham Khảo:**
-   * 3 mốc thu nhập tiêu chuẩn: Mức khởi điểm (Fresher: ~9.0 tr), Mức phổ biến (Junior - Middle: 24 - 31.9 tr), Cấp chuyên gia (Senior / Lead: 45.0+ tr).
-   * Biểu đồ so sánh mức lương trung vị giữa các nhánh nghề CNTT.
-   * Bảng thống kê chi tiết các mốc Min, Median, Max theo từng bậc kinh nghiệm sắp xếp từ thấp đến cao.
+#### 1. Tab 1: Tổng Quan Dữ Liệu Thị Trường
+* **Chỉ số KPI chính:** 4.761 tin tuyển dụng hợp lệ, 2.030 doanh nghiệp công nghệ, lương trung vị 31.8 triệu VNĐ/tháng, 15.8% tin có số liệu lương rõ ràng.
+* **Cơ cấu nguồn tuyển dụng:** Biểu đồ Donut thể hiện thị phần dữ liệu (ITViec: 42.5%, TopCV: 25.4%, LinkedIn: 20.5%, VietnamWorks: 11.6%).
+* **Phân bố địa lý & vai trò IT:** Biểu đồ thanh ngang thể hiện các trung tâm CNTT lớn (TP.HCM, Hà Nội, Đà Nẵng) và các vị trí tuyển dụng nhiều nhất.
+
+![Giao diện Tab 1 - Tổng Quan Dữ Liệu](dashboard/screenshots/web_tab1_overview.png)
+
+---
+
+#### 2. Tab 2: Kỹ Năng Theo Từng Vị Trí Công Việc
+* **Top kỹ năng công nghệ:** Xếp hạng các ngôn ngữ, framework được săn đón nhiều nhất (SQL, Java, Python, React, AWS...).
+* **Bộ lọc kỹ năng chuyên sâu:** Thống kê chi tiết tỷ lệ % yêu cầu công nghệ cho từng vị trí nghề nghiệp (Backend, Frontend, Fullstack, DevOps, Mobile, QA/QC, Data/AI) kèm thẻ nhận định tự động.
+
+![Giao diện Tab 2 - Kỹ Năng Theo Vị Trí](dashboard/screenshots/web_tab2_skills.png)
+
+---
+
+#### 3. Tab 3: Xu Hướng Biến Động & Mô Hình Dự Báo
+* **Chuỗi thời gian trực quan:** Mốc thời gian tuyến tính rõ nét theo định dạng Tháng/Năm (`10/2025` đến tương lai).
+* **Mô hình Holt's Trend:** Nối tiếp dữ liệu thực tế (xanh dương) bằng đường dự báo tương lai (cam nét đứt) kèm dải bóng mờ vùng dao động tin cậy 80%.
+* **Bố cục nhãn số liệu khoa học:** Số liệu điểm đầu (`241`) và điểm tụt dốc (`392`) nằm ngang tách biệt, hoàn toàn không bị đường biểu đồ đè qua.
+
+![Giao diện Tab 3 - Xu Hướng & Dự Báo Tuyển Dụng](dashboard/screenshots/web_tab3_trends.png)
+
+---
+
+#### 4. Tab 4: Thống Kê Mức Lương Tham Khảo
+* **3 mốc thu nhập tiêu chuẩn:** Mức khởi điểm (Fresher: ~9.0 tr), Mức phổ biến (Junior - Middle: 24 - 31.9 tr), Cấp chuyên gia (Senior / Lead: 45.0+ tr).
+* **So sánh lương theo vị trí:** Biểu đồ so sánh mức lương trung vị giữa các nhánh nghề CNTT.
+* **Bảng thống kê theo cấp bậc:** Chi tiết các mốc Thấp nhất (Sàn), Trung vị và Cao nhất (Trần) sắp xếp tuần tự từ thấp đến cao (Intern/Fresher -> Junior -> Middle -> Senior -> Lead/Manager).
+
+![Giao diện Tab 4 - Mức Lương Tham Khảo](dashboard/screenshots/web_tab4_salary.png)
 
 ---
 
