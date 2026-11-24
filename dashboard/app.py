@@ -260,12 +260,13 @@ with st.sidebar:
     all_sources = ["Tất cả nguồn"] + sorted(df_jobs_raw["source"].dropna().unique().tolist())
     source_choice = st.selectbox("Nguồn tin tuyển dụng:", options=all_sources, index=0)
 
-    # 2. Thành phố
-    all_cities = ["Tất cả thành phố"] + sorted(df_jobs_raw["city_name"].dropna().unique().tolist())
+    # 2. Thành phố (chỉ liệt kê các tỉnh/thành phố cụ thể)
+    valid_city_list = [c for c in df_jobs_raw["city_name"].dropna().unique() if c not in ["Không xác định", "Khác", "Unknown"]]
+    all_cities = ["Tất cả thành phố"] + sorted(valid_city_list)
     city_choice = st.selectbox("Khu vực / Thành phố:", options=all_cities, index=0)
 
-    # 3. Cấp bậc
-    level_list = ["Tất cả cấp bậc", "Intern", "Fresher", "Junior", "Middle", "Senior", "Lead / Manager"]
+    # 3. Cấp bậc (chỉ lấy các cấp bậc chuẩn hóa)
+    level_list = ["Tất cả cấp bậc", "Intern / Fresher", "Junior", "Middle", "Senior", "Lead / Manager"]
     level_choice = st.selectbox("Cấp bậc kinh nghiệm:", options=level_list, index=0)
 
     # 4. Vai trò
@@ -428,14 +429,16 @@ with tab1:
         st.markdown(
             """
             <div class="box-card">
-                <div class="box-title">📍 Phân Bố Tin Tuyển Dụng Theo Địa Phương</div>
-                <div class="box-caption">Số lượng tin ghi nhận theo từng tỉnh/thành trong tập dữ liệu</div>
+                <div class="box-title">📍 Top Tỉnh / Thành Phố Tập Trung Nhiều Tin Tuyển Dụng</div>
+                <div class="box-caption">Các địa phương có số lượng việc làm IT ghi nhận cao nhất trong tập dữ liệu</div>
             """,
             unsafe_allow_html=True,
         )
-        city_df = filtered_jobs["city_name"].value_counts().reset_index().head(5)
+        # Chỉ lấy các tỉnh thành phố cụ thể, loại bỏ các mục không xác định
+        valid_cities_df = filtered_jobs[~filtered_jobs["city_name"].isin(["Không xác định", "Khác", "Unknown"])]
+        city_df = valid_cities_df["city_name"].value_counts().reset_index().head(5)
         city_df.columns = ["Thành Phố", "Số Lượng"]
-        city_df["Tỷ Lệ"] = (city_df["Số Lượng"] / max(total_jobs, 1) * 100).round(1)
+        city_df["Tỷ Lệ"] = (city_df["Số Lượng"] / max(len(valid_cities_df), 1) * 100).round(1)
 
         fig_city = px.bar(
             city_df,
