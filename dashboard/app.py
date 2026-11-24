@@ -304,10 +304,14 @@ with st.sidebar:
 st.markdown(
     """
     <div class="hero-container">
-        <div class="hero-tag">BÁO CÁO TOÀN DIỆN THỊ TRƯỜNG LAO ĐỘNG IT VIỆT NAM</div>
-        <div class="hero-title">KHẢO SÁT VIỆC LÀM, KỸ NĂNG VÀ MỨC LƯƠNG IT</div>
+        <div class="hero-tag">ĐỀ TÀI PHÂN TÍCH DỮ LIỆU MÔN HỌC</div>
+        <div class="hero-title">KHẢO SÁT DỮ LIỆU TUYỂN DỤNG IT THU THẬP ĐƯỢC</div>
         <div class="hero-desc">
-            Phân tích chuyên sâu dữ liệu việc làm công nghệ thông tin từ <b>4 nguồn lớn: ITViec, TopCV, VietnamWorks và LinkedIn</b>. Dữ liệu đã được làm sạch, khử trùng lặp và lưu trữ theo mô hình kho dữ liệu chuẩn.
+            Báo cáo thống kê dựa trên tập dữ liệu mẫu gồm <b>4.761 tin tuyển dụng IT</b> thu thập từ 4 trang: ITViec, TopCV, VietnamWorks và LinkedIn.
+            <br>
+            <span style="font-size: 0.85rem; color: #94A3B8;">
+                ⚠️ <i>Lưu ý: Dữ liệu chỉ phản ánh các tin tuyển dụng thu thập được trong phạm vi đề tài, mang tính tham khảo và không đại diện cho toàn bộ thị trường IT Việt Nam.</i>
+            </span>
         </div>
     </div>
     """,
@@ -375,10 +379,10 @@ CHART_THEME = dict(
 # 6. CÁC TRANG PHÂN TÍCH (TABS)
 # ========================================================
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📊 1. Tổng Quan Thị Trường",
-    "🎯 2. Kỹ Năng Theo Từng Vị Trí",
-    "📈 3. Xu Hướng Theo Thời Gian",
-    "💰 4. Mặt Bằng Mức Lương"
+    "📊 1. Tổng Quan Dữ Liệu",
+    "🎯 2. Kỹ Năng Theo Vị Trí",
+    "📈 3. Biến Động Theo Thời Gian",
+    "💰 4. Mức Lương Tham Khảo"
 ])
 
 # ========================================================
@@ -391,8 +395,8 @@ with tab1:
         st.markdown(
             """
             <div class="box-card">
-                <div class="box-title">🌐 Tỷ Trọng Theo Nguồn Thu Thập</div>
-                <div class="box-caption">Tỷ lệ đóng góp dữ liệu từ 4 cổng tuyển dụng lớn</div>
+                <div class="box-title">🌐 Phân Bố Theo Nguồn Thu Thập</div>
+                <div class="box-caption">Số lượng và tỷ lệ tin thu thập từ 4 trang tuyển dụng</div>
             """,
             unsafe_allow_html=True,
         )
@@ -422,8 +426,8 @@ with tab1:
         st.markdown(
             """
             <div class="box-card">
-                <div class="box-title">📍 Phân Bố Việc Làm Theo Thành Phố</div>
-                <div class="box-caption">Các khu vực tập trung nhiều cơ hội việc làm IT nhất</div>
+                <div class="box-title">📍 Phân Bố Tin Tuyển Dụng Theo Địa Phương</div>
+                <div class="box-caption">Số lượng tin ghi nhận theo từng tỉnh/thành trong tập dữ liệu</div>
             """,
             unsafe_allow_html=True,
         )
@@ -455,8 +459,8 @@ with tab1:
     st.markdown(
         """
         <div class="box-card">
-            <div class="box-title">💻 Các Vị Trí Tuyển Dụng Phổ Biến Nhất</div>
-            <div class="box-caption">Số lượng tin tuyển dụng phân theo từng vị trí chuyên môn IT</div>
+            <div class="box-title">💻 Phân Bố Tin Tuyển Dụng Theo Vị Trí IT</div>
+            <div class="box-caption">Số lượng tin theo các vai trò công việc phổ biến trong tập dữ liệu</div>
         """,
         unsafe_allow_html=True,
     )
@@ -484,14 +488,14 @@ with tab1:
 
 
 # ========================================================
-# TAB 2: KỸ NĂNG THEO TỪNG VỊ TRÍ (THAY THẾ HEATMAP PHỨC TẠP)
+# TAB 2: KỸ NĂNG THEO TỪNG VỊ TRÍ
 # ========================================================
 with tab2:
     st.markdown(
         """
         <div class="box-card">
-            <div class="box-title">🏆 Top Kỹ Năng Được Yêu Cầu Nhiều Nhất Toàn Ngành</div>
-            <div class="box-caption">Các ngôn ngữ lập trình, framework và công nghệ có nhu cầu tuyển dụng cao nhất</div>
+            <div class="box-title">🏆 Top Kỹ Năng Xuất Hiện Nhiều Nhất Trong Dữ Liệu</div>
+            <div class="box-caption">Các ngôn ngữ, framework được đề cập nhiều nhất trong tập dữ liệu thu thập</div>
         """,
         unsafe_allow_html=True,
     )
@@ -512,19 +516,19 @@ with tab2:
         **CHART_THEME,
         height=380,
         yaxis=dict(autorange="reversed", title=""),
-        xaxis=dict(title="Số lượt yêu cầu trong tin tuyển dụng", showgrid=True, gridcolor="#F1F5F9"),
+        xaxis=dict(title="Số lượt xuất hiện trong tin tuyển dụng", showgrid=True, gridcolor="#F1F5F9"),
         coloraxis_showscale=False,
     )
     fig_sk.update_traces(textposition="outside", cliponaxis=False)
     st.plotly_chart(fig_sk, use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
-    # THAY THẾ HEATMAP: PHÂN TÍCH KỸ NĂNG THEO TỪNG VỊ TRÍ CHUYÊN MÔN (RẤT DỄ HIỂU)
+    # THỐNG KÊ KỸ NĂNG THEO TỪNG VỊ TRÍ CHUYÊN MÔN
     st.markdown(
         """
         <div class="box-card">
-            <div class="box-title">🔍 Tra Cứu Kỹ Năng Cốt Lõi Theo Từng Vị Trí Cụ Thể</div>
-            <div class="box-caption">Chọn một vị trí để xem ngay các công nghệ bắt buộc và phổ biến nhất của vị trí đó</div>
+            <div class="box-title">🔍 Thống Kê Kỹ Năng Theo Từng Vị Trí Công Việc</div>
+            <div class="box-caption">Xem các công nghệ được yêu cầu nhiều nhất trong từng vị trí theo mẫu dữ liệu</div>
         """,
         unsafe_allow_html=True,
     )
@@ -540,7 +544,7 @@ with tab2:
         top_available_roles = filtered_jobs["role_name"].value_counts().head(6).index.tolist()
 
     selected_role_to_view = st.selectbox(
-        "👉 Chọn vị trí IT muốn khảo sát kỹ năng:",
+        "👉 Chọn vị trí muốn khảo sát kỹ năng:",
         options=top_available_roles,
         index=0
     )
@@ -562,7 +566,7 @@ with tab2:
                 x="Số Tin Yêu Cầu",
                 y="Kỹ Năng",
                 orientation="h",
-                text=role_sk_counts["Tỷ Lệ Yêu Cầu (%)"].apply(lambda v: f"{v}% tin yêu cầu"),
+                text=role_sk_counts["Tỷ Lệ Yêu Cầu (%)"].apply(lambda v: f"{v}% tin"),
                 color="Số Tin Yêu Cầu",
                 color_continuous_scale=["#BAE6FD", "#0284C7"],
             )
@@ -570,19 +574,19 @@ with tab2:
                 **CHART_THEME,
                 height=340,
                 yaxis=dict(autorange="reversed", title=""),
-                xaxis=dict(title=f"Số tin tuyển {selected_role_to_view}", showgrid=True, gridcolor="#F1F5F9"),
+                xaxis=dict(title=f"Số tin tuyển vị trí {selected_role_to_view}", showgrid=True, gridcolor="#F1F5F9"),
                 coloraxis_showscale=False,
             )
             fig_role_sk.update_traces(textposition="outside", cliponaxis=False)
             st.plotly_chart(fig_role_sk, use_container_width=True)
 
         with sk_col_b:
-            st.markdown(f"**💡 Nhận định nhanh về vị trí `{selected_role_to_view}`:**")
-            st.markdown(f"- Tổng số tin tuyển vị trí này: **{role_total_postings:,} việc làm**.")
+            st.markdown(f"**💡 Thống kê mẫu cho vị trí `{selected_role_to_view}`:**")
+            st.markdown(f"- Số tin tuyển trong tập mẫu: **{role_total_postings:,} tin**.")
             top_1_sk = role_sk_counts.iloc[0]["Kỹ Năng"]
             top_1_pct = role_sk_counts.iloc[0]["Tỷ Lệ Yêu Cầu (%)"]
-            st.markdown(f"- Kỹ năng dẫn đầu: **{top_1_sk}** (xuất hiện trong **{top_1_pct}%** tin tuyển dụng).")
-            st.markdown(f"- Bộ kỹ năng cốt lõi đi kèm: **{', '.join(role_sk_counts['Kỹ Năng'].head(4).tolist())}**.")
+            st.markdown(f"- Kỹ năng xuất hiện nhiều nhất: **{top_1_sk}** (có trong **{top_1_pct}%** tin).")
+            st.markdown(f"- Các kỹ năng phổ biến kế tiếp: **{', '.join(role_sk_counts['Kỹ Năng'].head(4).tolist())}**.")
     else:
         st.info("Không có dữ liệu kỹ năng cho vị trí được chọn.")
     st.markdown("</div>", unsafe_allow_html=True)
@@ -595,8 +599,8 @@ with tab3:
     st.markdown(
         """
         <div class="box-card">
-            <div class="box-title">📅 Biến Động Số Lượng Tin Tuyển Dụng Theo Tháng</div>
-            <div class="box-caption">Quan sát chu kỳ tuyển dụng của các công ty công nghệ qua từng mốc thời gian rõ ràng</div>
+            <div class="box-title">📅 Số Lượng Tin Tuyển Dụng Ghi Nhận Theo Tháng</div>
+            <div class="box-caption">Biến động số lượng tin thu thập được qua các mốc thời gian (Tháng / Năm)</div>
         """,
         unsafe_allow_html=True,
     )
@@ -631,7 +635,7 @@ with tab3:
                 tickangle=-15,
             ),
             yaxis=dict(
-                title=dict(text="<b>Số Lượng Tin Đăng Tuyển</b>", font=dict(size=13, color="#0F172A")),
+                title=dict(text="<b>Số Lượng Tin Thu Thập</b>", font=dict(size=13, color="#0F172A")),
                 showgrid=True,
                 gridcolor="#F1F5F9",
             ),
@@ -643,14 +647,14 @@ with tab3:
 
 
 # ========================================================
-# TAB 4: MẶT BẰNG MỨC LƯƠNG (THAY THẾ BOXPLOT BẰNG THANH KHOẢNG LƯƠNG TRỰC QUAN)
+# TAB 4: MỨC LƯƠNG THAM KHẢO
 # ========================================================
 with tab4:
     st.markdown(
         """
         <div class="box-card">
-            <div class="box-title">💵 Mặt Bằng Thu Nhập Theo Cấp Bậc Kinh Nghiệm</div>
-            <div class="box-caption">Hiển thị rõ ràng 3 mốc: Mức sàn thấp nhất, Lương trung vị thực tế và Mức trần cao nhất (Đơn vị: Triệu VNĐ / Tháng)</div>
+            <div class="box-title">💵 Mức Lương Tham Khảo Theo Cấp Bậc Kinh Nghiệm</div>
+            <div class="box-caption">Thống kê 3 mốc: Thấp nhất, Trung vị và Cao nhất trong các tin có công khai lương (Đơn vị: Triệu VNĐ / Tháng)</div>
         """,
         unsafe_allow_html=True,
     )
@@ -679,12 +683,12 @@ with tab4:
         # Thêm cột lương trung vị
         fig_sal_bar.add_trace(
             go.Bar(
-                name="Lương Trung Vị Thực Tế",
+                name="Lương Trung Vị Mẫu",
                 y=level_stats["level_name"],
                 x=level_stats["Trung_Vị"],
                 orientation="h",
                 marker=dict(color="#2563EB", opacity=0.9),
-                text=level_stats.apply(lambda r: f"Trung vị: {r['Trung_Vị']:.1f} tr (Sàn: {r['Thấp_Nhất']:.0f} tr - Trần: {r['Cao_Nhất']:.0f} tr)", axis=1),
+                text=level_stats.apply(lambda r: f"Trung vị: {r['Trung_Vị']:.1f} tr (Thấp nhất: {r['Thấp_Nhất']:.0f} tr - Cao nhất: {r['Cao_Nhất']:.0f} tr)", axis=1),
                 textposition="inside",
                 insidetextanchor="middle",
                 textfont=dict(color="#FFFFFF", size=11, family="Plus Jakarta Sans"),
@@ -705,19 +709,19 @@ with tab4:
         st.markdown(
             """
             <div class="box-card">
-                <div class="box-title">📋 Bảng Thống Kê Chi Tiết Thu Nhập Theo Cấp Bậc</div>
-                <div class="box-caption">Số liệu tổng hợp từ các tin tuyển dụng có công khai khoảng lương</div>
+                <div class="box-title">📋 Bảng Thống Kê Mức Lương Theo Cấp Bậc Trong Mẫu Dữ Liệu</div>
+                <div class="box-caption">Tính toán từ các tin tuyển dụng có ghi rõ khoảng lương cụ thể trong tập thu thập</div>
             """,
             unsafe_allow_html=True,
         )
         display_table = level_stats.copy()
-        display_table.columns = ["Cấp Bậc", "Số Tin Khảo Sát", "Mức Sàn Thấp Nhất (tr)", "Lương Trung Vị (tr)", "Mức Trần Cao Nhất (tr)"]
+        display_table.columns = ["Cấp Bậc", "Số Tin Có Lương", "Thấp Nhất (tr)", "Lương Trung Vị (tr)", "Cao Nhất (tr)"]
         st.dataframe(
             display_table.style.format({
-                "Số Tin Khảo Sát": "{:,.0f}",
-                "Mức Sàn Thấp Nhất (tr)": "{:.1f}",
+                "Số Tin Có Lương": "{:,.0f}",
+                "Thấp Nhất (tr)": "{:.1f}",
                 "Lương Trung Vị (tr)": "{:.1f}",
-                "Mức Trần Cao Nhất (tr)": "{:.1f}",
+                "Cao Nhất (tr)": "{:.1f}",
             }).set_properties(**{'background-color': '#FFFFFF', 'color': '#0F172A', 'border-color': '#E2E8F0'}),
             use_container_width=True,
             height=260,
@@ -731,8 +735,8 @@ with tab4:
 # ========================================================
 st.markdown(
     """
-    <div style="text-align: center; color: #94A3B8; font-size: 0.85rem; padding: 24px 0 10px 0; border-top: 1px solid #E2E8F0; margin-top: 20px;">
-        Dự Án Phân Tích Dữ Liệu Tuyển Dụng Công Nghệ Thông Tin Việt Nam • Xây Dựng Bằng Streamlit & Plotly
+    <div style="text-align: center; color: #94A3B8; font-size: 0.82rem; padding: 24px 0 10px 0; border-top: 1px solid #E2E8F0; margin-top: 20px;">
+        Đề Tài Khảo Sát Dữ Liệu Tuyển Dụng IT • Sử dụng Streamlit & Plotly • Số liệu mang tính tham khảo trong phạm vi tập dữ liệu môn học
     </div>
     """,
     unsafe_allow_html=True,
