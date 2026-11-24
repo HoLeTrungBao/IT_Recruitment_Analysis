@@ -358,8 +358,8 @@ st.markdown(
 CHART_THEME = dict(
     plot_bgcolor="rgba(0,0,0,0)",
     paper_bgcolor="rgba(0,0,0,0)",
-    font=dict(family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif", color="#1E293B", size=13),
-    margin=dict(t=25, b=25, l=25, r=25),
+    font=dict(family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif", color="#0F172A", size=13),
+    margin=dict(t=30, b=30, l=35, r=35),
 )
 
 # ========================================================
@@ -397,16 +397,21 @@ with tab1:
                     values=source_df["Số Lượng"],
                     hole=0.55,
                     marker=dict(
-                        colors=["#2563EB", "#0D9488", "#F59E0B", "#8B5CF6"],
+                        colors=["#2563EB", "#0D9488", "#D97706", "#4F46E5"],
                         line=dict(color="#FFFFFF", width=2)
                     ),
-                    textinfo="percent+label",
+                    texttemplate="<b>%{label}</b><br><b>%{percent}</b>",
                     textposition="outside",
                     textfont=dict(size=13, color="#0F172A"),
                 )
             ]
         )
-        fig_src.update_layout(**CHART_THEME, height=320, showlegend=False)
+        fig_src.update_layout(
+            **CHART_THEME,
+            height=370,
+            margin=dict(t=25, b=65, l=45, r=45),
+            showlegend=False
+        )
         st.plotly_chart(fig_src, use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
@@ -429,15 +434,20 @@ with tab1:
             x="Số Lượng",
             y="Thành Phố",
             orientation="h",
-            text=city_df.apply(lambda r: f"{r['Số Lượng']:,} tin ({r['Tỷ Lệ']}%)", axis=1),
+            text=city_df.apply(lambda r: f"<b>{r['Số Lượng']:,} tin ({r['Tỷ Lệ']}%)</b>", axis=1),
             color="Số Lượng",
             color_continuous_scale=["#BFDBFE", "#1D4ED8"],
         )
         fig_city.update_layout(
             **CHART_THEME,
-            height=320,
+            height=370,
             yaxis=dict(autorange="reversed", title="", tickfont=dict(size=13, color="#0F172A")),
-            xaxis=dict(title="Số lượng tin tuyển dụng", showgrid=True, gridcolor="#E2E8F0"),
+            xaxis=dict(
+                title=dict(text="<b>Số lượng tin tuyển dụng</b>", font=dict(size=13, color="#0F172A")),
+                showgrid=True,
+                gridcolor="#E2E8F0",
+                tickfont=dict(size=12, color="#0F172A")
+            ),
             coloraxis_showscale=False,
         )
         fig_city.update_traces(textposition="outside", cliponaxis=False, textfont=dict(size=12, color="#0F172A"))
@@ -460,15 +470,20 @@ with tab1:
         role_df,
         x="Vị Trí IT",
         y="Số Lượng",
-        text=role_df["Số Lượng"].apply(lambda v: f"{v:,} tin"),
+        text=role_df["Số Lượng"].apply(lambda v: f"<b>{v:,} tin</b>"),
         color="Số Lượng",
         color_continuous_scale=["#CCFBF1", "#0D9488"],
     )
     fig_role.update_layout(
         **CHART_THEME,
-        height=340,
+        height=360,
         xaxis=dict(title="", tickfont=dict(size=13, color="#0F172A")),
-        yaxis=dict(title="Số lượng việc làm", showgrid=True, gridcolor="#E2E8F0"),
+        yaxis=dict(
+            title=dict(text="<b>Số lượng việc làm</b>", font=dict(size=13, color="#0F172A")),
+            showgrid=True,
+            gridcolor="#E2E8F0",
+            tickfont=dict(size=12, color="#0F172A")
+        ),
         coloraxis_showscale=False,
     )
     fig_role.update_traces(textposition="outside", cliponaxis=False, textfont=dict(size=12, color="#0F172A"))
@@ -497,7 +512,7 @@ with tab2:
         x="Số Lượng",
         y="Kỹ Năng",
         orientation="h",
-        text=skill_counts.apply(lambda r: f"{r['Số Lượng']:,} lượt ({r['Tỷ Lệ %']}%)", axis=1),
+        text=skill_counts.apply(lambda r: f"<b>{r['Số Lượng']:,} lượt ({r['Tỷ Lệ %']}%)</b>", axis=1),
         color="Số Lượng",
         color_continuous_scale=["#BAE6FD", "#1D4ED8"],
     )
@@ -505,7 +520,12 @@ with tab2:
         **CHART_THEME,
         height=380,
         yaxis=dict(autorange="reversed", title="", tickfont=dict(size=13, color="#0F172A")),
-        xaxis=dict(title="Số lượt xuất hiện trong tin tuyển dụng", showgrid=True, gridcolor="#E2E8F0"),
+        xaxis=dict(
+            title=dict(text="<b>Số lượt xuất hiện trong tin tuyển dụng</b>", font=dict(size=13, color="#0F172A")),
+            showgrid=True,
+            gridcolor="#E2E8F0",
+            tickfont=dict(size=12, color="#0F172A")
+        ),
         coloraxis_showscale=False,
     )
     fig_sk.update_traces(textposition="outside", cliponaxis=False, textfont=dict(size=12, color="#0F172A"))
@@ -553,7 +573,7 @@ with tab2:
                 x="Số Tin Yêu Cầu",
                 y="Kỹ Năng",
                 orientation="h",
-                text=role_sk_counts["Tỷ Lệ Yêu Cầu (%)"].apply(lambda v: f"{v}% tin"),
+                text=role_sk_counts["Tỷ Lệ Yêu Cầu (%)"].apply(lambda v: f"<b>{v}% tin</b>"),
                 color="Số Tin Yêu Cầu",
                 color_continuous_scale=["#CCFBF1", "#0F766E"],
             )
@@ -561,7 +581,12 @@ with tab2:
                 **CHART_THEME,
                 height=340,
                 yaxis=dict(autorange="reversed", title="", tickfont=dict(size=13, color="#0F172A")),
-                xaxis=dict(title=f"Số tin tuyển {selected_role_to_view}", showgrid=True, gridcolor="#E2E8F0"),
+                xaxis=dict(
+                    title=dict(text=f"<b>Số tin tuyển {selected_role_to_view}</b>", font=dict(size=13, color="#0F172A")),
+                    showgrid=True,
+                    gridcolor="#E2E8F0",
+                    tickfont=dict(size=12, color="#0F172A")
+                ),
                 coloraxis_showscale=False,
             )
             fig_role_sk.update_traces(textposition="outside", cliponaxis=False, textfont=dict(size=12, color="#0F172A"))
@@ -660,6 +685,10 @@ with tab3:
         plot_lower_vals = [last_actual_val] + list(lower_vals)
         plot_upper_vals = [last_actual_val] + list(upper_vals)
 
+        # Tính toán giới hạn trục Y thoáng đãng để không bị chạm nóc
+        y_max_data = max(df_monthly_series["job_count"].max(), max(plot_upper_vals))
+        y_top_limit = y_max_data * 1.22
+
         fig_forecast = go.Figure()
 
         # 1. Vẽ đường THỰC TẾ trước
@@ -670,10 +699,11 @@ with tab3:
                 mode="lines+markers+text",
                 name="Thực tế ghi nhận",
                 line=dict(color="#1D4ED8", width=3.5),
-                marker=dict(size=9, color="#1E40AF"),
-                text=df_monthly_series["job_count"].apply(lambda v: f"{v:,}"),
+                marker=dict(size=10, color="#1E40AF"),
+                text=df_monthly_series["job_count"].apply(lambda v: f"<b>{v:,}</b>"),
                 textposition="top center",
-                textfont=dict(size=12, color="#0F172A"),
+                cliponaxis=False,
+                textfont=dict(size=13, color="#1D4ED8"),
             )
         )
 
@@ -698,28 +728,32 @@ with tab3:
                 mode="lines+markers+text",
                 name="Đường dự báo tương lai",
                 line=dict(color="#D97706", width=3, dash="dash"),
-                marker=dict(size=9, color="#B45309", symbol="diamond"),
-                text=[f"{v:.0f}" for v in plot_forecast_vals],
+                marker=dict(size=10, color="#B45309", symbol="diamond"),
+                text=[f"<b>{v:.0f}</b>" for v in plot_forecast_vals],
                 textposition="top center",
-                textfont=dict(size=12, color="#B45309"),
+                cliponaxis=False,
+                textfont=dict(size=13, color="#B45309"),
             )
         )
 
         fig_forecast.update_layout(
             **CHART_THEME,
-            height=430,
+            height=470,
+            margin=dict(t=40, b=85, l=55, r=40),
             xaxis=dict(
                 type="category",
                 categoryorder="array",
                 categoryarray=full_timeline,
-                title=dict(text="<b>Mốc Thời Gian Tuyến Tính (Tháng / Năm)</b>", font=dict(size=13, color="#0F172A")),
-                tickfont=dict(size=12, color="#0F172A"),
+                title=dict(text="<b>Mốc Thời Gian Tuyến Tính (Tháng / Năm)</b>", font=dict(size=14, color="#0F172A")),
+                tickfont=dict(size=13, color="#0F172A"),
                 showgrid=True,
                 gridcolor="#E2E8F0",
                 tickangle=-15,
             ),
             yaxis=dict(
-                title=dict(text="<b>Số Lượng Tin Tuyển Dụng</b>", font=dict(size=13, color="#0F172A")),
+                range=[0, y_top_limit],
+                title=dict(text="<b>Số Lượng Tin Tuyển Dụng</b>", font=dict(size=14, color="#0F172A")),
+                tickfont=dict(size=13, color="#0F172A"),
                 showgrid=True,
                 gridcolor="#E2E8F0",
             ),
@@ -729,7 +763,8 @@ with tab3:
                 y=1.02,
                 xanchor="right",
                 x=1,
-                bgcolor="rgba(255,255,255,0.8)"
+                font=dict(size=12, color="#0F172A"),
+                bgcolor="rgba(255,255,255,0.85)"
             ),
         )
         st.plotly_chart(fig_forecast, use_container_width=True)
@@ -819,18 +854,23 @@ with tab4:
             x="Lương Trung Vị",
             y="Vị Trí IT",
             orientation="h",
-            text=role_sal_stats["Lương Trung Vị"].apply(lambda v: f"{v:.1f} tr / tháng"),
+            text=role_sal_stats["Lương Trung Vị"].apply(lambda v: f"<b>{v:.1f} tr / tháng</b>"),
             color="Lương Trung Vị",
             color_continuous_scale=["#BFDBFE", "#1D4ED8"],
         )
         fig_role_sal.update_layout(
             **CHART_THEME,
-            height=380,
+            height=390,
             yaxis=dict(title="", tickfont=dict(size=13, color="#0F172A")),
-            xaxis=dict(title="Mức Lương Trung Vị (Triệu VNĐ / Tháng)", showgrid=True, gridcolor="#E2E8F0"),
+            xaxis=dict(
+                title=dict(text="<b>Mức Lương Trung Vị (Triệu VNĐ / Tháng)</b>", font=dict(size=13, color="#0F172A")),
+                showgrid=True,
+                gridcolor="#E2E8F0",
+                tickfont=dict(size=12, color="#0F172A")
+            ),
             coloraxis_showscale=False,
         )
-        fig_role_sal.update_traces(textposition="outside", cliponaxis=False, textfont=dict(size=12, color="#0F172A"))
+        fig_role_sal.update_traces(textposition="outside", cliponaxis=False, textfont=dict(size=13, color="#0F172A"))
         st.plotly_chart(fig_role_sal, use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
