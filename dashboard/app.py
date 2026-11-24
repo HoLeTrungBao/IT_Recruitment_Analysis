@@ -177,9 +177,8 @@ st.markdown(
 # ========================================================
 DB_PATH = "data/warehouse/it_recruitment_dwh.db"
 
-@st.cache_data(ttl=600)
 def load_all_data():
-    """Tải toàn bộ dữ liệu từ kho dữ liệu SQLite."""
+    """Tải toàn bộ dữ liệu từ kho dữ liệu SQLite (truy vấn trực tiếp không cache cũ)."""
     conn = sqlite3.connect(DB_PATH)
 
     # 1. Bảng dữ liệu việc làm
