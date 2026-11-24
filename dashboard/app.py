@@ -757,47 +757,8 @@ with tab3:
         )
         st.plotly_chart(fig_forecast, use_container_width=True)
 
-        # 2 Ô GIẢI THÍCH DỄ HIỂU CHO NGƯỜI KHÔNG CHUYÊN
-        guide_c1, guide_c2 = st.columns([6, 6])
-        with guide_c1:
-            st.markdown(
-                """
-                <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; font-size: 0.88rem;">
-                    <div style="font-weight: 700; color: #1E293B; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
-                        <span>🔍</span> Cách Thức Ước Tính:
-                    </div>
-                    <div style="color: #475569; line-height: 1.5;">
-                        Thuật toán tự động học quy luật tăng giảm của <b>13 tháng đã qua</b>, ưu tiên các tháng gần nhất để vẽ ra xu hướng tiếp diễn trong tương lai.
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-        with guide_c2:
-            st.markdown(
-                f"""
-                <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; font-size: 0.88rem;">
-                    <div style="font-weight: 700; color: #1E293B; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
-                        <span>🎯</span> Mức Độ Tin Cậy & Dao Động:
-                    </div>
-                    <div style="color: #475569; line-height: 1.5;">
-                        Dải màu cam trên biểu đồ thể hiện <b>khoảng dao động an toàn (~80%)</b>. Nhu cầu thực tế được dự đoán sẽ nằm trong khoảng từ mức sàn đến mức trần này.
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-        # MỤC CHI TIẾT KỸ THUẬT DÀNH RIÊNG CHO HỘI ĐỒNG THẦY CÔ (THU GỌN)
-        with st.expander("⚙️ Dành cho phản biện kỹ thuật: Thông số mô hình toán học (MAE, RMSE, Holt's Trend)"):
-            st.markdown(
-                f"""
-                - **Thuật toán sử dụng:** Mô hình san bằng hàm mũ tuyến tính Holt (Holt's Linear Exponential Smoothing) từ gói `statsmodels.tsa`.
-                - **Tham số tối ưu:** Hệ số làm mượt mức cơ sở $\\alpha = 0.5$, hệ số làm mượt xu thế $\\beta = 0.3$.
-                - **Sai số tuyệt đối trung bình (MAE):** ± {mae_score:.1f} tin tuyển dụng.
-                - **Sai số bình phương trung bình (RMSE):** {rmse_score:.1f} tin tuyển dụng.
-                """
-            )
+        # Chú thích ngắn gọn, tinh giản, không rườm rà
+        st.caption("ℹ️ *Ghi chú: Đường nét đứt màu cam và dải bóng mờ thể hiện ước tính xu hướng tham khảo dựa trên dữ liệu các tháng gần nhất.*")
         st.markdown("</div>", unsafe_allow_html=True)
     else:
         st.warning("Không có đủ chuỗi thời gian để thực hiện mô hình dự báo.")
