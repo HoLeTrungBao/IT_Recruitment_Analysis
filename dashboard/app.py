@@ -354,12 +354,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Cấu hình biểu đồ sáng, font to rõ
+# Cấu hình biểu đồ sáng, font to rõ (không đặt margin cố định trong theme để tránh trùng lặp)
 CHART_THEME = dict(
     plot_bgcolor="rgba(0,0,0,0)",
     paper_bgcolor="rgba(0,0,0,0)",
     font=dict(family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif", color="#0F172A", size=13),
-    margin=dict(t=30, b=30, l=35, r=35),
 )
 
 # ========================================================
@@ -441,6 +440,7 @@ with tab1:
         fig_city.update_layout(
             **CHART_THEME,
             height=370,
+            margin=dict(t=25, b=35, l=35, r=35),
             yaxis=dict(autorange="reversed", title="", tickfont=dict(size=13, color="#0F172A")),
             xaxis=dict(
                 title=dict(text="<b>Số lượng tin tuyển dụng</b>", font=dict(size=13, color="#0F172A")),
@@ -477,6 +477,7 @@ with tab1:
     fig_role.update_layout(
         **CHART_THEME,
         height=360,
+        margin=dict(t=25, b=35, l=35, r=35),
         xaxis=dict(title="", tickfont=dict(size=13, color="#0F172A")),
         yaxis=dict(
             title=dict(text="<b>Số lượng việc làm</b>", font=dict(size=13, color="#0F172A")),
@@ -519,6 +520,7 @@ with tab2:
     fig_sk.update_layout(
         **CHART_THEME,
         height=380,
+        margin=dict(t=25, b=35, l=35, r=35),
         yaxis=dict(autorange="reversed", title="", tickfont=dict(size=13, color="#0F172A")),
         xaxis=dict(
             title=dict(text="<b>Số lượt xuất hiện trong tin tuyển dụng</b>", font=dict(size=13, color="#0F172A")),
@@ -580,6 +582,7 @@ with tab2:
             fig_role_sk.update_layout(
                 **CHART_THEME,
                 height=340,
+                margin=dict(t=25, b=35, l=35, r=35),
                 yaxis=dict(autorange="reversed", title="", tickfont=dict(size=13, color="#0F172A")),
                 xaxis=dict(
                     title=dict(text=f"<b>Số tin tuyển {selected_role_to_view}</b>", font=dict(size=13, color="#0F172A")),
@@ -861,6 +864,7 @@ with tab4:
         fig_role_sal.update_layout(
             **CHART_THEME,
             height=390,
+            margin=dict(t=25, b=35, l=35, r=35),
             yaxis=dict(title="", tickfont=dict(size=13, color="#0F172A")),
             xaxis=dict(
                 title=dict(text="<b>Mức Lương Trung Vị (Triệu VNĐ / Tháng)</b>", font=dict(size=13, color="#0F172A")),
