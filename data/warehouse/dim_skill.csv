@@ -6,1948 +6,3074 @@
 5,.NET MVC
 6,.NET framework
 7,.Net
-8,.Net 6+
-9,.Net Core
-10,1Password
-11,3D Game
-12,3D Max
-13,3D Modeling
-14,3ds Max
-15,A-spice
-16,A/B testing
-17,ABAP
-18,ABB
-19,ACF
-20,AD
-21,ADAS
-22,ADC
-23,ADF
-24,ADO.NET
-25,AEM
-26,AFNetworking
-27,AI
-28,AI Tools
-29,AI plugins
-30,AI tools
-31,AI-powered coding tools
-32,AI/ML
-33,AJAX
-34,AKKA
-35,AKS
-36,AM
-37,AMQP
-38,API
-39,API Design
-40,API Gateway
-41,API Management
-42,API Testing
-43,API automation testing
-44,API development
-45,API platform
-46,API testing
-47,APIs
-48,APL
-49,APM
-50,AR
-51,AR/VR
-52,ARM Toolchain
-53,ASIC
-54,ASP.NET
-55,ASP.NET Core
-56,ASP.NET MVC
-57,ASP.Net
-58,ASP.Net Core
-59,ASP.Net MVC
-60,ASPICE
-61,AUTOSAR
-62,AV
-63,AWS
-64,AWS CLI
-65,AWS CloudFormation
-66,AWS CloudWatch
-67,AWS CodeArtifacts
-68,AWS Cognito
-69,AWS Device Farm
-70,AWS ECR
-71,AWS Glue
-72,AWS IAM Identity Center
-73,AWS IoTCore
-74,AWS Lambda
-75,AWS Networking
-76,AWS QuickSight
-77,AWS RDS
-78,AWS Redshift
-79,AWS S3
-80,Acronis
-81,Active Directory
-82,ActiveMQ
-83,Activiti
-84,AdMob
-85,Admob
-86,Adobe
-87,Adobe Creative Cloud
-88,Adobe Creative Suite
-89,Adobe Forms
-90,Adobe Illustrator
-91,Adobe Photoshop
-92,Adobe Suite
-93,Adobe XD
-94,After Effects
-95,Agile
-96,Agile/Scrum
-97,Airbyte
-98,Airflow
-99,Airtable
-100,Ajax
-101,Alamofire
-102,Alembic
-103,Alerta
-104,Alfresco
-105,Algolia
-106,Algorithms
-107,Amazon
-108,Amazon Aurora
-109,Amazon Bedrock
-110,Amazon CloudWatch
-111,Amazon MQ
-112,Amazon RDS
-113,Amazon Redshift
-114,Amazon SNS/SQS
-115,Amazon Web Services
-116,Android
-117,Android Jetpack
-118,Android NDK
-119,Android SDK
-120,Android Studio
-121,Android studio
-122,Angular
-123,Angular CLI
-124,Angular Universal
-125,Angular.js
-126,AngularJS
-127,AngularJs
-128,Ansible
-129,Ant Design
-130,AntDesign
-131,Antd
-132,Antd design
-133,Anti-DDoS
-134,Anti-Malware/Endpoint Protection
-135,Antivirus
-136,Apache
-137,Apache Airflow
-138,Apache Druid
-139,Apache Flink
-140,Apache HTTP Server
-141,Apache HttpClient
-142,Apache Kafka
-143,Apache Solr
-144,Apache Spark
-145,Apache Tomcat
-146,Apache-Spark
-147,Apex
-148,Apollo
-149,Apollo GraphQL
-150,Apollo Server
-151,App Annie
-152,App Store Optimization
-153,AppDynamics
-154,Appium
-155,Apple Connect
-156,Application Insights
-157,Application Security
-158,Applitools
-159,Arbitrum
-160,ArcGIS Pro
-161,Arduino
-162,Argo CD
-163,ArgoCD
-164,ArtCAM
-165,Artifactory
-166,Aruba
-167,Asana
-168,AssetBundles
-169,Asteria Warp
-170,Asterisk
-171,Asynchronous Programming
-172,Atlassian
-173,Audio
-174,Aura
-175,Aurora PostgreSQL
-176,Auth0
-177,Autify
-178,Auto CAD
-179,Auto Layout
-180,AutoCAD
-181,AutoCad
-182,AutoLayout
-183,Autocad
-184,Autofac
-185,Automated Testing
-186,Automation
-187,Automation Anywhere
-188,Automation Test
-189,Automation Testing
-190,Automation testing
-191,Automotive
-192,Autonomous Driving
-193,Autoruns
-194,Axios
-195,Axure
-196,Azure
-197,Azure AD
-198,Azure Cloud
-199,Azure Data Factory
-200,Azure Data Lake
-201,Azure DevOps
-202,Azure Devops
-203,Azure Event Hubs
-204,Azure Monitor
-205,Azure OpenAI
-206,Azure Pipelines
-207,Azure SQL
-208,Azure Service Bus
-209,Azure Synapse
-210,BFGMiner
-211,BI
-212,BI tools
-213,BIM
-214,BLE
-215,BNB Chain
-216,BPMN
-217,BRD
-218,BSP
-219,BSP Linux
-220,BW/BO
-221,Babel
-222,Backbone JS
-223,Backend Testing
-224,Backlog
-225,Backup
-226,Backup Systems
-227,Balsamiq
-228,Bash
-229,Bash Shell
-230,Beam
-231,Beaver Builder
-232,Behave
-233,Benchmarking
-234,Big Data
-235,Big data
-236,BigCommerce
-237,BigQuery
-238,BitLocker
-239,Bitbucket
-240,Bizagi
-241,Black Box Testing
-242,Black box testing
-243,BlackDuck
-244,BlackDuck Hub
-245,Blazor
-246,Blender
-247,Bloc
-248,Blockchain
-249,BloodHound
-250,Bluetooth
-251,Boomi
-252,Boost
-253,Boot
-254,Bootstrap
-255,Bridge Engineer
-256,BrowserStack
-257,Bubble
-258,Bugzilla
-259,BullMQ
-260,Burp Suite
-261,Business Analysis
-262,Business Intelligence
-263,BytePlus
-264,BytePlus CDN
-265,C
-266,C language
-267,C#
-268,C++
-269,C++ Builder
-270,C/C++
-271,CAD
-272,CAD/CAM
-273,CALS
-274,CAM
-275,CAN
-276,CAN Protocol
-277,CANalyzer
-278,CANoe
-279,CATIA
-280,CCNA
-281,CDN
-282,CDS View
-283,CGMiner
-284,CI/CD
-285,CICD
-286,CISAM
-287,CISSP
-288,CMAKE
-289,CMMI
-290,CMMi
-291,CMS
-292,CMake
-293,CNC
-294,COBIT
-295,COBOL
-296,CPI
-297,CREO
-298,CRM
-299,CS-Cart
-300,CSS
-301,CSS 3
-302,CSS Modules
-303,CSS-in-JS
-304,CSS3
-305,CSV
-306,CUDA
-307,CURL
-308,CWE
-309,Caching mechanisms
-310,Cacti
-311,Cad
-312,Caffe
-313,CakePHP
-314,CameraX
-315,Camunda
-316,Canva
-317,Canva AI
-318,Canvas
-319,CapCut AI
-320,Carthage
-321,Cassandra
-322,Celery
-323,CentOS
-324,Ceph
-325,Chai
-326,Charles
-327,Charles Proxy
-328,ChatGPT
-329,Chatwork
-330,CheckPoint
-331,Chinese
-332,Chopper
-333,Ci/CD
-334,Cimatrol
-335,Cimatron
-336,Circle CI
-337,CircleCI
-338,CircleCi
-339,Cisco
-340,Cisco Secure Endpoint
-341,Cisco UCS
-342,Clean Architecture
-343,Clerk
-344,ClickHouse
-345,ClickUp
-346,Clickhouse
-347,ClientTrack
-348,Cloud
-349,Cloud Computing
-350,Cloud Config
-351,Cloud Firestore
-352,Cloud Foundry
-353,Cloud Functions
-354,Cloud Gateway
-355,Cloud Infrastructure
-356,Cloud Security
-357,Cloud Services
-358,Cloud Storage
-359,Cloud Technologies
-360,Cloud platforms
-361,Cloud-Native
-362,Cloud-native
-363,Cloud-native Architecture
-364,Cloud-native architectures
-365,Cloud-native solutions
-366,CloudFormation
-367,CloudWatch
-368,Cloudflare
-369,Cobalt Strike
-370,CockroachDB
-371,CocoaLumberjack
-372,CocoaPods
-373,CocoaTouch
-374,Cocoapods
-375,Cocos
-376,Cocos Creator
-377,Cocos2d-JS
-378,Cocos2d-x
-379,Cocos2dx
-380,CodeBuild
-381,CodeIgniter
-382,CodePipeline
-383,CodePush
-384,Codelgniter
-385,Combine
-386,Command Line Interface
-387,CompTIA
-388,Compose
-389,Compose Multiplatform
-390,Compose UI
-391,Composer
-392,Computer
-393,Computer Vision
-394,Concurrency
-395,Configuation Management Software
-396,Configuration Manager
-397,Confluence
-398,Confluent
-399,Container
-400,Container Security
-401,Containerization
-402,Containers
-403,Content Distribution Network
-404,Context API
-405,Continuous Delivery
-406,Continuous Delivery/Deployment
-407,Continuous Deployment
-408,Continuous Integration
-409,Core Data
-410,Core Data Services
-411,CoreAnimation
-412,CoreData
-413,CoreML
-414,Corebank T24
-415,Corgi Engine
-416,Coroutine
-417,Coroutines
-418,Cosmos
-419,Coverity
-420,Cpanel
-421,Crashlytics
-422,Cribl
-423,Crypto Algorithms
-424,Cryptocurrency
-425,Cryptography
-426,Crystal Report
-427,Cucumber
-428,CucumberJS
-429,Cyber Security
-430,Cyber Security Analyst
-431,Cyber Security Engineer
-432,Cybersecurity
-433,Cybersecurity Engineering
-434,Cypress
-435,D365
-436,DASH
-437,DASHCAM
-438,DAST
-439,DApps
-440,DB2
-441,DBA
-442,DBT
-443,DBWeaver
-444,DDoS Protection
-445,DGL
-446,DHCP
-447,DL4J
-448,DLMS Protocol
-449,DLP
-450,DMS
-451,DNS
-452,DNS Security
-453,DOORs
-454,DRM
-455,DRP
-456,Dapper
-457,Dart
-458,Data & AI
-459,Data Analysis
-460,Data Bricks
-461,Data Engineer
-462,Data Mining
-463,Data Pipeline
-464,Data Privacy / Compliance
-465,Data Quality Tools
-466,Data Science
-467,Data Security
-468,Data Studio
-469,Data Warehouse
-470,Data Warehousing
-471,Data lake
-472,Data modeling
-473,Data visualization
-474,Data warehouse
-475,Data-driven
-476,DataOps
-477,Database
-478,Database management
-479,Databricks
-480,Datadog
-481,Datastage
-482,Dataverse
-483,Davinci
-484,Dbt
-485,DeFi
-486,Debian
-487,Decentralized Applications
-488,Deep Learning
-489,Dell
-490,Dell Boomi AtomSphere
-491,Delta Lake
-492,Dependency Injection
-493,Design
-494,Design Patterns
-495,Design Systems
-496,Design Thinking
-497,DevExpress
-498,DevExtreme
-499,DevOps
-500,DevOps Azure
-501,DevOps tools
-502,DevSecOps
-503,Dialogflow
-504,Diffusion Models
-505,Digital tokens
-506,DigitalOcean
-507,Dio
-508,DirectAdmin
-509,DirectX
-510,Distributed Systems
-511,Divi
-512,Django
-513,Docker
-514,Docker Compose
-515,Docker Swarm
-516,Domain
-517,Domain-Driven Design
-518,Draw.io
-519,Dremio
-520,Dropshipping
-521,Drupal
-522,DynamoDB
-523,Dynatrace
-524,E-commerce
-525,EDR
-526,EFK
-527,EJB
-528,EKS
-529,ELK
-530,ELK Stack
-531,ELK/Loki
-532,ELT
-533,ELV
-534,ENS
-535,EPP
-536,ERP
-537,ES6
-538,ESLint
-539,ESP-IDF
-540,ESP32
-541,ETAS
-542,ETL
-543,ETL Pentaho
-544,EVM
-545,Eclipse
-546,Eclipse RCP
-547,Edge Computing
-548,ElastiCache
-549,Elastic
-550,Elastic Search
-551,Elastic search
-552,ElasticSearch
-553,Elasticsearch
-554,Electron
-555,Electron.js
-556,ElectronJs
-557,Element Plus
-558,Elementor
-559,Elixir
-560,Email
-561,Email Exchange Server
-562,Embedded
-563,Embedded Android
-564,Embedded Automotive Development
-565,Embedded C
-566,Embedded Linux
-567,Embedded Software
-568,Embedded Systems
-569,Embedded system
-570,Emulate3D
-571,Encryption
-572,Encryption Key Management
-573,End-to-end encryption
-574,Endpoint Central
-575,Endpoint Security
-576,English
-577,Enterprise Architecture
-578,Entity Framework
-579,Entity Framework Core
-580,Entra ID
-581,Enzyme
-582,Epicor
-583,Eplan
-584,Eslint
-585,Espresso
-586,Ether
-587,Ethereum
-588,Ethernet
-589,Ethernet TCP/IP
-590,Ethers.js
-591,Event-Driven Architecture
-592,Event-driven architecture
-593,Excel
-594,Exchange
-595,Exchange Server
-596,Expo
-597,Express
-598,Express JS
-599,Express.js
-600,ExpressJS
-601,ExpressJs
-602,EyeShot
-603,F#
-604,FAISS
-605,FFMPEG
-606,FFmpeg
-607,FME
-608,FOTA
-609,FRS
-610,FW
-611,Facebook
-612,Facial Recognition
-613,Faktory
-614,Fanuc
-615,Fast API
-616,FastAPI
-617,Fastlane
-618,Fiber
-619,Figma
-620,File Management
-621,Fiori
-622,Fiori Elements
-623,FireBase
-624,Firebase
-625,Firebase Analytics
-626,Fireflies
-627,Firestore
-628,Firewall
-629,Firewalls
-630,Firmware
-631,FitNesse
-632,Flash Bootloader
-633,Flask
-634,Flexbox
-635,Flink
-636,Flow
-637,Flutter
-638,Flux
-639,Forguncy
-640,Fortify
-641,Fortigate
-642,Fortinet
-643,Foundation
-644,Foundry
-645,Framework
-646,FreeIPA
-647,FreeRTOS
-648,French
-649,Fullstack
-650,Functional Safety Standards
-651,Functional Testing
-652,Functional specifications
-653,Fusion 360
-654,G Suite
-655,G-code
-656,GA360
-657,GA4
-658,GAN
-659,GCD
-660,GCP
-661,GDB
-662,GIMP
-663,GIT
-664,GPO
-665,GRPC
-666,GStreamer
-667,Game Development
-668,Games
-669,Gatsby
-670,Gcore
-671,Gemma
-672,GenAI
-673,Generative AI
-674,GeoPandas
-675,GeoServer
-676,Geoserver
-677,GetX
-678,Gherkin
-679,Gin
-680,Git
-681,Git Flow
-682,GitHub
-683,GitHub Action
-684,GitHub Actions
-685,GitHub Copilot
-686,GitLab
-687,GitLab CI
-688,GitLab CI/CD
-689,GitOps
-690,Github
-691,Gitlab
-692,Glue
-693,Go
-694,Go Route
-695,Godot
-696,Golang
-697,GoldenGate
-698,Google
-699,Google AI Studio
-700,Google Analytics
-701,Google Analytics 4
-702,Google BigQuery
-703,Google Calendar
-704,Google Chronicle
-705,Google Cloud
-706,Google Cloud Platform
-707,Google Cloud Platform Services
-708,Google Cloud SQL
-709,Google Cloud Vision
-710,Google Drive Realtime API
-711,Google Firebase
-712,Google Keyword Planner
-713,Google Kubernetes Engine
-714,Google Maps
-715,Google Maps API
-716,Google Meet
-717,Google Natural Language API
-718,Google Sheet
-719,Google Sheets
-720,Google Tools
-721,Google Vertex AI
-722,Google Workplace
-723,Google Workspace
-724,GoogleAppScript
-725,Governance
-726,Gradio
-727,Gradle
-728,Grafana
-729,Grafana/Prometheus
-730,Grails
-731,GraphQL
-732,GraphQL APIs
-733,Graphana
-734,Graphical User Interface
-735,Graylog
-736,Groovy
-737,Group Policy
-738,Gulp
-739,HANA Cloud
-740,HAProxy
-741,HBase
-742,HDFS
-743,HFS
-744,HLS
-745,HLS.js
-746,HMI
-747,HP
-748,HPE
-749,HRM / HCM
-750,HTML
-751,HTML/CSS
-752,HTML5
-753,HTMX
-754,HTTP
-755,HTTP client
-756,HTTP/2
-757,HTTP2
-758,HTTPS
-759,Hadoop
-760,Halcon
-761,Hapi
-762,Hardhat
-763,Hardware Maintenance
-764,Hardware Troubleshooting
-765,Hardware-software Integration
-766,Havoc
-767,Hazelcast
-768,Hbase
-769,Helm
-770,Helm Charts
-771,Hibernate
-772,Hibernate/JPA
-773,Hive
-774,Hooks
-775,HubSpot
-776,Hugging Face
-777,Hugging Face Transformers
-778,HuggingFace
-779,HuggingFace Transformers
-780,Hyper-V
-781,HyperMill
-782,Hyperledger
-783,Hyperledger Fabric
-784,I2C
-785,IAM
-786,IAP
-787,IAST
-788,IBM DB2
-789,IBM WebSphere
-790,ICE
-791,IDS/IPS
-792,IDS/IPS/Firewall
-793,IIS
-794,INTERRUPT
-795,IOS
-796,IOT
-797,IPC
-798,IPFS
-799,IPS
-800,ISO
-801,ISO 27001
-802,ISO 9001
-803,ISO26262
-804,ISO27001
-805,ISTIO
-806,IT Audit
-807,IT Communication/Translation
-808,IT Governance
-809,IT Support
-810,ITIL
-811,ITIL Foundation
-812,ITSM
-813,IaC
-814,Iceberg
-815,Illustrator
-816,InVision
-817,Incident Response
-818,Industrial Automation
-819,Industrial Printing
-820,InfluxDB
-821,Information Security
-822,Infrastructure as Code
-823,Inovance
-824,Integration test
-825,IntelliJ IDEA
-826,Intellij
-827,Internet Gateway
-828,Intune
-829,Inventor
-830,IoT
-831,Ionic
-832,Isar
-833,Istio
-834,J2EE
-835,JFrog
-836,JIRA
-837,JIRA Service Management
-838,JMeter
-839,JPA
-840,JPA2
-841,JQuery
-842,JSF
-843,JSON
-844,JSON-RPC
-845,JSP
-846,JSP Servlet
-847,JUnit
-848,JWT
-849,Jakarta EE
-850,Japanese
-851,Japanese IT Communication
-852,Jasmine
-853,Java
-854,Java EE
-855,Java Persistence API
-856,Java Spring
-857,Java Spring Boot
-858,Java Spring-Framework
-859,Java Swing
-860,JavaEE
-861,JavaFX
-862,JavaScript
-863,Jazz
-864,Jboss
-865,Jboss AS
-866,Jenkins
-867,Jest
-868,JetPack
-869,Jetpack
-870,Jetpack Component
-871,Jetpack Compose
-872,Jetson
-873,Jetson Devices
-874,Jetty
-875,Jira
-876,Jira Service Management
-877,Jmeter
-878,Joomla
-879,Jquery
-880,Juniper
-881,Junit
-882,Jupyter Notebook
-883,KACE
-884,KVM
-885,Kafka
-886,Kanban
-887,Karate
-888,Karma
-889,Katalon
-890,Katalon Studio
-891,Kendo UI
-892,Keras
-893,Keycloak
-894,Keyence
-895,Kibana
-896,Koa.js
-897,Korean
-898,Kotlin
-899,Kotlin Multiplatform
-900,Kotlin Multiplatform Mobile
-901,Ktor
-902,Kubeflow
-903,Kubernetes
-904,Kysely
-905,LAN
-906,LEAN
-907,LESS
-908,LIN
-909,LINQ
-910,LLDB
-911,LLM
-912,LLMs
-913,LLamaIndex
-914,LSTM
-915,LWC
-916,LangChain
-917,LangGraph
-918,Langchain
-919,Langflow
-920,Laravel
-921,Laravel Dusk
-922,Lavarel
-923,Leadership
-924,Lean Project Management
-925,Learning
-926,Legacy 3-tier architecture
-927,Lerna
-928,Less
-929,Liferay
-930,Lift Control
-931,Linux
-932,Linux/Unix
-933,Liquid
-934,Live2D
-935,LiveData
-936,Llama 2
-937,LlamaIndex
-938,Load Balancer
-939,Load Balancing
-940,Load/Performance testing
-941,LoadRunner
-942,Logging
-943,Looker
-944,Looker Studio
-945,Lora/LoraWAN
-946,Lua
-947,Lua Script
-948,Lucidchart
-949,Luigi
-950,M700
-951,M850
-952,MATLAB/Simulink
-953,MCU
-954,MDM
-955,MDVR
-956,MES
-957,MFA
-958,MFC
-959,ML
-960,MLFlow
-961,MLOps
-962,MLflow
-963,MMDetection
-964,MML
-965,MODBUS RTU
-966,MPC
-967,MQTT
-968,MS Office
-969,MS SQL
-970,MS SQL Server
-971,MS-SQL
-972,MSCA
-973,MSSQL
-974,MSSQL Server
-975,MUI
-976,MVC
-977,MVC Framework
-978,MVC3
-979,MVC5
-980,MVI
-981,MVI Architecture
-982,MVP
-983,MVVC
-984,MVVM
-985,Mac
-986,Mac OS
-987,Machine
-988,Machine Learning
-989,Machinery
-990,Magento
-991,Magento 2
-992,MagicPod
-993,Make
-994,Mantis
-995,Manual Testing
-996,Mapbox
-997,MariaDB
-998,Market research
-999,MasterCAM
-1000,MasterCam
-1001,MasterCam2020
-1002,Mastercam
-1003,Mastercam 2018
-1004,Mastercam 2021
-1005,Mastercam X5
-1006,Material
-1007,Material Design
-1008,Material Design UI
-1009,Material UI
-1010,MaterialUI
-1011,Matlab
-1012,Maven
-1013,Maya
-1014,Memcached
-1015,Mermaid.js
-1016,Message Queue
-1017,Message Queues
-1018,MessageQueue
-1019,Metabase
-1020,MicroStation
-1021,Microcontrollers
-1022,Microfrontend
-1023,Microservices
-1024,Microservices Architecture
-1025,Microsoft
-1026,Microsoft 365
-1027,Microsoft Azure
-1028,Microsoft Azure DevOps
-1029,Microsoft Azure SQL Database
-1030,Microsoft Dynamics
-1031,Microsoft Dynamics 365
-1032,Microsoft Endpoint Manager
-1033,Microsoft Entra ID
-1034,Microsoft Excel
-1035,Microsoft Exchange Server
-1036,Microsoft Fabric
-1037,Microsoft Intune
-1038,Microsoft Office
-1039,Microsoft Office 365
-1040,Microsoft Outlook
-1041,Microsoft Power Apps
-1042,Microsoft Power Automate
-1043,Microsoft Power BI
-1044,Microsoft Project
-1045,Microsoft SQL
-1046,Microsoft SQL Server
-1047,Microsoft Teams
-1048,Microsoft Visual Studio
-1049,Microsoft Word
-1050,Milvus
-1051,MinIO
-1052,Miro
-1053,Mirror
-1054,Mitsu
-1055,Mitsubishi
-1056,Mitsubishi M70
-1057,MobX
-1058,Mobile
-1059,Mobile App
-1060,Mobile Applications
-1061,Mobile Apps
-1062,Mocha
-1063,Mockito
-1064,Mockups
-1065,Modbus
-1066,Modularization
-1067,Monday
-1068,MongoDB
-1069,Mongoose
-1070,Monitoring
-1071,Monitoring Tools
-1072,Moodle
-1073,MyBatis
-1074,MySQL
-1075,N8N
-1076,NAC
-1077,NAS
-1078,NFC
-1079,NGINX
-1080,NHibernate
-1081,NIST
-1082,NIST CSF/RMF
-1083,NLP
-1084,NPM
-1085,NServiceBus
-1086,NTP
-1087,NUnit
-1088,NX
-1089,Nagios
-1090,Native
-1091,Natural Language Processing
-1092,Neo4j
-1093,Nessus
-1094,Nest JS
-1095,Nest.js
-1096,NestJS
-1097,NetSecOps
-1098,NetSuite
-1099,Network
-1100,Network Access Control
-1101,Network Security
-1102,Network Systems
-1103,Network Topology
-1104,Networking
-1105,Neural Network
-1106,New Relic
-1107,NewRelic
-1108,Next.js
-1109,NextJS
-1110,NextJs
-1111,Nexus
-1112,Nginx
-1113,NiFi
-1114,Nifi
-1115,No-SQL
-1116,NoSQL
-1117,Node.js
-1118,NodeJS
-1119,NodeJs
-1120,Nordic chip
-1121,Not Specified
-1122,NotebookLM
-1123,Notion
-1124,Notion API
-1125,NumPy
-1126,Nuxt
-1127,Nuxt.js
-1128,NuxtJS
-1129,Nx
-1130,OAuth
-1131,OAuth 2.0
-1132,OAuth2
-1133,OBD
-1134,OCR
-1135,ODI
-1136,OData
-1137,OData Gateway
-1138,OIDC
-1139,OKHTTP
-1140,ONNX
-1141,OOP
-1142,ORM
-1143,OSINT
-1144,OWASP
-1145,Oauth2
-1146,Objective C
-1147,Objective-C
-1148,Observable
-1149,Odoo
-1150,Office 365
-1151,OkHttp
-1152,Omron
-1153,Onesignal
-1154,Onnx
-1155,Open API
-1156,Open Source
-1157,Open Telemetry
-1158,OpenAI
-1159,OpenAI API
-1160,OpenAI APIs
-1161,OpenAPI
-1162,OpenAPI Specification
-1163,OpenCV
-1164,OpenGL
-1165,OpenID Connect
-1166,OpenSearch
-1167,OpenShift
-1168,OpenStack
-1169,OpenVZ
-1170,Operating Systems
-1171,Opsgenie
-1172,Optimism
-1173,Oracle
-1174,Oracle 11g
-1175,Oracle Apex
-1176,Oracle BI
-1177,Oracle DB
-1178,Oracle Database
-1179,Oracle EBS
-1180,Oracle Flexcube
-1181,Oracle PL/SQL
-1182,Oracle SQL Developer
-1183,Oracle Warehouse Builder
-1184,OutSystems
-1185,Outsystems
-1186,P2P
-1187,PAL
-1188,PAM
-1189,PC Tools
-1190,PCB
-1191,PCHunter
-1192,PCI DSS
-1193,PCIDSS
-1194,PDB
-1195,PDM
-1196,PGSQL
-1197,PHP
-1198,PHP Laravel
-1199,PHPUnit
-1200,PI/PO
-1201,PID
-1202,PKI
-1203,PL SQL
-1204,PL/SQL
-1205,PLC
-1206,PLM
-1207,PLSQL
-1208,PMI
-1209,PMP
-1210,PQA
-1211,PRTG
-1212,PTC
-1213,PWM
-1214,PaaS
-1215,Packer
-1216,Pact
-1217,PaddleOCR
-1218,Palo Alto Networks
-1219,Pandas
-1220,Parcel
-1221,PayPal
-1222,Pen Testing
-1223,Penetration Testing
-1224,Pentaho
-1225,Pentest
-1226,Pentesting
-1227,Perfecto
-1228,Performance Testing
-1229,Performance testing
-1230,Perl
-1231,Perplexity
-1232,Phaser
-1233,PhaserJS
-1234,Phoenix
-1235,PhoneGap
-1236,Photo
-1237,Photon
-1238,Photoshop
-1239,Pigma
-1240,Pillow
-1241,Pipedream
-1242,PixiJS
-1243,PlantUML
-1244,Playable Ads
-1245,Playwright
-1246,Poe
-1247,Polyspace
-1248,PostgreSQL
-1249,PostgreSql
-1250,Postgres
-1251,Postgresql
-1252,Postman
-1253,Power
-1254,Power App
-1255,Power Apps
-1256,Power Automate
-1257,Power BI
-1258,Power Platform
-1259,PowerApps
-1260,PowerBI
-1261,PowerShell
-1262,Powerbuilder
-1263,Powermill
-1264,Powershell
-1265,Presale
-1266,Prettier
-1267,PrimeFaces
-1268,Primefaces
-1269,Prisma
-1270,Procexp
-1271,Product Design
-1272,Product Management
-1273,Product Metrics
-1274,Product Owner
-1275,Product roadmap
-1276,Product strategy
-1277,Progress ABL/4GL
-1278,Progress Database
-1279,Progress OpenEdge
-1280,Project Management
-1281,Prometheus
-1282,Prompt Engineering
-1283,Prosemirror
-1284,Protobuf
-1285,Protopie
-1286,Prototyping
-1287,Protractor
-1288,Provider
-1289,Proxmox
-1290,ProxySQL
-1291,Pub/Sub
-1292,Public Key Infrastructure
-1293,Pulumi
-1294,Puppeteer
-1295,Push Notification
-1296,PyG
-1297,PyQt
-1298,PySpark
-1299,PyTorch
-1300,PyTorch Mobile
-1301,Pydantic
-1302,Pylon
-1303,Python
-1304,Pytorch
-1305,QA
-1306,QA QC
-1307,QGIS
-1308,QML
-1309,QTest
-1310,Qase
-1311,Qdrant
-1312,Qlik
-1313,Qt
-1314,Quality Assurance
-1315,Quarkus
-1316,R
-1317,RAG
-1318,RDBMS
-1319,RDS
-1320,REST
-1321,REST API
-1322,REST APIs
-1323,REST Assured
-1324,REST-assured
-1325,REST/SOAP APIs
-1326,REST/SOAP-based web services
-1327,RESTful
-1328,RESTful API
-1329,RESTful APIs
-1330,RESTful Web Services
-1331,ROS
-1332,RPA
-1333,RS232
-1334,RS485
-1335,RTCP
-1336,RTOS
-1337,RTP
-1338,RTSP
-1339,RXSwift
-1340,RabbitMQ
-1341,Radix-UI
-1342,Rails
-1343,Rancher
-1344,Random Forest
-1345,Ranorex
-1346,Rasa
-1347,Rasp Pi
-1348,Raspberry Pi
-1349,React
-1350,React Hook
-1351,React Hook Form
-1352,React Hooks
-1353,React Native
-1354,React Testing Library
-1355,React-Router
-1356,React.js
-1357,ReactJS
-1358,ReactNative
-1359,Real Time Operating System
-1360,Real-time Computing
-1361,Realm
-1362,Realtime Database
-1363,Realtime OS
-1364,Reanimated
-1365,Recoil
-1366,Red Team
-1367,Redhat
-1368,Redis
-1369,Redmine
-1370,Redshift
-1371,Redteam
-1372,Redux
-1373,Redux Saga
-1374,Redux-Saga
-1375,RegeX
-1376,Regression Testing
-1377,Relational databases
-1378,Requests
-1379,Reselect
-1380,Responsive Design
-1381,Responsive Web Design
-1382,Rest API
-1383,Rest APIs
-1384,Rest Assured
-1385,RestAssured
-1386,Restful
-1387,Restful API
-1388,Restful APIs
-1389,Restful Api
-1390,Retrofit
-1391,Revenue Cat
-1392,Revit
-1393,Rhapsody
-1394,Risk & Compliance
-1395,Risk Assessment / BCP
-1396,Risk Management
-1397,Rive
-1398,Riverpod
-1399,Roblox
-1400,Roboelectric
-1401,Robot
-1402,Robot Framework
-1403,Robot framework
-1404,Robotic Process Automation (RPA)
-1405,Rocket
-1406,RocksDB
-1407,Rollbar
-1408,Rollup
-1409,Room
-1410,Router
-1411,Ruby
-1412,Ruby on Rails
-1413,Ruckus
-1414,Rust
-1415,Rx
-1416,RxJS
-1417,RxJava
-1418,RxSwift
-1419,S3
-1420,SAFe Agile
-1421,SAN Storage
-1422,SAP
-1423,SAP AI Business Services
-1424,SAP AI Core
-1425,SAP AI Launchpad
-1426,SAP BTP
-1427,SAP Business Object
-1428,SAP BusinessObjects
-1429,SAP CAP
-1430,SAP Cloud Application Programming Model
-1431,SAP FIORI
-1432,SAP UI5
-1433,SAP Workflows
-1434,SAP2000
-1435,SAPUI5
-1436,SAS
-1437,SASS
-1438,SASS/SCSS
-1439,SAST
-1440,SCA
-1441,SCADA
-1442,SCM
-1443,SCRUM
-1444,SCSS
-1445,SCTP
-1446,SDL
-1447,SDLC
-1448,SDLC Management Tools
-1449,SEO
-1450,SIEM
-1451,SIP
-1452,SNPE
-1453,SOA
-1454,SOAP
-1455,SOAR
-1456,SOLID
-1457,SOLID Principles
-1458,SOQL
-1459,SPC
-1460,SPI
-1461,SPSS
-1462,SQL
-1463,SQL Developer
-1464,SQL Server
-1465,SQL server
-1466,SQLAlchemy
-1467,SQLDelight
-1468,SQLServer
-1469,SQLite
-1470,SRT
-1471,SRTP
-1472,SSIS
-1473,SSO
-1474,STAAD Pro
-1475,STM32
-1476,STUN
-1477,SVN
-1478,SaaS
-1479,Salesforce
-1480,Salesforce APIs
-1481,Salesforce Commerce Cloud
-1482,Salesforce Platform Developer 1
-1483,Samsung Galaxy Framework
-1484,Sass
-1485,Scala
-1486,Scikit
-1487,Scikit-learn
-1488,Scratch
-1489,Screaming Frog
-1490,Scrum
-1491,Search Console
-1492,Secure Boot
-1493,Secure Hardware
-1494,Security
-1495,Security Protocols
-1496,Security Testing
-1497,Security testing
-1498,Selenium
-1499,Semgrep
-1500,Sensor Tower
-1501,Sentry
-1502,Serenity BDD
-1503,Server
-1504,Server configuration
-1505,Serverless
-1506,Serverless Architecture
-1507,Servers
-1508,Service Mesh
-1509,ServiceNow
-1510,Servicenow
-1511,Servlet
-1512,Servlets
-1513,Servo
-1514,Servo motor
-1515,Shader/Shader Graph
-1516,ShaderLab
-1517,Shaders
-1518,Shapely
-1519,SharePoint
-1520,Shared Memory
-1521,Sharepoint
-1522,Shell
-1523,Shell Script
-1524,Shell Scripts
-1525,Shell script
-1526,Shiftleft Testing
-1527,Shopify
-1528,Shopify Liquid
-1529,Siemen
-1530,Siemens
-1531,Siemens NX
-1532,SignalR
-1533,Sigrid
-1534,Simulink
-1535,Sinon
-1536,Six Sigma
-1537,Six sigma
-1538,Sketch
-1539,SketchUp
-1540,Sketchup
-1541,Sklearn
-1542,Slack
-1543,Sliver
-1544,Smart Contracts
-1545,Smart contracts
-1546,SnapKit
-1547,Snowflake
-1548,Snyk Code
-1549,SoCs
-1550,Soap UI
-1551,SoapUI
-1552,Socket
-1553,Socket Programming
-1554,Software Architecture
-1555,Software Development
-1556,Solana
-1557,Solana Web3.js
-1558,SolarWinds
-1559,Solarwinds
-1560,SolidCAM
-1561,SolidWorks
-1562,Solidity
-1563,Solidwork
-1564,Solidworks
-1565,Solr
-1566,Solution Architecture
-1567,SonarQube
-1568,Sonarqube
-1569,Spark
-1570,Specflow
-1571,Splunk
-1572,Spring
-1573,Spring Boot
-1574,Spring Cloud
-1575,Spring Framework
-1576,Spring MVC
-1577,Spring Security
-1578,Spring framework
-1579,SpringBoot
-1580,SpringMVC
-1581,Stakeholder management
-1582,Starlark
-1583,State management
-1584,Statistical Analysis
-1585,Stepping motor
-1586,Storage
-1587,StoreKit
-1588,StoreKit2
-1589,Storm
-1590,Storyboard
-1591,Storybook
-1592,Strategy planning
-1593,Streamlit
-1594,Stripe
-1595,Structured Cabling
-1596,Strut
-1597,Struts
-1598,Styled Components
-1599,Styled-components
-1600,Substance Painter
-1601,Supabase
-1602,Svelte
-1603,Swagger
-1604,Swift
-1605,Swift Package Manager
-1606,SwiftPM
-1607,SwiftUI
-1608,Switch
-1609,Switches
-1610,Sybase
-1611,Symfony
-1612,Synapse
-1613,Syslog
-1614,System Admin
-1615,System Architecture
-1616,System Center Configuration Manager
-1617,System Monitoring Tools
-1618,T-SQL
-1619,TARA
-1620,TCP/IP
-1621,TCPDump
-1622,TCPView
-1623,TCServer
-1624,TDD
-1625,TFlite
-1626,TIMER
-1627,TLS
-1628,TMĐT
-1629,TOGAF
-1630,TURN
-1631,Tableau
-1632,Tabnine
-1633,Tabular
-1634,Tailwind
-1635,Tailwind CSS
-1636,TailwindCSS
-1637,Talend
-1638,TanStack Query
-1639,TanStack Router
-1640,TanStack Table
-1641,Team City
-1642,Team Management
-1643,TeamCity
-1644,Technical Writing
-1645,Technology Roadmapping
-1646,Temenos Infinity
-1647,Tenable.io
-1648,Tensor Core
-1649,TensorFlow
-1650,TensorFlow Lite
-1651,TensorFlow Serving
-1652,TensorRT
-1653,Tensorflow
-1654,Terraform
-1655,Terragrunt
-1656,Tesseract
-1657,Test Complete
-1658,Test Driven Development
-1659,TestComplete
-1660,TestFlight
-1661,TestNG
-1662,TestRail
-1663,Testcafe
-1664,Tester
-1665,Testlink
-1666,Testrail
-1667,Text-to-SQL
-1668,Textract
-1669,The Graph
-1670,Theia
-1671,Themeleaf
-1672,ThreadX
-1673,Threat Modeling
-1674,Three.js
-1675,Thymeleaf
-1676,Ticketing Systems
-1677,Tiktok
-1678,Tomcat
-1679,Trac
-1680,Tracing
-1681,Travis CI
-1682,Trello
-1683,TritonServer
-1684,TrustZone
-1685,Turbo
-1686,Turnstile Control
-1687,Tuxedo Middleware
-1688,Twig
-1689,TypeORM
-1690,TypeScript
-1691,Typeform
-1692,Typography
-1693,UART
-1694,UDP
-1695,UDS
-1696,UDSonCAN
-1697,UI Testing
-1698,UI frameworks
-1699,UI testing
-1700,UI-UX
-1701,UIKit
-1702,UML
-1703,UNIX
-1704,UR robot
-1705,USART
-1706,USB
-1707,UWP
-1708,UX/UI
-1709,Ubuntu
-1710,Ui5
-1711,UiPath
-1712,Unit Testing
-1713,Unit test
-1714,Unit testing
-1715,Unity
-1716,Unity 2D
-1717,Unity 3D
-1718,Unix
-1719,Unix Shell
-1720,Unix/Linux
-1721,Unreal
-1722,Unreal Engine
-1723,Usability testing
-1724,User Journey Mapping
-1725,User diagram
-1726,User flows
-1727,User story
-1728,UserDefaults
-1729,VB.NET
-1730,VB.Net
-1731,VBA
-1732,VCL
-1733,VLAN
-1734,VMWare ESXi
-1735,VMware
-1736,VMware ESXi
-1737,VNPAY
-1738,VPN
-1739,VR
-1740,VR/AR
-1741,VS Code
-1742,VSCode
-1743,VSTS
-1744,Valgrind
-1745,Vector
-1746,Vector CANoe
-1747,Vercel
-1748,Vericut
-1749,Verilog
-1750,Vert.x
-1751,Vertex AI
-1752,Vertx
-1753,ViTest
-1754,Video
-1755,Video.js
-1756,Viem
-1757,Virtualization
-1758,Virtuozzo
-1759,Visi
-1760,Visily
-1761,Visio
-1762,Vision
-1763,Visual Basic
-1764,Visual C++
-1765,Visual Design
-1766,Visual Paradigm
-1767,Visual Studio
-1768,Visual Studio 2019
-1769,Visual Studio 2022
-1770,Visual Studio Code
-1771,Visual Studio.NET
-1772,Visualforce
-1773,Visualization Tools
-1774,Vite
-1775,VoIP
-1776,Vscode
-1777,Vue
-1778,Vue Router
-1779,Vue.js
-1780,Vue3
-1781,VueJS
-1782,Vuetify
-1783,Vuex
-1784,W3C Blockchain
-1785,WAF
-1786,WAN
-1787,WAS
-1788,WCF
-1789,WDIO
-1790,WEB
-1791,WEB API
-1792,WMS
-1793,WPF
-1794,Wagmi
-1795,WalletConnect
-1796,Waterfall
-1797,Waterfall Methodology
-1798,Watermarking
-1799,Weaviate
-1800,Web
-1801,Web API
-1802,Web APIs
-1803,Web Application
-1804,Web Applications
-1805,Web Service
-1806,Web Services
-1807,Web System
-1808,Web/Mobile Testing
-1809,Web3
-1810,Web3.js
-1811,WebAssembly
-1812,WebGL
-1813,WebGPU
-1814,WebRTC
-1815,WebSocket
-1816,WebSockets
-1817,WebdriverIO
-1818,Webflow
-1819,Webhook
-1820,Webpack
-1821,Webserver
-1822,Webservices
-1823,Websocket
-1824,Websphere
-1825,Weight & Biases
-1826,White box testing
-1827,WiFi
-1828,Wifi
-1829,Wildfly
-1830,Win Form Application
-1831,WinForms
-1832,WinUI
-1833,WinUI3
-1834,WindIdea
-1835,Windows
-1836,Windows 10
-1837,Windows 11
-1838,Windows API
-1839,Windows Event Forwarder
-1840,Windows Form
-1841,Windows Forms
-1842,Windows IIS
-1843,Windows SDK
-1844,Windows Server
-1845,Windows Services
-1846,Winforms
-1847,Wireframing
-1848,Wireshark
-1849,WooCommerce
-1850,WordPress
-1851,Wordpress
-1852,Workato
-1853,Workday
-1854,XCode
-1855,XDR
-1856,XDebug
-1857,XGBoost
-1858,XGboost
-1859,XML
-1860,XML-RPC
-1861,XPath
-1862,XUnit
-1863,Xcode
-1864,XcodeBuild
-1865,Xen Citrix
-1866,YAML
-1867,YARN
-1868,Yarn
-1869,Yaskawa
-1870,Yii
-1871,Yii 2
-1872,Yocto
-1873,Yocto Build System
-1874,ZK
-1875,Zabbix
-1876,Zapier
-1877,ZenHub
-1878,Zend
-1879,Zephyr
-1880,Zeplin
-1881,Zigbee
-1882,Zod
-1883,Zoom
-1884,Zustand
-1885,aaPanel
-1886,analystic
-1887,automation testing
-1888,axios
-1889,black box testing
-1890,blockchain
-1891,bug-tracking systems
-1892,cPanel
-1893,cloud
-1894,cloud computing
-1895,cloud solutions
-1896,cloud-native
-1897,cloud-native architectures
-1898,cocoapods
-1899,containerization
-1900,core banking
-1901,data lake/warehouse
-1902,dbt
-1903,docker
-1904,draw.io
-1905,etherCat
-1906,ethers.js
-1907,fetch
-1908,figma
-1909,firebase
-1910,firewall
-1911,firewalls
-1912,functional testing
-1913,gRPC
-1914,git
-1915,gitlab
-1916,iOS
-1917,jBOSS
-1918,jBPM
-1919,jQuery
-1920,jUnit
-1921,kotlinx.coroutines
-1922,kubernetes
-1923,low-code
-1924,mSQL
-1925,macOS
-1926,manual testing
-1927,microservice
-1928,n8n
-1929,network
-1930,no-code
-1931,noSQL
-1932,node.js
-1933,npm
-1934,openCV
-1935,performance testing
-1936,pytest
-1937,regression testing
-1938,robot
-1939,robot cylinder
-1940,scikit-learn
-1941,server
-1942,smart contract
-1943,sqlite
-1944,storage
-1945,tRPC
-1946,vSAN
-1947,vb.net
-1948,websocket
-1949,wifi
-1950,xCode
-1951,yarn
-1952,zkSync
+8,.Net & Flutter
+9,.Net 6+
+10,.Net Core
+11,1Password
+12,3D Game
+13,3D Max
+14,3D Modeling
+15,3ds Max
+16,4G
+17,4G 5G knowledge
+18,A-spice
+19,A/B testing
+20,AB Testing
+21,ABAP
+22,ABB
+23,ABB Robot
+24,ACF
+25,AD
+26,ADAS
+27,ADC
+28,ADF
+29,ADO.NET
+30,ADR Recording
+31,AEM
+32,AES
+33,AFNetworking
+34,AI
+35,AI / LLM Applications
+36,AI Adoption
+37,AI Agent
+38,AI Agents
+39,AI Applications
+40,AI Engineer
+41,AI Software
+42,AI Solutions
+43,AI Technology
+44,AI Tools
+45,AI coding tools
+46,AI plugins
+47,AI system
+48,AI tools
+49,AI-assisted workflows
+50,AI-powered coding tools
+51,AI/ML
+52,AI/ML & Data Engineering
+53,AIMS
+54,AJAX
+55,AKKA
+56,AKS
+57,AM
+58,AMQP
+59,ANSYS
+60,API
+61,API Design
+62,API Gateway
+63,API Integration
+64,API Management
+65,API RESTful
+66,API Restful
+67,API Services
+68,API Testing
+69,API automation testing
+70,API development
+71,API platform
+72,API testing
+73,APIs
+74,APL
+75,APM
+76,AR
+77,AR/VR
+78,ARM Cortex-M
+79,ARM Toolchain
+80,ASIC
+81,ASP.NET
+82,ASP.NET Core
+83,ASP.NET MVC
+84,ASP.Net
+85,ASP.Net Core
+86,ASP.Net MVC
+87,ASPICE
+88,AUTOSAR
+89,AV
+90,AV Installation
+91,AWS
+92,AWS CLI
+93,AWS CloudFormation
+94,AWS CloudWatch
+95,AWS CodeArtifacts
+96,AWS Cognito
+97,AWS Device Farm
+98,AWS ECR
+99,AWS Glue
+100,AWS IAM Identity Center
+101,AWS IoTCore
+102,AWS Lambda
+103,AWS Networking
+104,AWS QuickSight
+105,AWS RDS
+106,AWS Redshift
+107,AWS S3
+108,AX Technical
+109,Aave
+110,Ability to Communicate
+111,Access Control
+112,Access Control Management
+113,Access SQL
+114,Acronis
+115,Active Directory
+116,Active Mindset
+117,ActiveMQ
+118,Activiti
+119,AdMob
+120,Admob
+121,Adobe
+122,Adobe Creative Cloud
+123,Adobe Creative Suite
+124,Adobe Forms
+125,Adobe Illustrator
+126,Adobe Photoshop
+127,Adobe Suite
+128,Adobe XD
+129,Advanced Excel
+130,Aerospace
+131,After Effects
+132,Agentic workflows
+133,Agile
+134,Agile Development
+135,Agile Leadership
+136,Agile Scrum
+137,Agile/Scrum
+138,Ai Development
+139,Ai Solutions
+140,Ai/Ml
+141,Airbyte
+142,Airflow
+143,Airtable
+144,Ajax
+145,Alamofire
+146,Alembic
+147,Alerta
+148,Alfresco
+149,Algolia
+150,Algorithms
+151,Allegro PCB Design
+152,Altium Design
+153,Amazon
+154,Amazon Aurora
+155,Amazon Bedrock
+156,Amazon CloudWatch
+157,Amazon MQ
+158,Amazon RDS
+159,Amazon Redshift
+160,Amazon SNS/SQS
+161,Amazon Web Services
+162,Amos
+163,An Ninh
+164,An Ninh Mạng
+165,An Ninh Thông Tin
+166,An Toàn Thông Tin
+167,Analysis & Reporting Skills
+168,Analysis Tool
+169,Analytical Problem Solving
+170,Analytical Skills
+171,Analytical Thinking
+172,Analytical thinking
+173,Analytics
+174,Analytics Tool
+175,And Vba
+176,Android
+177,Android App Design
+178,Android Jetpack
+179,Android NDK
+180,Android SDK
+181,Android Studio
+182,Android studio
+183,Angular
+184,Angular CLI
+185,Angular Universal
+186,Angular.js
+187,AngularJS
+188,AngularJs
+189,Anh Văn B1
+190,Ansible
+191,Ant
+192,Ant Design
+193,AntDesign
+194,Antd
+195,Antd design
+196,Anti-DDoS
+197,Anti-Malware/Endpoint Protection
+198,Antivirus
+199,Apache
+200,Apache Airflow
+201,Apache Druid
+202,Apache Flink
+203,Apache HTTP Server
+204,Apache HttpClient
+205,Apache Kafka
+206,Apache MINA
+207,Apache Maven
+208,Apache NiFi
+209,Apache Solr
+210,Apache Spark
+211,Apache Tomcat
+212,Apache-Spark
+213,Apex
+214,Api
+215,Api Development
+216,Api Integration
+217,Api Testing
+218,Api Và Tích Hợp Hệ Thống
+219,Api- Microservice
+220,Apis And Webhooks
+221,Apollo
+222,Apollo GraphQL
+223,Apollo Server
+224,App Annie
+225,App Store Optimization
+226,AppDynamics
+227,Appium
+228,Apple Connect
+229,Application Development
+230,Application Insights
+231,Application Security
+232,Application Security Assessment
+233,Application Support
+234,Applitools
+235,Arbitrum
+236,ArcGIS Pro
+237,Architect
+238,Architecture Model Making
+239,Arduino
+240,Argo CD
+241,ArgoCD
+242,ArtCAM
+243,Artifactory
+244,Artificial Intelligence
+245,Artificial Intelligence (AI)
+246,Aruba
+247,Aruba Networks
+248,Asana
+249,AssetBundles
+250,Asteria Warp
+251,Asterisk
+252,Asynchronous Programming
+253,Atlassian
+254,Attention to Detail
+255,Audio
+256,Audio Visual Equipment
+257,Audio Visual Support
+258,Audiovisual
+259,Audit
+260,Aura
+261,Aurora PostgreSQL
+262,Auth0
+263,Autify
+264,Auto CAD
+265,Auto Layout
+266,AutoCAD
+267,AutoCad
+268,AutoLayout
+269,Autocad
+270,Autofac
+271,Automated Software Testing
+272,Automated Test Equipment (Ate)
+273,Automated Testing
+274,Automated Unit Testing
+275,Automation
+276,Automation Anywhere
+277,Automation Test
+278,Automation Tester
+279,Automation Testing
+280,Automation system
+281,Automation testing
+282,Automotive
+283,Automotive Engineering
+284,Automotive Product
+285,Autonomous Driving
+286,Autoruns
+287,Autosar Classic Architecture
+288,Aws Services
+289,Axios
+290,Axure
+291,Azure
+292,Azure AD
+293,Azure Cloud
+294,Azure Data Factory
+295,Azure Data Lake
+296,Azure DevOps
+297,Azure Devops
+298,Azure Event Hubs
+299,Azure Monitor
+300,Azure Monitor And Log Analytics
+301,Azure OpenAI
+302,Azure Pipelines
+303,Azure SQL
+304,Azure Service Bus
+305,Azure Synapse
+306,BFGMiner
+307,BI
+308,BI Publisher
+309,BI Reporting
+310,BI TABLEAU
+311,BI Tools
+312,BI tools
+313,BIM
+314,BLE
+315,BNB Chain
+316,BOM Development
+317,BPMN
+318,BRD
+319,BSP
+320,BW/BO
+321,Babel
+322,Back-end Programming
+323,Backbone JS
+324,Backend
+325,Backend Testing
+326,Backend developer
+327,Backlog
+328,Backup
+329,Backup Systems
+330,Balsamiq
+331,Bank
+332,Banking
+333,Barcode System
+334,Basel II
+335,Bash
+336,Bash Shell
+337,Basic Design
+338,Beam
+339,Beaver Builder
+340,Behave
+341,Benchmarking
+342,Bi Tools
+343,Big Data
+344,Big Data Analytics
+345,Big Data Processing
+346,Big Data Và Cloud
+347,BigCommerce
+348,BigQuery
+349,BitLocker
+350,Bitbucket
+351,Bizagi
+352,Black Box Testing
+353,Black box testing
+354,BlackDuck
+355,BlackDuck Hub
+356,Blazor
+357,Blender
+358,Bloc
+359,Blockchain
+360,BloodHound
+361,Bluetooth
+362,Boomi
+363,Boost
+364,Boot
+365,Bootstrap
+366,Bridge Engineer
+367,BrowserStack
+368,Bubble
+369,Bug Report Writing
+370,Bugzilla
+371,BullMQ
+372,Burp Suite
+373,Business Analysis
+374,Business Analyst Skills
+375,Business Central (Bc) Configuration
+376,Business Data Analysis & Reporting
+377,Business English
+378,Business Intelligence
+379,Business Operation
+380,Business analysis
+381,BytePlus
+382,BytePlus CDN
+383,Báo Cáo Quản Trị
+384,Bảo Dưỡng
+385,Bảo Hành
+386,Bảo Mật Dữ Liệu
+387,Bảo Mật Hệ Thống
+388,Bảo Mật Server
+389,Bảo Mật Thông Tin
+390,Bảo Mật Web
+391,Bảo Trì
+392,Bảo Trì Thiết Bị Tin Học
+393,C
+394,C Programming Language
+395,C language
+396,C#
+397,C# .Net Framework
+398,C++
+399,C++ Builder
+400,C/Al
+401,C/C++
+402,C/C++ Programming
+403,CAD
+404,CAD/CAM
+405,CAE Engineering
+406,CALS
+407,CAM
+408,CAN
+409,CAN Protocol
+410,CANalyzer
+411,CANoe
+412,CATIA
+413,CCIE
+414,CCNA
+415,CCNA Security
+416,CCNP
+417,CDN
+418,CDS View
+419,CEH
+420,CFA
+421,CGMiner
+422,CI/CD
+423,CI/CD tools
+424,CICD
+425,CISAM
+426,CISSP
+427,CMAKE
+428,CMMI
+429,CMMi
+430,CMS
+431,CMake
+432,CNC
+433,CNC Programming
+434,CNTT
+435,CNTT - Phần Cứng
+436,COBIT
+437,COBOL
+438,CPI
+439,CREO
+440,CRM
+441,CS-Cart
+442,CSS
+443,CSS 3
+444,CSS Modules
+445,CSS3
+446,CSS5
+447,CSV
+448,CUDA
+449,CURL
+450,CWE
+451,Caching mechanisms
+452,Cacti
+453,Cad
+454,Caffe
+455,CakePHP
+456,Camera
+457,Camera Operator
+458,CameraX
+459,Camunda
+460,Canva
+461,Canva AI
+462,Canvas
+463,Canvas Apps
+464,CapCut AI
+465,Card Payment Technology
+466,Carthage
+467,Cassandra
+468,Cctv
+469,Cds Views And Rap
+470,Celery
+471,CentOS
+472,Ceph
+473,Chai
+474,Channel Support
+475,Charles
+476,Charles Proxy
+477,ChatGPT
+478,Chatwork
+479,CheckPoint
+480,Chinese
+481,Chinese Communication
+482,Chopper
+483,Chuyển Đổi Số
+484,Chuyển đổi số
+485,Chuẩn hóa dữ liệu
+486,Chất Lượng Sản Phẩm
+487,Chỉ Số Hiệu Suất Cs
+488,Chịu Được Áp Lực
+489,Chủ Động- Trách Nhiệm
+490,Chứng Chỉ Togaf
+491,Chứng khoán
+492,Ci/CD
+493,Ci/Cd
+494,Ci/Cd & Gitops
+495,Ci/Cd Methodologies
+496,Ci/Cd Và Git
+497,Cimatrol
+498,Cimatron
+499,Circle CI
+500,CircleCI
+501,CircleCi
+502,Cisco
+503,Cisco CCNP
+504,Cisco Secure Endpoint
+505,Cisco UCS
+506,Clean Architecture
+507,Clerk
+508,ClickHouse
+509,ClickUp
+510,Clickhouse
+511,ClientTrack
+512,Cloud
+513,Cloud Architecture
+514,Cloud Computing
+515,Cloud Config
+516,Cloud Development
+517,Cloud Enterprise Architecture
+518,Cloud Firestore
+519,Cloud Foundry
+520,Cloud Functions
+521,Cloud Gateway
+522,Cloud Infrastructure
+523,Cloud Integration
+524,Cloud Native Solutions
+525,Cloud Platform
+526,Cloud Platforms
+527,Cloud Security
+528,Cloud Server
+529,Cloud Services
+530,Cloud Solution
+531,Cloud Solutions
+532,Cloud Storage
+533,Cloud Technologies
+534,Cloud platforms
+535,Cloud-Native
+536,Cloud-native
+537,Cloud-native Architecture
+538,Cloud-native architectures
+539,Cloud-native solutions
+540,CloudFormation
+541,CloudWatch
+542,Cloudflare
+543,Cobalt Strike
+544,CockroachDB
+545,CocoaLumberjack
+546,CocoaPods
+547,CocoaTouch
+548,Cocoapods
+549,Cocos
+550,Cocos 2d-x
+551,Cocos Creator
+552,Cocos2d-JS
+553,Cocos2d-x
+554,Cocos2dx
+555,CodeBuild
+556,CodeIgniter
+557,CodePipeline
+558,CodePush
+559,Codelgniter
+560,Collaboration
+561,Combine
+562,Command Line Interface
+563,Communication
+564,Communication Protocols
+565,Communication Skills
+566,Communication and negotiation skills
+567,Communication skills
+568,CompTIA
+569,CompTIA Security
+570,Compliance
+571,Compose
+572,Compose Multiplatform
+573,Compose UI
+574,Composer
+575,Computer
+576,Computer Engineering
+577,Computer Maintenance
+578,Computer Science
+579,Computer Vision
+580,Computerized System
+581,Concurrency
+582,Configuation Management Software
+583,Configuration Manager
+584,Confluence
+585,Confluent
+586,Consulting
+587,Container
+588,Container Security
+589,Containerization
+590,Containers
+591,Containers And Microservices
+592,Content Distribution Network
+593,Content Moderation
+594,Context API
+595,Continuous Delivery
+596,Continuous Delivery/Deployment
+597,Continuous Deployment
+598,Continuous Integration
+599,Core
+600,Core Banking
+601,Core Data
+602,Core Data Services
+603,Core ERP
+604,Core Network Solution
+605,CoreAnimation
+606,CoreData
+607,CoreML
+608,Corebank T24
+609,Corgi Engine
+610,Coroutine
+611,Coroutines
+612,Cosmos
+613,Coverity
+614,Cpanel
+615,Crashlytics
+616,Creative Mindset
+617,Creative Problem Solving
+618,Cribl
+619,Crypto Algorithms
+620,Cryptocurrency
+621,Cryptography
+622,Crystal Report
+623,Css
+624,Css Operation
+625,Cucumber
+626,CucumberJS
+627,Customer Communication
+628,Customer Experience Management
+629,Customer Journey Map
+630,Customer Service
+631,Customer Service Mindset
+632,Cyber Risk Management
+633,Cyber Security
+634,Cyber Security Analyst
+635,Cyber Security Engineer
+636,Cyber security
+637,Cybersecurity
+638,Cybersecurity Awareness
+639,Cybersecurity Engineering
+640,Cybersecurity Expertise
+641,Cypress
+642,Cài Đặt Hệ Thống
+643,Có Kinh Nghiệm Làm Việc Với Data Warehouse
+644,Công Cụ Uipath
+645,Công Nghệ Phần Mềm
+646,Công Nghệ Thông Tin
+647,Công nghệ thông tin
+648,Cơ Học Lượng Tử
+649,Cơ Sở Dữ Liệu
+650,Cơ Sở Dữ Liệu Non-Sql
+651,Cơ Sở Dữ Liệu Quan Hệ (Sql)
+652,Cơ Sở Dữ Liệu SQL Server
+653,Cơ Sở Dữ Liệu Sql
+654,Cơ Điện Tử
+655,Cấu Hình Mạng
+656,Cấu Trúc Dữ Liệu
+657,D365
+658,DASH
+659,DAST
+660,DApps
+661,DB2
+662,DBA
+663,DBT
+664,DBWeaver
+665,DDoS Protection
+666,DEV
+667,DFM
+668,DGL
+669,DHCP
+670,DHCP Server
+671,DL4J
+672,DLMS Protocol
+673,DLP
+674,DMS
+675,DNS
+676,DNS Security
+677,DOORs
+678,DRM
+679,DRP
+680,DWDM
+681,DWH
+682,Dao Động Ký
+683,Dapper
+684,Dart
+685,Dashboards Design
+686,Data & AI
+687,Data AI
+688,Data Administration
+689,Data Analys
+690,Data Analysis
+691,Data Analytics
+692,Data Architecture
+693,Data Automation
+694,Data Bricks
+695,Data Center And Dr Environments
+696,Data Center Infrastructure
+697,Data Center Management
+698,Data Engineer
+699,Data Engineering
+700,Data Extraction
+701,Data Governance
+702,Data Governance Frameworks
+703,Data Integration
+704,Data Lake
+705,Data Loss Prevention
+706,Data Management
+707,Data Management Tools
+708,Data Masking
+709,Data Mining
+710,Data Modeling
+711,Data Organization
+712,Data Pipeline
+713,Data Pipeline Optimization
+714,Data Policy
+715,Data Privacy / Compliance
+716,Data Quality
+717,Data Quality Assessment
+718,Data Quality Tools
+719,Data Recovery
+720,Data Science
+721,Data Security
+722,Data Structure
+723,Data Studio
+724,Data Visualization
+725,Data Warehouse
+726,Data Warehouse Systems
+727,Data Warehousing
+728,Data analysis
+729,Data lake
+730,Data modeling
+731,Data processing
+732,Data visualization
+733,Data warehouse
+734,Data-Driven
+735,Data-driven
+736,DataOps
+737,Database
+738,Database Administration
+739,Database Design
+740,Database Development
+741,Database MySQL
+742,Database Query
+743,Database Software
+744,Database Tuning And Capacity Planning
+745,Database management
+746,Databricks
+747,Datacom Protocols
+748,Datadog
+749,Datastage
+750,Dataverse
+751,Davinci
+752,Dax Formula
+753,Dbt
+754,DeFi
+755,Debian
+756,Debug
+757,Debugging
+758,Decentralized Applications
+759,Decision Making
+760,Decisive Judgment
+761,Deep Learning
+762,Dell
+763,Dell Boomi AtomSphere
+764,Delta Lake
+765,Dependency Injection
+766,Design
+767,Design Pattern
+768,Design Patterns
+769,Design Planning
+770,Design Systems
+771,Design Thinking
+772,Detailed Network Design
+773,Details Orientation
+774,DevExpress
+775,DevExtreme
+776,DevOps
+777,DevOps Azure
+778,DevOps tools
+779,DevSecOps
+780,Device Drivers
+781,Devops
+782,Devsecops Và Ci/Cd
+783,Diagnostic tools
+784,Dialogflow
+785,Diffusion Models
+786,Digital Solution
+787,Digital tokens
+788,DigitalOcean
+789,Digitalization
+790,Dio
+791,DirectAdmin
+792,DirectX
+793,Disaster Recovery
+794,Distributed Computing
+795,Distributed Systems
+796,Divi
+797,Django
+798,Docker
+799,Docker Compose
+800,Docker Swarm
+801,Dom/Webgl Rendering
+802,Domain
+803,Domain-Driven Design
+804,Draw.io
+805,Dremio
+806,Dropshipping
+807,Drupal
+808,Duy Trì Khách Hàng
+809,Dwdm- Otn- Nms Transmission Systems
+810,Dwdm/Otn Equipment
+811,DynamoDB
+812,Dynatrace
+813,Dịch Vụ Viễn Thông
+814,E-commerce
+815,EDR
+816,EFK
+817,EJB
+818,EKS
+819,ELK
+820,ELK Stack
+821,ELK/Loki
+822,ELT
+823,ELV
+824,ENS
+825,EPP
+826,ERP
+827,ERP Application
+828,ERP Consulting
+829,ERP Deployment
+830,ERP Management
+831,ERP Migration
+832,ERP Projects
+833,ERP SAP System
+834,ERP Systems
+835,ES6
+836,ESLint
+837,ESP-IDF
+838,ESP32
+839,ESS Tools
+840,ETAS
+841,ETL
+842,ETL Database
+843,ETL Pentaho
+844,ETL Tool
+845,EVM
+846,Eclipse
+847,Eclipse RCP
+848,Ecommerce Solution
+849,Ecommerce Technology
+850,Edge Computing
+851,Effective Communication
+852,Effective Presentation
+853,Effective Teamwork
+854,ElastiCache
+855,Elastic
+856,Elastic Search
+857,Elastic search
+858,ElasticSearch
+859,Elasticsearch
+860,Electrical Engineering
+861,Electron
+862,Electron.js
+863,ElectronJs
+864,Electronic Testing
+865,Electronics
+866,Electronjs
+867,Element Plus
+868,Elementor
+869,Elixir
+870,Email
+871,Email Exchange Server
+872,Embedded
+873,Embedded Android
+874,Embedded Automotive Development
+875,Embedded C
+876,Embedded C++
+877,Embedded Linux
+878,Embedded Programming C++
+879,Embedded Software
+880,Embedded System
+881,Embedded Systems
+882,Embedded Testing
+883,Embedded system
+884,Ember
+885,Emulate3D
+886,Encryption
+887,Encryption Key Management
+888,End-User Support
+889,End-to-end encryption
+890,Endpoint Central
+891,Endpoint Security
+892,Engineering Application Softwares
+893,English
+894,English Communication
+895,English Conversation
+896,English Fluency
+897,English Language Proficiency
+898,English communication
+899,English fluency
+900,Enterprise Architecture
+901,Enterprise Networking
+902,Enterprise Software Solutions
+903,Entity Framework
+904,Entity Framework Core
+905,Entra ID
+906,Enzyme
+907,Epicor
+908,Eplan
+909,Erp
+910,Erp Implementation
+911,Erp Systems
+912,Eslint
+913,Espresso
+914,Ether
+915,Ethereum
+916,Ethernet
+917,Ethernet TCP/IP
+918,Ethers.js
+919,Etl/Elt
+920,Etl/Elt Pipelines
+921,Etl/Elt/Cdc/Api
+922,Evaluation Method
+923,Event-Driven Architecture
+924,Event-driven architecture
+925,Excel
+926,Exchange
+927,Exchange Server
+928,Expo
+929,Express
+930,Express JS
+931,Express.js
+932,ExpressJS
+933,ExpressJs
+934,EyeShot
+935,F#
+936,FAISS
+937,FFMPEG
+938,FFmpeg
+939,FME
+940,FOTA
+941,FRS
+942,FW
+943,Facebook
+944,Facial Recognition
+945,Failure Analysis
+946,Faktory
+947,Fanuc
+948,Fast API
+949,FastAPI
+950,FastApi
+951,Fastlane
+952,Fiber
+953,Field Sales
+954,Figma
+955,File Management
+956,Financial Analysis
+957,Financial Service
+958,Fintech
+959,Fiori
+960,Fiori Elements
+961,FireBase
+962,Firebase
+963,Firebase Analytics
+964,Fireflies
+965,Firestore
+966,Firewall
+967,Firewalls
+968,Firmware
+969,FitNesse
+970,Fixed Access Network
+971,Fixed Assets Management
+972,Fixture Processing
+973,Flash Bootloader
+974,Flash Bootloader Development
+975,Flask
+976,Flexbox
+977,Flink
+978,Flow
+979,Fluent Communication Skills
+980,Flutter
+981,Flutter Development
+982,Flux
+983,Forguncy
+984,Fortify
+985,Fortigate
+986,Fortigate Firewall
+987,Fortinet
+988,Foundation
+989,Foundry
+990,Framework
+991,Frameworks Frontend
+992,Fraud Detection Systems
+993,FreeIPA
+994,FreeRTOS
+995,French
+996,Front End
+997,Front-End
+998,Full Stack Developer
+999,Full Stack Development
+1000,Fullstack
+1001,Fullstack .NET
+1002,Fullstack Development
+1003,Functional Safety Standards
+1004,Functional Testing
+1005,Functional specifications
+1006,Fusion 360
+1007,G Suite
+1008,G-code
+1009,GA360
+1010,GA4
+1011,GAN
+1012,GCD
+1013,GCP
+1014,GDB
+1015,GIMP
+1016,GIT
+1017,GPO
+1018,GRC
+1019,GRPC
+1020,GSM
+1021,GStreamer
+1022,GUI Design
+1023,Game 2D
+1024,Game Server
+1025,Game Testing
+1026,Games
+1027,Gaming
+1028,Gatsby
+1029,Gcore
+1030,Gemma
+1031,GenAI
+1032,General Communication English
+1033,Generative AI
+1034,Generative Ai/Llm
+1035,GeoPandas
+1036,GeoServer
+1037,Geoserver
+1038,GetX
+1039,Gherkin
+1040,Giao Thức Truyền Thông
+1041,Giao Tiếp
+1042,Giao Tiếp
+1043,Giao Tiếp Chủ Động
+1044,Giao Tiếp Đàm Phán
+1045,Giao tiếp
+1046,Giao tiếp Tiếng Anh
+1047,Giao tiếp tiếng Hàn
+1048,Giao tiếp và làm việc nhóm
+1049,Gin
+1050,Git
+1051,Git And Alm Tools
+1052,Git Flow
+1053,Git Workflow
+1054,Git/Gerrit
+1055,GitHub
+1056,GitHub Action
+1057,GitHub Actions
+1058,GitHub Copilot
+1059,GitLab
+1060,GitLab CI
+1061,GitLab CI/CD
+1062,GitOps
+1063,Github
+1064,Github Desktop
+1065,Gitlab
+1066,Gitlab Ci
+1067,Giám Sát
+1068,Giám Sát Hoạt Động
+1069,Giám Sát Kiểm Tra
+1070,Giám Sát Thiết Kế
+1071,Giải Pháp Công Nghệ
+1072,Giải Pháp Kỹ Thuật
+1073,Giải Pháp Phần Mềm
+1074,Giải Pháp Robot
+1075,Giải Pháp Tích Hợp
+1076,Giải Quyết Vấn Đề
+1077,Giảng Dạy
+1078,Glue
+1079,Go
+1080,Go Route
+1081,Godot
+1082,Golang
+1083,GoldenGate
+1084,Google
+1085,Google AI Studio
+1086,Google Analytics
+1087,Google Analytics 4
+1088,Google BigQuery
+1089,Google Calendar
+1090,Google Chronicle
+1091,Google Cloud
+1092,Google Cloud Platform
+1093,Google Cloud Platform Services
+1094,Google Cloud SQL
+1095,Google Cloud Vision
+1096,Google Drive Realtime API
+1097,Google Firebase
+1098,Google Keyword Planner
+1099,Google Kubernetes Engine
+1100,Google Looker
+1101,Google Maps
+1102,Google Maps API
+1103,Google Meet
+1104,Google Natural Language API
+1105,Google Sheet
+1106,Google Sheet Nâng Cao
+1107,Google Sheets
+1108,Google Tools
+1109,Google Vertex AI
+1110,Google Workplace
+1111,Google Workspace
+1112,Google Ws And Ai Platforms
+1113,GoogleAppScript
+1114,Governance
+1115,Gradio
+1116,Gradle
+1117,Grafana
+1118,Grafana/Prometheus
+1119,Grails
+1120,GraphQL
+1121,GraphQL APIs
+1122,Graphana
+1123,Graphical User Interface
+1124,Graylog
+1125,Groovy
+1126,Group Policy
+1127,Gulp
+1128,HANA Cloud
+1129,HAProxy
+1130,HBase
+1131,HDFS
+1132,HFS
+1133,HLS
+1134,HLS.js
+1135,HMI
+1136,HP
+1137,HPE
+1138,HRM / HCM
+1139,HTML
+1140,HTML/CSS
+1141,HTML5
+1142,HTMX
+1143,HTTP
+1144,HTTP client
+1145,HTTP/2
+1146,HTTP2
+1147,HTTPS
+1148,Hadoop
+1149,Hadoop Cluster Performance Tuning
+1150,Hadoop Ecosystem
+1151,Halcon
+1152,Hamiltonian
+1153,Hapi
+1154,Hardhat
+1155,Hardware Design
+1156,Hardware Maintenance
+1157,Hardware R&D
+1158,Hardware Support
+1159,Hardware Testing
+1160,Hardware Troubleshooting
+1161,Hardware-software Integration
+1162,Havoc
+1163,Hazelcast
+1164,Hbase
+1165,Healthcare Analytics
+1166,Helm
+1167,Helm Charts
+1168,Help Desk
+1169,Help Desk Support
+1170,Helpdesk
+1171,Hibernate
+1172,Hibernate/JPA
+1173,High Availability Database Environment
+1174,Hive
+1175,Hooks
+1176,Hopsworks
+1177,Hospitality
+1178,Html
+1179,Html/Css
+1180,Http Protocol
+1181,Huawei Enterprise Products
+1182,Huawei Olt/Ont
+1183,HubSpot
+1184,Hugging Face
+1185,Hugging Face Transformers
+1186,HuggingFace
+1187,HuggingFace Transformers
+1188,Hybrid Cloud
+1189,Hyper-V
+1190,HyperMill
+1191,Hyperledger
+1192,Hyperledger Fabric
+1193,Hạ Tầng Công Nghệ
+1194,Hạ Tầng Mạng
+1195,Hạ Tầng Viễn Thông
+1196,Hệ Thống Camera Quan Sát
+1197,Hệ Thống Core
+1198,Hệ Thống Mạng
+1199,Hệ Thống Mạng Lan
+1200,Hệ Thống T24
+1201,Hệ điều hành Linux
+1202,Hỗ Trợ Kỹ Thuật
+1203,Hỗ trợ khách hàng
+1204,I2C
+1205,IAM
+1206,IAP
+1207,IAST
+1208,IBM Cloud
+1209,IBM DB2
+1210,IBM WebSphere
+1211,ICE
+1212,ICT
+1213,ICT infrastructure management
+1214,IDS/IPS
+1215,IDS/IPS/Firewall
+1216,IIS
+1217,INTERRUPT
+1218,IOS
+1219,IOT
+1220,IP Networking
+1221,IP Routing
+1222,IPC
+1223,IPFS
+1224,IPS
+1225,ISO
+1226,ISO 27001
+1227,ISO 9000
+1228,ISO 9001
+1229,ISO26262
+1230,ISO27001
+1231,ISP
+1232,ISTIO
+1233,ISTQB
+1234,IT Administration
+1235,IT Audit
+1236,IT Communication/Translation
+1237,IT Governance
+1238,IT Hardware
+1239,IT Help Desk
+1240,IT Helpdesk
+1241,IT Infrastructure
+1242,IT Infrastructure Management
+1243,IT Management
+1244,IT Operations
+1245,IT Phần Cứng
+1246,IT Phần Mềm
+1247,IT Presale
+1248,IT Production
+1249,IT Project Management
+1250,IT Project Planning
+1251,IT Risk Management
+1252,IT Security
+1253,IT Security solution
+1254,IT Solution Consulting
+1255,IT Support
+1256,IT System
+1257,IT System Administration
+1258,IT Testing
+1259,ITGC
+1260,ITIL
+1261,ITIL Foundation
+1262,ITIL Frameworks
+1263,ITSM
+1264,IaC
+1265,Iceberg
+1266,Identity Management
+1267,Illustrator
+1268,InVision
+1269,Incident Management
+1270,Incident Response
+1271,Industrial Automation
+1272,Industrial Printing
+1273,InfluxDB
+1274,Information Security
+1275,Information Security Analysis
+1276,Information Systems
+1277,Information Technology
+1278,Information security
+1279,Infrastructure
+1280,Infrastructure As Code
+1281,Infrastructure Consulting
+1282,Infrastructure Management
+1283,Infrastructure Security
+1284,Infrastructure Support
+1285,Infrastructure as Code
+1286,Infrastructure-As-Code
+1287,Inovance
+1288,Installation Testing
+1289,Instrumentation Engineering
+1290,Integration
+1291,Integration Platforms
+1292,Integration test
+1293,IntelliJ IDEA
+1294,Intellij
+1295,International Collaboration
+1296,International Environment
+1297,Internet Banking
+1298,Internet Gateway
+1299,Intune
+1300,Inventor
+1301,IoT
+1302,Ionic
+1303,Ipaas Platforms
+1304,Isar
+1305,Istio
+1306,It HelpDesk
+1307,It Infrastructure Management
+1308,It Management
+1309,It Operations
+1310,It Security
+1311,It Support
+1312,J2EE
+1313,JFrog
+1314,JIRA
+1315,JIRA Service Management
+1316,JMeter
+1317,JPA
+1318,JPA2
+1319,JQuery
+1320,JSF
+1321,JSON
+1322,JSON-RPC
+1323,JSP
+1324,JUnit
+1325,JWT
+1326,Jakarta EE
+1327,Japanese
+1328,Japanese Communication
+1329,Japanese IT Communication
+1330,Japanese Speaking
+1331,Jasmine
+1332,Java
+1333,Java 8
+1334,Java EE
+1335,Java Persistence API
+1336,Java Programming
+1337,Java Spring
+1338,Java Spring Boot
+1339,Java Spring-Framework
+1340,Java Swing
+1341,Java System
+1342,Java programming
+1343,JavaEE
+1344,JavaFX
+1345,JavaScript
+1346,Javascript/Typescript
+1347,Jazz
+1348,Jboss
+1349,Jboss AS
+1350,Jenkins
+1351,Jest
+1352,JetPack
+1353,Jetpack
+1354,Jetpack Component
+1355,Jetpack Compose
+1356,Jetson
+1357,Jetson Devices
+1358,Jetty
+1359,Jira
+1360,Jira Service Management
+1361,Jmeter
+1362,Joomla
+1363,Jquery
+1364,Juniper
+1365,Junit
+1366,Jupyter Notebook
+1367,KACE
+1368,KVM
+1369,Kafka
+1370,Kanban
+1371,Karate
+1372,Karma
+1373,Katalon
+1374,Katalon Studio
+1375,Kendo UI
+1376,Keras
+1377,Kernel
+1378,Keycloak
+1379,Keyence
+1380,Khoa Học Dữ Liệu
+1381,Khoa Học Máy Tính
+1382,Không Cần Kinh Nghiệm
+1383,Kibana
+1384,Kiến Trúc Data Lakehouse
+1385,Kiến Trúc Data Warehouse
+1386,Kiến Trúc Data Warehouse/Data Lake
+1387,Kiến Trúc Microservices
+1388,Kiến Trúc Nền Tảng Dữ Liệu
+1389,Kiến Trúc Vật Liệu
+1390,Kiến trúc hệ thống
+1391,Kiểm Soát Chất Lượng
+1392,Kiểm Soát Tài Liệu
+1393,Kiểm Thử
+1394,Kiểm Thử Bảo Mật
+1395,Kiểm Thử Phần Mềm
+1396,Kiểm Thử Sit
+1397,Kiểm Thử Tính Năng
+1398,Kiểm Thử Xâm Nhập Web/Api
+1399,Kiểm Thử Ứng Dụng Ai/Llm
+1400,Kiểm Tra Phần Mềm
+1401,Koa.js
+1402,Korean
+1403,Kotlin
+1404,Kotlin Android
+1405,Kotlin Multiplatform
+1406,Kotlin Multiplatform Mobile
+1407,Ktor
+1408,Kubeflow
+1409,Kubernetes
+1410,Kubernetes Và Cloud
+1411,Kysely
+1412,Kỹ Năng Debug Mạch Phần Cứng
+1413,Kỹ Năng Nắm Bắt và Giải Quyết Vấn Đề
+1414,Kỹ Thuật
+1415,Kỹ Thuật Hàng Không
+1416,Kỹ Thuật Linh Kiện
+1417,Kỹ Thuật Máy Bay
+1418,Kỹ Thuật Mạng
+1419,Kỹ Thuật Vật Lý
+1420,Kỹ Thuật Đo Lường
+1421,Kỹ năng giao tiêp
+1422,Kỹ năng giao tiếp
+1423,Kỹ năng nắm bắt và giải quyết vấn đề
+1424,LAN
+1425,LEAN
+1426,LESS
+1427,LIN
+1428,LINQ
+1429,LINUX
+1430,LLDB
+1431,LLM
+1432,LLM & Prompt Engineering
+1433,LLMs
+1434,LLamaIndex
+1435,LSTM
+1436,LWC
+1437,Labview
+1438,Lambda
+1439,Lan/Wan Networks
+1440,LangChain
+1441,LangGraph
+1442,Langchain
+1443,Langflow
+1444,Laravel
+1445,Laravel Dusk
+1446,Large Language Model Systems
+1447,Large Language Models (LLM)
+1448,Large-Scale Cloud Migration
+1449,Lavarel
+1450,Leadership
+1451,Leadership Management
+1452,Leadership Mindset
+1453,Lean Analytics
+1454,Lean Project Management
+1455,Learning
+1456,Legacy 3-tier architecture
+1457,Lerna
+1458,Less
+1459,Liferay
+1460,Lift Control
+1461,Linux
+1462,Linux Device Driver
+1463,Linux Kernel
+1464,Linux OS
+1465,Linux Security Configuration
+1466,Linux Server
+1467,Linux Shell
+1468,Linux System Administration
+1469,Linux system
+1470,Linux- Docker Và Ci/Cd
+1471,Linux/Unix
+1472,Liquid
+1473,Live2D
+1474,LiveData
+1475,Llama 2
+1476,LlamaIndex
+1477,Llm Api Optimization
+1478,Load Balancer
+1479,Load Balancing
+1480,Load/Performance testing
+1481,LoadRunner
+1482,Local Ai Deployment
+1483,Log File Troubleshooting
+1484,Logging
+1485,Logic Models
+1486,Logical Thinking
+1487,Looker
+1488,Looker Studio
+1489,Loop Tuning
+1490,Lora/LoraWAN
+1491,Low Voltage System
+1492,Lua
+1493,Lua Script
+1494,Lucidchart
+1495,Luigi
+1496,Làm Tài Liệu Kỹ Thuật
+1497,Làm Việc Nhóm
+1498,Làm Việc Với Đối Tác Nước Ngoài
+1499,Làm việc nhóm
+1500,Lãnh Đạo
+1501,Lập Báo Cáo Dự Án
+1502,Lập Báo Cáo Ngân Hàng
+1503,Lập Trình
+1504,Lập Trình Backend
+1505,Lập Trình C++
+1506,Lập Trình Cơ Bản
+1507,Lập Trình ERP
+1508,Lập Trình Frontend
+1509,Lập Trình Máy Tính
+1510,Lập Trình NET
+1511,Lập Trình Nhúng
+1512,Lập Trình Python
+1513,Lập Trình Rpa Uipath
+1514,Lập Trình Vi Điều Khiển
+1515,Lập kế hoạch
+1516,Lắp Đặt Thiết Bị
+1517,M365 Administration
+1518,M700
+1519,M850
+1520,MATLAB
+1521,MCU
+1522,MDM
+1523,MDM Technology
+1524,MES
+1525,MES operation
+1526,MFA
+1527,MFC
+1528,MI Platform
+1529,MIS
+1530,ML
+1531,MLFlow
+1532,MLOps
+1533,MLflow
+1534,MMDetection
+1535,MML
+1536,MODBUS RTU
+1537,MPC
+1538,MQTT
+1539,MS Azure
+1540,MS Office
+1541,MS SQL
+1542,MS SQL DBA
+1543,MS SQL Server
+1544,MS-SQL
+1545,MSCA
+1546,MSSQL
+1547,MSSQL Server
+1548,MUI
+1549,MVC
+1550,MVC Framework
+1551,MVC3
+1552,MVC5
+1553,MVI
+1554,MVP
+1555,MVVC
+1556,MVVM
+1557,MYSQL
+1558,Mac
+1559,Mac OS
+1560,Machine
+1561,Machine Learning
+1562,Magento
+1563,Magento 2
+1564,MagicPod
+1565,Make
+1566,Malware
+1567,Malware Analysis
+1568,Manage ERP Software
+1569,Mantis
+1570,Manual QA
+1571,Manual Test
+1572,Manual Testing
+1573,Manufacturing Operations
+1574,Manufacturing Quality Control
+1575,Manufacturing Test Strategy
+1576,Mapbox
+1577,MariaDB
+1578,Market Analysis
+1579,Market Insight
+1580,Market research
+1581,Marketing Cloud
+1582,Master Data Management
+1583,MasterCAM
+1584,MasterCam
+1585,MasterCam2020
+1586,Mastercam
+1587,Mastercam 2018
+1588,Mastercam 2021
+1589,Mastercam X5
+1590,Material
+1591,Material Design
+1592,Material Design UI
+1593,Material Master Data Management
+1594,Material UI
+1595,MaterialUI
+1596,Matlab
+1597,Matlab Keras
+1598,Maven
+1599,Maya
+1600,Mcu And Rtos
+1601,Mechatronics
+1602,Memcached
+1603,Mermaid.js
+1604,Mes Logic Implementation
+1605,Message Queue
+1606,Message Queues
+1607,MessageQueue
+1608,Metabase
+1609,Micro-Services Design
+1610,MicroStation
+1611,Microcontroller Programming
+1612,Microcontrollers
+1613,Microfrontend
+1614,Microservice
+1615,Microservice ESB
+1616,Microservices
+1617,Microservices Architecture
+1618,Microsoft
+1619,Microsoft 365
+1620,Microsoft 365 Administration
+1621,Microsoft Azure
+1622,Microsoft Azure DevOps
+1623,Microsoft Azure SQL Database
+1624,Microsoft Dynamics
+1625,Microsoft Dynamics 365
+1626,Microsoft Dynamics AX
+1627,Microsoft Endpoint Manager
+1628,Microsoft Entra ID
+1629,Microsoft Excel
+1630,Microsoft Exchange Server
+1631,Microsoft Fabric
+1632,Microsoft Intune
+1633,Microsoft Office
+1634,Microsoft Office 365
+1635,Microsoft Office proficiency
+1636,Microsoft Outlook
+1637,Microsoft Power Apps
+1638,Microsoft Power Automate
+1639,Microsoft Power BI
+1640,Microsoft Power Platform
+1641,Microsoft PowerApps
+1642,Microsoft Project
+1643,Microsoft SQL
+1644,Microsoft SQL Server
+1645,Microsoft Teams
+1646,Microsoft Visual Studio
+1647,Microsoft Word
+1648,Middleware
+1649,Milvus
+1650,MinIO
+1651,Miro
+1652,Mirror
+1653,Mission Operations
+1654,Mitsu
+1655,Mitsubishi
+1656,Mitsubishi M70
+1657,Mlops
+1658,Mlops/Llmops
+1659,MobX
+1660,Mobile
+1661,Mobile App
+1662,Mobile Applications
+1663,Mobile Apps
+1664,Mobile Backend
+1665,Mobile Banking
+1666,Mobile Network
+1667,Mobile Software
+1668,Mobile System Architecture
+1669,Mobile Telecom
+1670,Mobile Web Design
+1671,Mocha
+1672,Mockito
+1673,Mockups
+1674,Modbus
+1675,Model-Driven Apps
+1676,Modularization
+1677,Monday
+1678,MongoDB
+1679,Mongoose
+1680,Monitoring
+1681,Monitoring Tools
+1682,Moodle
+1683,Ms Power BI
+1684,Multi-Cloud Environments
+1685,Multi-Process Programming
+1686,Multi-Thread
+1687,MyBatis
+1688,MySQL
+1689,Mysql/Mariadb Administration
+1690,Máy Tính
+1691,Mô Hình Dữ Liệu
+1692,Mô Hình Mitre Att&Ck
+1693,N8N
+1694,NAC
+1695,NAS
+1696,NFC
+1697,NGINX
+1698,NGINX Proxy
+1699,NHibernate
+1700,NIST
+1701,NIST CSF/RMF
+1702,NLP
+1703,NMS
+1704,NPM
+1705,NPM/Yarn
+1706,NServiceBus
+1707,NTP
+1708,NUnit
+1709,NVIDIA
+1710,NX
+1711,Nagios
+1712,Native
+1713,Natural Language Processing
+1714,Natural Processing Language
+1715,Negotiation
+1716,Neo4j
+1717,Nessus
+1718,Nest JS
+1719,Nest.js
+1720,NestJS
+1721,NetSecOps
+1722,NetSuite
+1723,Netezza
+1724,Netty
+1725,Network
+1726,Network Access Control
+1727,Network Analysis
+1728,Network Architecture
+1729,Network Automation
+1730,Network Configuration
+1731,Network Forensic
+1732,Network Infrastructure
+1733,Network Infrastructure Architecture
+1734,Network Infrastructure Expertise
+1735,Network Installation
+1736,Network Management
+1737,Network Performance Optimization
+1738,Network Protocols
+1739,Network Routing
+1740,Network Security
+1741,Network Solutions
+1742,Network Support
+1743,Network Systems
+1744,Network Technology
+1745,Network Troubleshooting
+1746,Network systems applications
+1747,Network- Server And Virtualisation
+1748,Networking
+1749,Neural Network
+1750,New Product Release
+1751,New Relic
+1752,NewRelic
+1753,Next.Js
+1754,Next.js
+1755,NextJS
+1756,NextJs
+1757,Nexus
+1758,Nghiên Cứu Khoa Học
+1759,Nghiên Cứu Sản Phẩm
+1760,Nghiên Cứu Tài Liệu
+1761,Nginx
+1762,Ngân Hàng
+1763,Nhận Diện Rủi Ro
+1764,NiFi
+1765,Nifi
+1766,Nlp
+1767,No-SQL
+1768,NoSQL
+1769,Node.Js
+1770,Node.js
+1771,NodeJS
+1772,NodeJs
+1773,Nodejs Và Python
+1774,Nordic chip
+1775,Not Specified
+1776,NotebookLM
+1777,Notion
+1778,Notion API
+1779,NumPy
+1780,Nuxt
+1781,Nuxt.js
+1782,NuxtJS
+1783,Nx
+1784,Nông Nghiệp
+1785,Nền Tảng Big Data
+1786,OAuth
+1787,OAuth 2.0
+1788,OAuth2
+1789,OBD
+1790,OCR
+1791,ODI
+1792,ODOO
+1793,ODS
+1794,OData
+1795,OData Gateway
+1796,OIDC
+1797,OKHTTP
+1798,ONNX
+1799,OOAD
+1800,OOP
+1801,ORM
+1802,OSINT
+1803,OWASP
+1804,Oauth2
+1805,Objective C
+1806,Objective-C
+1807,Observable
+1808,Odoo
+1809,Office 365
+1810,OkHttp
+1811,Omron
+1812,Onesignal
+1813,Onnx
+1814,Oop
+1815,Open API
+1816,Open Source
+1817,Open Telemetry
+1818,OpenAI
+1819,OpenAI API
+1820,OpenAI APIs
+1821,OpenAPI
+1822,OpenAPI Specification
+1823,OpenCV
+1824,OpenGL
+1825,OpenID Connect
+1826,OpenSearch
+1827,OpenShift
+1828,OpenStack
+1829,OpenVZ
+1830,Operating System
+1831,Operating Systems
+1832,Opsgenie
+1833,Optical Transmission
+1834,Optimism
+1835,Optimizing Performance
+1836,OrCAD
+1837,Oracle
+1838,Oracle 11g
+1839,Oracle Apex
+1840,Oracle BI
+1841,Oracle CRM
+1842,Oracle Certificate
+1843,Oracle Cloud
+1844,Oracle DB
+1845,Oracle Database
+1846,Oracle Database Administration
+1847,Oracle EBS
+1848,Oracle Flexcube
+1849,Oracle PL/SQL
+1850,Oracle SQL
+1851,Oracle SQL Developer
+1852,Oracle Warehouse Builder
+1853,Osi Model
+1854,OutSystems
+1855,Outsystems
+1856,Owasp Masvs/Mastg
+1857,Owasp Methodologies
+1858,P2P
+1859,PAL
+1860,PAM
+1861,PC Tools
+1862,PCB
+1863,PCB Application
+1864,PCB Layout
+1865,PCB Layout Design
+1866,PCHunter
+1867,PCI DSS
+1868,PCIDSS
+1869,PDB
+1870,PDM
+1871,PGSQL
+1872,PHP
+1873,PHP Laravel
+1874,PHPUnit
+1875,PI/PO
+1876,PID
+1877,PKI
+1878,PL SQL
+1879,PL/SQL
+1880,PLC
+1881,PLM
+1882,PLSQL
+1883,PMI
+1884,PMP
+1885,POC development
+1886,PQA
+1887,PRTG
+1888,PSS
+1889,PTC
+1890,PWM
+1891,PYTHON
+1892,PaaS
+1893,Packer
+1894,Pact
+1895,PaddleOCR
+1896,Palo Alto Networks
+1897,Pam (Privileged Access Management)
+1898,Pandas
+1899,PayPal
+1900,Pen Testing
+1901,Penetration Testing
+1902,Pentaho
+1903,Pentest
+1904,Pentesting
+1905,Pentesting Tools
+1906,Perfecto
+1907,Performance Testing
+1908,Performance testing
+1909,Perl
+1910,Perplexity
+1911,Phaser
+1912,PhaserJS
+1913,Phoenix
+1914,PhoneGap
+1915,Photo
+1916,Photon
+1917,Photoshop
+1918,Php
+1919,Php Development
+1920,Phát Triển Game
+1921,Phát Triển Giải Pháp
+1922,Phát Triển Phần Mềm
+1923,Phát Triển Sản Phẩm
+1924,Phát Triển Ứng Dụng Web
+1925,Phân Tích Chiến Lược
+1926,Phân Tích Doanh Nghiệp
+1927,Phân Tích Dữ Liệu
+1928,Phân Tích Kinh Doanh
+1929,Phân Tích Lỗi
+1930,Phân Tích Nghiệp Vụ
+1931,Phân Tích Tư Duy
+1932,Phân Tích Yêu Cầu Giải Pháp
+1933,Phân tích dữ liệu
+1934,Phân tích nghiệp vụ
+1935,Phần Mềm Bệnh Viện
+1936,Phần Mềm CAD
+1937,Phần Mềm Ngân Hàng
+1938,Phần Mềm Thiết Kế 3D
+1939,Phối Hợp Nghiệp Vụ Và Kỹ Thuật
+1940,Phối Hợp Với Development
+1941,Phối Hợp Với Người Dùng
+1942,Phối Hợp Xử Lý
+1943,Phối Hợp Đa Bên
+1944,Pigma
+1945,Pillow
+1946,Pipedream
+1947,Pivot Table
+1948,PixiJS
+1949,PlantUML
+1950,Platform Policy Compliance
+1951,Playable Ads
+1952,Playwright
+1953,Playwright Python
+1954,Playwright With Python
+1955,Playwright/Cypress/Selenium
+1956,Poe
+1957,Polyspace
+1958,Portfolio Management
+1959,Posix Operating Systems
+1960,Postgre
+1961,Postgre SQL
+1962,PostgreSQL
+1963,PostgreSql
+1964,Postgres
+1965,Postgresql
+1966,Postman
+1967,Power
+1968,Power App
+1969,Power Apps
+1970,Power Automate
+1971,Power BI
+1972,Power Bi
+1973,Power Fx
+1974,Power Platform
+1975,Power Query
+1976,PowerBI
+1977,PowerPoint
+1978,PowerShell
+1979,Powerbuilder
+1980,Powermill
+1981,Powerpoint
+1982,Powershell
+1983,Pre-sales
+1984,Prepare Test Data
+1985,Presale
+1986,Presales Technical
+1987,Presentation
+1988,Prettier
+1989,PrimeFaces
+1990,Primefaces
+1991,Prisma
+1992,Problem Solving
+1993,Problem-solving
+1994,Process Automation
+1995,Procexp
+1996,Product Analyst
+1997,Product Design
+1998,Product Management
+1999,Product Metrics
+2000,Product Owner
+2001,Product Security
+2002,Product roadmap
+2003,Product strategy
+2004,Production Support
+2005,Professional Communication
+2006,Programming/Scripting (Al
+2007,Progress ABL/4GL
+2008,Progress Database
+2009,Progress OpenEdge
+2010,Project Management
+2011,Project magement
+2012,Project management
+2013,Prometheus
+2014,Prompt Engineering
+2015,Prosemirror
+2016,Protobuf
+2017,Protocols
+2018,Protopie
+2019,Prototyping
+2020,Protractor
+2021,Provider
+2022,Proxmox
+2023,ProxySQL
+2024,Pub/Sub
+2025,Public Cloud
+2026,Public Key Infrastructure
+2027,Pulumi
+2028,Puppeteer
+2029,Push Notification
+2030,PyG
+2031,PyQt
+2032,PySpark
+2033,PyTorch
+2034,PyTorch Mobile
+2035,Pydantic
+2036,Pylon
+2037,Pyspark
+2038,Pyspark And Python
+2039,Python
+2040,Python And Node.Js Api Servers
+2041,Python Dcc Automation
+2042,Python Development
+2043,Python programming
+2044,Python và SQL
+2045,Python- C#- C++
+2046,Pytorch
+2047,QA
+2048,QA Automation
+2049,QA Engineering
+2050,QA QC
+2051,QAOA
+2052,QC Systems
+2053,QEC
+2054,QGIS
+2055,QML
+2056,QTest
+2057,QUẢN TRỊ RỦI RO
+2058,Qa
+2059,Qase
+2060,Qc
+2061,Qdrant
+2062,Qlik
+2063,Qt
+2064,Quality Assessment
+2065,Quality Assurance
+2066,Quantitative Modeling
+2067,Quantum Mechanics
+2068,Quarkus
+2069,Quản Lý Dữ Liệu
+2070,Quản Lý Dự Án
+2071,Quản Lý Dự Án Công Nghệ
+2072,Quản Lý Dự Án Viễn Thông
+2073,Quản Lý Firewall
+2074,Quản Lý Hệ Thống CCTV
+2075,Quản Lý Hệ Thống Phần Mềm
+2076,Quản Lý Incident/Request
+2077,Quản Lý Lãnh Đạo
+2078,Quản Lý Nhóm
+2079,Quản Lý Rủi Ro
+2080,Quản Lý Sản Phẩm
+2081,Quản Lý Sự Cố Cntt
+2082,Quản Lý Tiến Độ
+2083,Quản Lý Vận Hành
+2084,Quản Trị Cơ Sở Dữ Liệu
+2085,Quản Trị Database
+2086,Quản Trị Dữ Liệu
+2087,Quản Trị Dữ Liệu Ngân Hàng
+2088,Quản Trị Dự Án
+2089,Quản Trị Hạ Tầng CNTT
+2090,Quản Trị Hạ Tầng Ảo Hóa
+2091,Quản Trị Hệ Thống
+2092,Quản Trị Hệ Thống CNTT
+2093,Quản Trị Hệ Thống ERP
+2094,Quản Trị Hệ Thống Erp
+2095,Quản Trị Hệ Thống Máy Chủ
+2096,Quản Trị Máy Chủ
+2097,Quản Trị Mạng
+2098,Quản Trị Mạng Hạ Tầng
+2099,Quản Trị Mạng Lan
+2100,Quản Trị Mạng Máy Tính
+2101,Quản Trị Phần Mềm
+2102,Quản Trị Rủi Ro
+2103,Quản Trị Rủi Ro Thông Tin
+2104,Quản Trị Server
+2105,Quản Trị Vận Hành
+2106,Quản lý chất lượng
+2107,Quản lý danh mục
+2108,Quản lý ngân sách
+2109,R
+2110,RAG
+2111,RDBMS
+2112,RDS
+2113,REST
+2114,REST API
+2115,REST APIs
+2116,REST Assured
+2117,REST-assured
+2118,REST/SOAP APIs
+2119,REST/SOAP-based web services
+2120,RESTful
+2121,RESTful API
+2122,RESTful API design
+2123,RESTful API development
+2124,RESTful APIs
+2125,RESTful Web Services
+2126,ROS
+2127,RPA
+2128,RS232
+2129,RS485
+2130,RTCP
+2131,RTOS
+2132,RTP
+2133,RTSP
+2134,RXSwift
+2135,RabbitMQ
+2136,RabbitMq
+2137,Radio Interface Knowledge
+2138,Radix-UI
+2139,Rag Và Vector Database
+2140,Rails
+2141,Ran Architecture
+2142,Rancher
+2143,Random Forest
+2144,Ranorex
+2145,Rasa
+2146,Rasp Pi
+2147,Raspberry Pi
+2148,Rational Performance Tester
+2149,React
+2150,React Hook
+2151,React Hook Form
+2152,React Hooks
+2153,React Native
+2154,React Testing Library
+2155,React-Router
+2156,React.js
+2157,ReactJS
+2158,ReactJs
+2159,ReactNative
+2160,Reactjs
+2161,Real Time Operating System
+2162,Real-time Computing
+2163,Realm
+2164,Realtime Database
+2165,Realtime OS
+2166,Reanimated
+2167,Recoil
+2168,Red Team
+2169,Redhat
+2170,Redis
+2171,Redmine
+2172,Redshift
+2173,Redteam
+2174,Redux
+2175,Redux Saga
+2176,Redux-Saga
+2177,RegeX
+2178,Regression Testing
+2179,Reinforcement Learning
+2180,Relational databases
+2181,Replication Management
+2182,Reporting Progress
+2183,Reporting and analytical skills
+2184,Requests
+2185,Research
+2186,Researching New Technologies
+2187,Reselect
+2188,Responsive Design
+2189,Responsive Web Design
+2190,Rest API
+2191,Rest APIs
+2192,Rest Api
+2193,Rest Api Và Database
+2194,Rest Apis
+2195,Rest Apis And Relational Databases
+2196,Rest Assured
+2197,RestAssured
+2198,Restful
+2199,Restful API
+2200,Restful APIs
+2201,Restful Api
+2202,Retrofit
+2203,Revenue Cat
+2204,Reverse Engineering
+2205,Reverse Engineering Binary
+2206,Revit
+2207,Rhapsody
+2208,Risk & Compliance
+2209,Risk Analysis
+2210,Risk Assessment / BCP
+2211,Risk Control Analysis
+2212,Risk Governance
+2213,Risk Management
+2214,Risk-based auditing
+2215,Rive
+2216,Riverpod
+2217,Roblox
+2218,Roboelectric
+2219,Robot
+2220,Robot Framework
+2221,Robot Programming
+2222,Robot framework
+2223,Robotic Process Automation (RPA)
+2224,Rocket
+2225,RocksDB
+2226,Rollbar
+2227,Rollup
+2228,Room
+2229,Root Cause Analysis
+2230,Router
+2231,Routing
+2232,Routing Protocol
+2233,Rpa
+2234,Rtos
+2235,Rtos Và Giao Tiếp Can
+2236,Ruby
+2237,Ruby on Rails
+2238,Ruckus
+2239,Rust
+2240,Rust Programming
+2241,Rx
+2242,RxJS
+2243,RxJava
+2244,RxSwift
+2245,S/4HANA
+2246,S/4Hana Conversion
+2247,S3
+2248,SAFe Agile
+2249,SAN Storage
+2250,SAP
+2251,SAP ABAP
+2252,SAP AI Business Services
+2253,SAP AI Core
+2254,SAP AI Launchpad
+2255,SAP BTP
+2256,SAP Business Object
+2257,SAP BusinessObjects
+2258,SAP CAP
+2259,SAP CO
+2260,SAP Cloud Application Programming Model
+2261,SAP Consulting
+2262,SAP ECC 6.0
+2263,SAP FI
+2264,SAP FICO
+2265,SAP FIORI
+2266,SAP Fiori
+2267,SAP Functional
+2268,SAP Integration Suite
+2269,SAP Logistics
+2270,SAP System Proficiency
+2271,SAP UI5
+2272,SAP Workflows
+2273,SAP2000
+2274,SAPUI5
+2275,SAS
+2276,SASS
+2277,SASS/SCSS
+2278,SAST
+2279,SCA
+2280,SCADA
+2281,SCM
+2282,SCRUM
+2283,SCSS
+2284,SCTP
+2285,SD-WAN
+2286,SDL
+2287,SDLC
+2288,SDLC Management Tools
+2289,SDLC methodologies
+2290,SEO
+2291,SIEM
+2292,SIP
+2293,SMT Programing
+2294,SNPE
+2295,SOA
+2296,SOAP
+2297,SOAR
+2298,SOC
+2299,SOLID
+2300,SOLID Principles
+2301,SOQL
+2302,SPC
+2303,SPI
+2304,SPSS
+2305,SQL
+2306,SQL & Power BI
+2307,SQL Database
+2308,SQL Developer
+2309,SQL Server
+2310,SQL Tunning
+2311,SQL programming
+2312,SQL server
+2313,SQLAlchemy
+2314,SQLDelight
+2315,SQLServer
+2316,SQLite
+2317,SRT
+2318,SRTP
+2319,SSIS
+2320,SSO
+2321,STAAD Pro
+2322,STM32
+2323,STUN
+2324,SVN
+2325,SaaS
+2326,SalesCloud
+2327,Salesforce
+2328,Salesforce APIs
+2329,Salesforce Commerce Cloud
+2330,Salesforce Development
+2331,Salesforce Implementation
+2332,Salesforce Platform Developer 1
+2333,Samsung Galaxy Framework
+2334,Sap
+2335,Sap Erp
+2336,Sap O2C Process
+2337,Sap S/4Hana
+2338,Sass
+2339,Sast/Dast/Sca Tools
+2340,Scala
+2341,Scalable Automation Frameworks
+2342,Schematics
+2343,Science
+2344,Scikit
+2345,Scikit-learn
+2346,Scope Management
+2347,Scratch
+2348,Screaming Frog
+2349,Scripting
+2350,Scrum
+2351,Scrum Master
+2352,Sdlc
+2353,Search Console
+2354,Secure Boot
+2355,Secure Hardware
+2356,Security
+2357,Security Engineering
+2358,Security Firewall
+2359,Security Incident Response
+2360,Security Information
+2361,Security Infrastructure
+2362,Security Monitoring
+2363,Security Operations
+2364,Security Protocols
+2365,Security Risk
+2366,Security Solutions
+2367,Security System Management
+2368,Security Testing
+2369,Security testing
+2370,Selenium
+2371,Selenium WebDriver
+2372,Semgrep
+2373,Sensor Tower
+2374,Sentry
+2375,SerDes
+2376,Serenity BDD
+2377,Server
+2378,Server Administration
+2379,Server Management
+2380,Server System Management
+2381,Server configuration
+2382,Serverless
+2383,Serverless Architecture
+2384,Servers
+2385,Service Desk
+2386,Service Management
+2387,Service Mesh
+2388,ServiceNow
+2389,Servicenow
+2390,Servlet
+2391,Servlets
+2392,Servo
+2393,Shader/Shader Graph
+2394,ShaderLab
+2395,Shaders
+2396,Shapely
+2397,SharePoint
+2398,Shared Memory
+2399,Sharepoint
+2400,Shell
+2401,Shell Script
+2402,Shell Scripts
+2403,Shell script
+2404,Shiftleft Testing
+2405,Shop Drawing
+2406,Shopify
+2407,Shopify Liquid
+2408,Siem
+2409,Siemen
+2410,Siemens
+2411,Siemens NX
+2412,Signal Integrity
+2413,SignalR
+2414,Signaling Protocols
+2415,Sigrid
+2416,Simulink
+2417,Sinon
+2418,Site Survey
+2419,Six Sigma
+2420,Six sigma
+2421,Sketch
+2422,SketchUp
+2423,Sketchup
+2424,Sklearn
+2425,Slack
+2426,Sliver
+2427,Smart Contracts
+2428,Smart contracts
+2429,SnapKit
+2430,Snowflake
+2431,Snyk Code
+2432,SoCs
+2433,Soap UI
+2434,SoapUI
+2435,Socket
+2436,Socket Programming
+2437,Software
+2438,Software Architecture
+2439,Software Architecture Design
+2440,Software Defined Radio (Sdr)
+2441,Software Design
+2442,Software Development
+2443,Software Development Tools
+2444,Software Engineer
+2445,Software Engineering
+2446,Software Implementation
+2447,Software Installation
+2448,Software Management
+2449,Software Programming
+2450,Software Quality Assurance
+2451,Software Solution Architecture
+2452,Software Technology
+2453,Software Testing
+2454,Software Troubleshooting
+2455,Solana
+2456,Solana Web3.js
+2457,SolarWinds
+2458,Solarwinds
+2459,SolidCAM
+2460,SolidWorks
+2461,Solidity
+2462,Solidwork
+2463,Solidworks
+2464,Solr
+2465,Solution Architect
+2466,Solution Architecture
+2467,SonarQube
+2468,Sonarqube
+2469,Spark
+2470,Specflow
+2471,Spi
+2472,Splunk
+2473,Spring
+2474,Spring Boot
+2475,Spring Boots
+2476,Spring Cloud
+2477,Spring Core
+2478,Spring Data
+2479,Spring Data JPA
+2480,Spring Framework
+2481,Spring MVC
+2482,Spring Security
+2483,Spring framework
+2484,SpringBoot
+2485,SpringMVC
+2486,Spss
+2487,Sql
+2488,Sql And Relational Databases
+2489,Sql And Vector Db
+2490,Sql Statement
+2491,Sql Và Postgresql
+2492,Sql Và Python
+2493,Sql)
+2494,Stakeholder Management
+2495,Stakeholder Mangement
+2496,Stakeholder Relationship
+2497,Stakeholder management
+2498,Starlark
+2499,State management
+2500,Statistical Analysis
+2501,Statistical Modeling
+2502,Storage
+2503,Storage Management
+2504,Storage Solution
+2505,StoreKit
+2506,StoreKit2
+2507,Storm
+2508,Storyboard
+2509,Storybook
+2510,Strategic Thinking
+2511,Strategy planning
+2512,Streamlit
+2513,Stripe
+2514,Structured Cabling
+2515,Structured Cabling Knowledge
+2516,Strut
+2517,Struts
+2518,Styled Components
+2519,Substance Painter
+2520,Supabase
+2521,Svelte
+2522,Swagger
+2523,Swift
+2524,Swift Package Manager
+2525,SwiftPM
+2526,SwiftUI
+2527,Switch
+2528,Switches
+2529,Switching System
+2530,Sybase
+2531,Symfony
+2532,Synapse
+2533,Syslog
+2534,System Admin
+2535,System Administration
+2536,System Architecture
+2537,System Center Configuration Manager
+2538,System Engineer
+2539,System Integration
+2540,System Management
+2541,System Monitoring Tools
+2542,System Security
+2543,System Security Management
+2544,System Support
+2545,System Testing
+2546,System Validation
+2547,System Và Security
+2548,System security
+2549,Systems Engineering
+2550,Systems Integration
+2551,Systems Integration Architecture
+2552,Sử Dụng Ít Nhất Một Bi Tool
+2553,Sửa Chữa
+2554,Sửa Chữa Lắp Đặt
+2555,T-SQL
+2556,T24
+2557,TARA
+2558,TCP/IP
+2559,TCP/IP\r\r
+2560,TCPDump
+2561,TCPView
+2562,TCServer
+2563,TDD
+2564,TFlite
+2565,TIMER
+2566,TLS
+2567,TMĐT
+2568,TOGAF
+2569,TURN
+2570,Tableau
+2571,Tableau BI
+2572,Tableu
+2573,Tabnine
+2574,Tabular
+2575,Tailwind
+2576,Tailwind CSS
+2577,TailwindCSS
+2578,Talend
+2579,TanStack Query
+2580,TanStack Router
+2581,TanStack Table
+2582,Task Coordination
+2583,Tcp/Ip
+2584,Teaching
+2585,Team City
+2586,Team Management
+2587,Team Mentoring
+2588,Team Work
+2589,TeamCity
+2590,Teamwork
+2591,Technical
+2592,Technical Communications
+2593,Technical Documentation
+2594,Technical Engineering
+2595,Technical Lead
+2596,Technical Support
+2597,Technical Troubleshooting
+2598,Technical Writing
+2599,Technology
+2600,Technology Application
+2601,Technology Change Management
+2602,Technology Operations
+2603,Technology Roadmapping
+2604,Telecom And Radio Systems Railway
+2605,Telecom Equipment Delivery
+2606,Telecom Infrastructure
+2607,Telecom Installation
+2608,Telecom Support
+2609,Telecommunication Protocols
+2610,Telecommunication Systems
+2611,Telecommunications
+2612,Telecommunications Technology
+2613,Temenos Infinity
+2614,Tenable.io
+2615,Tensor Core
+2616,TensorFlow
+2617,TensorFlow Lite
+2618,TensorFlow Serving
+2619,TensorRT
+2620,Tensorflow
+2621,Terraform
+2622,Terragrunt
+2623,Tesseract
+2624,Test Automation
+2625,Test Automation Tools
+2626,Test Case
+2627,Test Case Writing
+2628,Test Cases
+2629,Test Complete
+2630,Test Design
+2631,Test Designing
+2632,Test Driven Development
+2633,Test Engineering
+2634,Test Lab Management
+2635,Test Planning
+2636,TestComplete
+2637,TestFlight
+2638,TestNG
+2639,TestRail
+2640,Testcafe
+2641,Tester
+2642,Testing
+2643,Testing Process
+2644,Testlink
+2645,Testrail
+2646,Text-to-SQL
+2647,Textract
+2648,The Graph
+2649,Theia
+2650,Themeleaf
+2651,Thiết Kế API
+2652,Thiết Kế Cơ Sở Dữ Liệu
+2653,Thiết Kế Digital
+2654,Thiết Kế FPGA
+2655,Thiết Kế Giải Pháp
+2656,Thiết Kế Hệ Thống
+2657,Thiết Kế Mạch Thủy Lực
+2658,Thiết Kế Mạch Điện
+2659,Thiết Kế Mạch Điện Tử
+2660,Thiết Kế Pcb Altium Designer
+2661,Thiết Kế Phần Cứng
+2662,Thiết Kế Website
+2663,Thiết Lập Quy Trình
+2664,ThreadX
+2665,Threat Hunting
+2666,Threat Modeling
+2667,Three.js
+2668,Thuật Toán Lượng Tử
+2669,Thymeleaf
+2670,Thành Thạo Excel
+2671,Thành thạo Excel
+2672,Thử Nghiệm Hệ Thống
+2673,Thử Nghiệm Độ Tin Cậy
+2674,Ticket Management
+2675,Ticketing Systems
+2676,Tiktok
+2677,Tin Học Văn Phòng
+2678,Tiếng Anh
+2679,Tiếng Trung
+2680,Tiếng Trung Giao Tiếp
+2681,Tiếp Thị Sản Phẩm
+2682,Tomcat
+2683,Trac
+2684,Tracing
+2685,Transmission
+2686,Travis CI
+2687,Treasury Systems
+2688,Trellix And Intune
+2689,Trello
+2690,Triton Inference Server
+2691,TritonServer
+2692,Triển Khai Bản Vẽ 2D
+2693,Triển Khai Dự Án
+2694,Triển Khai Dự Án Chuyển Đổi Số
+2695,Triển Khai Hệ Thống Mạng Doanh Nghiệp
+2696,Triển Khai Mạng
+2697,Triển Khai Phần Mềm
+2698,Triển Khai Thiết Bị Mạng
+2699,Troubleshooting
+2700,Troubleshooting Analysis
+2701,Troubleshooting Control Systems
+2702,TrustZone
+2703,Trình bày kết quả
+2704,Trí Tuệ Nhân Tạo
+2705,Trực quan hóa dữ liệu
+2706,Turbo
+2707,Turnstile Control
+2708,Tuxedo Middleware
+2709,Twig
+2710,TypeORM
+2711,TypeScript
+2712,Typeform
+2713,Typescript
+2714,Typography
+2715,Tài Chính
+2716,Tài Chính Kế Toán
+2717,Tài chính
+2718,Tích Hợp Dữ Liệu
+2719,Tích Hợp Giải Pháp Viễn Thông
+2720,Tích hợp API
+2721,Tư Duy Chiến Lược
+2722,Tư Duy Hệ Thống
+2723,Tư Duy Kinh Doanh
+2724,Tư Duy Research-Oriented
+2725,Tư Duy Toán Học
+2726,Tư Vấn Giải Pháp
+2727,Tư Vấn Giải Pháp Kỹ Thuật
+2728,Tư Vấn Kỹ Thuật
+2729,Tư duy hệ thống
+2730,Tư duy logic
+2731,Tư duy sản phẩm
+2732,Tự Động Hóa
+2733,Tự Động Hóa Python/Go
+2734,UART
+2735,UDP
+2736,UDS
+2737,UDSonCAN
+2738,UI Development
+2739,UI Testing
+2740,UI frameworks
+2741,UI testing
+2742,UI-UX
+2743,UIKit
+2744,UML
+2745,UNITY PRO
+2746,UNIX
+2747,UR robot
+2748,USART
+2749,USB
+2750,UWP
+2751,UX/UI
+2752,Uart
+2753,Uat Và Hồi Quy
+2754,Ubuntu
+2755,Uds Iso144229
+2756,Ui/Ux Design
+2757,Ui5
+2758,UiPath
+2759,Uniswap
+2760,Unit Testing
+2761,Unit test
+2762,Unit testing
+2763,Unity
+2764,Unity 2D
+2765,Unity 3D
+2766,Unix
+2767,Unix Shell
+2768,Unix/Linux
+2769,Unreal
+2770,Unreal Engine
+2771,Unreal Engine/Unity Tools
+2772,Usability testing
+2773,User Journey Mapping
+2774,User diagram
+2775,User flows
+2776,User story
+2777,UserDefaults
+2778,VB.NET
+2779,VB.Net
+2780,VBA
+2781,VBA Excel
+2782,VCL
+2783,VLAN
+2784,VMWare ESXi
+2785,VMware
+2786,VMware ESXi
+2787,VMware vSphere
+2788,VNPAY
+2789,VPN
+2790,VQE
+2791,VR
+2792,VR/AR
+2793,VS Code
+2794,VSCode
+2795,VSTS
+2796,Valgrind
+2797,Validation
+2798,Vba
+2799,Vector
+2800,Vector CANoe
+2801,Vendor Management
+2802,Vercel
+2803,Vericut
+2804,Verilog
+2805,Vert.x
+2806,Vertex AI
+2807,Vertx
+2808,Vhdl Hoặc Verilog
+2809,ViTest
+2810,Video
+2811,Video.js
+2812,Viem
+2813,Virtualization
+2814,Virtualization VMware
+2815,Virtualization infrastructure
+2816,Virtuozzo
+2817,Visi
+2818,Visily
+2819,Visio
+2820,Vision
+2821,Visual Basic
+2822,Visual C++
+2823,Visual Design
+2824,Visual Paradigm
+2825,Visual Studio
+2826,Visual Studio 2019
+2827,Visual Studio 2022
+2828,Visual Studio Code
+2829,Visual Studio.NET
+2830,Visualforce
+2831,Visualization Tools
+2832,Vite
+2833,Viết Câu Lệnh Truy Vấn Sql
+2834,Viết Test Case
+2835,Viễn Thông
+2836,Viễn Thông - CNTT
+2837,Vmware
+2838,Vmware/Hyper-V
+2839,VoIP
+2840,Vpn Và Sd-Wan
+2841,Vscode
+2842,Vtiger CRM
+2843,Vue
+2844,Vue Router
+2845,Vue.js
+2846,Vue3
+2847,VueJS
+2848,Vuetify
+2849,Vuex
+2850,Vulnerability Assessment
+2851,Vulnerability Scanning
+2852,Vận Hành Hạ Tầng
+2853,Vận Hành Hệ Thống
+2854,Vận Hành Hệ Thống Mạng
+2855,Vận Hành Hệ Thống Thu Phí
+2856,Vận Hành Máy Chủ
+2857,Vận Hành Điện
+2858,W3C Blockchain
+2859,WAF
+2860,WAN
+2861,WAS
+2862,WCDMA
+2863,WCF
+2864,WDIO
+2865,WEB
+2866,WEB API
+2867,WLAN
+2868,WMS
+2869,WMS System
+2870,WMS operations
+2871,WPF
+2872,WPF UI
+2873,Wagmi
+2874,WalletConnect
+2875,Waterfall
+2876,Waterfall Methodology
+2877,Watermarking
+2878,Weaviate
+2879,Web
+2880,Web API
+2881,Web APIs
+2882,Web Application
+2883,Web Applications
+2884,Web Automation Testing
+2885,Web Client
+2886,Web Content Optimization
+2887,Web Development
+2888,Web Security
+2889,Web Service
+2890,Web Services
+2891,Web System
+2892,Web/Mobile Testing
+2893,Web3
+2894,Web3.js
+2895,WebAssembly
+2896,WebGL
+2897,WebGPU
+2898,WebLogic
+2899,WebRTC
+2900,WebSocket
+2901,WebSockets
+2902,WebdriverIO
+2903,Webflow
+2904,Webhook
+2905,Webpack
+2906,Webserver
+2907,Webservices
+2908,Website Development
+2909,Websocket
+2910,Websphere
+2911,Weight & Biases
+2912,White box testing
+2913,Wholesale Banking
+2914,Wi-Fi
+2915,WiFi
+2916,WiFi Technologies
+2917,Wifi
+2918,Wifi Wireless Chipsets
+2919,Wildfly
+2920,Win Form Application
+2921,WinForms
+2922,WinUI
+2923,WinUI3
+2924,WindIdea
+2925,Windows
+2926,Windows 10
+2927,Windows 11
+2928,Windows API
+2929,Windows Backup
+2930,Windows Event Forwarder
+2931,Windows Form
+2932,Windows Forms
+2933,Windows IIS
+2934,Windows Operating Systems
+2935,Windows SDK
+2936,Windows Security Management
+2937,Windows Server
+2938,Windows Services
+2939,Winforms
+2940,Wireframing
+2941,Wireless Networks
+2942,Wireless Protocols
+2943,Wireless Technologies
+2944,Wireless solutions
+2945,Wireshark
+2946,WooCommerce
+2947,WordPress
+2948,Wordpress
+2949,Workato
+2950,Workday
+2951,Workflow Automation
+2952,X++
+2953,XCode
+2954,XDR
+2955,XDebug
+2956,XGBoost
+2957,XGboost
+2958,XML
+2959,XML-RPC
+2960,XPath
+2961,XUnit
+2962,Xcode
+2963,XcodeBuild
+2964,Xen Citrix
+2965,Xây Dựng Giải Pháp
+2966,Xử Lý Số Liệu
+2967,Xử Lý Sự Cố
+2968,YAML
+2969,YARN
+2970,Yarn
+2971,Yaskawa
+2972,Yii
+2973,Yii 2
+2974,Yocto
+2975,Yocto Build System
+2976,ZK
+2977,Zabbix
+2978,Zapier
+2979,ZenHub
+2980,Zend
+2981,Zephyr
+2982,Zeplin
+2983,Zigbee
+2984,Zod
+2985,Zoom
+2986,Zustand
+2987,aaPanel
+2988,analystic
+2989,analytical skills
+2990,automation testing
+2991,axios
+2992,black box testing
+2993,blockchain
+2994,bug-tracking systems
+2995,cPanel
+2996,cloud
+2997,cloud computing
+2998,cloud solutions
+2999,cloud-native
+3000,cloud-native architectures
+3001,cocoapods
+3002,communication
+3003,containerization
+3004,core banking
+3005,cryptography
+3006,data lake/warehouse
+3007,data-driven decision making
+3008,dbt
+3009,docker
+3010,draw.io
+3011,eCommerce Platforms
+3012,etherCat
+3013,ethers.js
+3014,excel
+3015,fetch
+3016,figma
+3017,firebase
+3018,firewall
+3019,firewalls
+3020,functional testing
+3021,gRPC
+3022,genAI
+3023,git
+3024,gitlab
+3025,iOS
+3026,iOS App Testing
+3027,iOS Development
+3028,jBOSS
+3029,jBPM
+3030,jQuery
+3031,jUnit
+3032,kotlinx.coroutines
+3033,kubernetes
+3034,linh kiện điện tử
+3035,low-code
+3036,lập trình C/C++
+3037,mSQL
+3038,macOS
+3039,manual testing
+3040,microservice
+3041,n8n
+3042,network
+3043,no-code
+3044,noSQL
+3045,node js
+3046,node.js
+3047,npm
+3048,openCV
+3049,performance testing
+3050,phần mềm
+3051,problem-solving
+3052,pytest
+3053,regression testing
+3054,robot
+3055,scikit-learn
+3056,server
+3057,smart contract
+3058,solidity
+3059,sqlite
+3060,storage
+3061,tRPC
+3062,vSAN
+3063,vb.net
+3064,websocket
+3065,wifi
+3066,xCode
+3067,yarn
+3068,zkSync
+3069,Điện Toán Đám Mây
+3070,Điện Tử
+3071,Điện Tử Viễn Thông
+3072,Điện tử viễn thông
+3073,Đàm Phán Thương Mại
+3074,Đào Tạo Kĩ Thuật
+3075,Đảm Bảo Chất Lượng
+3076,Đọc Hiểu Tài Liệu Kỹ Thuật
+3077,Đối Chiếu Số Liệu
+3078,Ứng Dụng IOS

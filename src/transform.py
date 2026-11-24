@@ -342,6 +342,50 @@ def _transform_topcv(df_raw: pd.DataFrame) -> pd.DataFrame:
     ]
 
 
+def _transform_vietnamworks(df_raw: pd.DataFrame) -> pd.DataFrame:
+    """Biến đổi và chuẩn hóa dữ liệu VietnamWorks."""
+    df = df_raw.drop_duplicates().copy()
+
+    # Lọc lấy các tin IT
+    if "is_tech" in df.columns:
+        df = df[df["is_tech"] == "tech"].copy()
+    else:
+        df = df[df["title"].apply(is_it_job)].copy()
+
+    # Chuẩn hóa mức lương
+    sal = [parse_salary(s) for s in df["salary"]]
+    df["salary_min"] = [s[0] for s in sal]
+    df["salary_max"] = [s[1] for s in sal]
+    df["salary_avg"] = [s[2] for s in sal]
+    df["is_negotiable"] = [s[3] for s in sal]
+
+    # Chuẩn hóa thành phố và vai trò
+    df["city"] = df["location"].apply(standardize_city)
+    df["role_category"] = [classify_role(t) for t in df["title"]]
+
+    # Chuẩn hóa cấp bậc & kinh nghiệm
+    exp_col = df["experience_level"] if "experience_level" in df.columns else [None] * len(df)
+    exp = [extract_experience_and_level(t, level_text=l) for t, l in zip(df["title"], exp_col)]
+    df["exp_years_min"] = [e[0] for e in exp]
+    df["job_level"] = [e[1] for e in exp]
+
+    # Chuẩn hóa kỹ năng
+    df["skills_list"] = [parse_and_impute_skills(sk, t) for sk, t in zip(df["skills"], df["title"])]
+    df["source"] = "VietnamWorks"
+
+    # Chuẩn hóa ngày đăng
+    if "date_posted" in df.columns:
+        df["post_date"] = pd.to_datetime(df["date_posted"], errors="coerce").dt.strftime("%Y-%m-%d")
+    else:
+        df["post_date"] = np.nan
+
+    return df.rename(columns={"title": "job_title"})[
+        ["job_title", "company", "city", "role_category", "job_level", "exp_years_min",
+         "salary_min", "salary_max", "salary_avg", "is_negotiable", "skills_list",
+         "source", "post_date"]
+    ]
+
+
 def _transform_job_descriptions(df_raw: pd.DataFrame) -> pd.DataFrame:
     """Biến đổi và chuẩn hóa dữ liệu job_descriptions."""
     df = df_raw.drop_duplicates().copy()
@@ -385,6 +429,7 @@ def transform_all(raw_dataframes: dict[str, pd.DataFrame]) -> pd.DataFrame:
     transform_map = {
         "ITViec":          _transform_itviec,
         "TopCV":           _transform_topcv,
+        "VietnamWorks":    _transform_vietnamworks,
         "JobDescriptions": _transform_job_descriptions,
     }
 
