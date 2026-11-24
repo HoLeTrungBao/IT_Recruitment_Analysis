@@ -496,20 +496,51 @@ with tab1:
     )
     role_df = filtered_jobs["role_name"].value_counts().reset_index().head(8)
     role_df.columns = ["Vị Trí IT", "Số Lượng"]
+
+    def format_role_label(name):
+        s = str(name).strip()
+        mapping = {
+            "Backend Developer": "Backend<br>Dev",
+            "Frontend Developer": "Frontend<br>Dev",
+            "Fullstack Developer": "Fullstack<br>Dev",
+            "Software Engineer (Chung)": "Software<br>Engineer",
+            "Data / AI / Machine Learning": "Data / AI<br>& ML",
+            "QA / QC / Tester": "QA / QC<br>Tester",
+            "Mobile Developer": "Mobile<br>Dev",
+            "Other IT Roles": "Vị trí<br>khác",
+            "DevOps / Cloud Engineer": "DevOps<br>Cloud",
+            "IT Support / Helpdesk": "IT Support<br>Helpdesk",
+            "Project Manager / Product Owner": "PM / PO",
+            "System / Network Engineer": "System<br>Network",
+        }
+        if s in mapping:
+            return mapping[s]
+        parts = s.split()
+        if len(parts) >= 2:
+            mid = len(parts) // 2
+            return "<br>".join([" ".join(parts[:mid]), " ".join(parts[mid:])])
+        return s
+
+    role_df["Vị Trí Hiển Thị"] = role_df["Vị Trí IT"].apply(format_role_label)
     
     fig_role = px.bar(
         role_df,
-        x="Vị Trí IT",
+        x="Vị Trí Hiển Thị",
         y="Số Lượng",
         text=role_df["Số Lượng"].apply(lambda v: f"<b>{v:,} tin</b>"),
         color="Số Lượng",
         color_continuous_scale=["#CCFBF1", "#0D9488"],
+        custom_data=["Vị Trí IT"]
     )
     fig_role.update_layout(
         **CHART_THEME,
-        height=360,
-        margin=dict(t=25, b=35, l=35, r=35),
-        xaxis=dict(title="", tickfont=dict(size=13, color="#0F172A")),
+        height=380,
+        margin=dict(t=25, b=55, l=35, r=35),
+        xaxis=dict(
+            title="", 
+            tickangle=0, 
+            tickfont=dict(size=12, color="#0F172A")
+        ),
         yaxis=dict(
             title=dict(text="<b>Số lượng việc làm</b>", font=dict(size=13, color="#0F172A")),
             showgrid=True,
@@ -518,7 +549,12 @@ with tab1:
         ),
         coloraxis_showscale=False,
     )
-    fig_role.update_traces(textposition="outside", cliponaxis=False, textfont=dict(size=12, color="#0F172A"))
+    fig_role.update_traces(
+        textposition="outside", 
+        cliponaxis=False, 
+        textfont=dict(size=12, color="#0F172A"),
+        hovertemplate="<b>%{customdata[0]}</b><br>Số việc làm: %{y:,} tin<extra></extra>"
+    )
     st.plotly_chart(fig_role, use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
