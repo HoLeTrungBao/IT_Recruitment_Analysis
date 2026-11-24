@@ -640,7 +640,7 @@ with tab3:
         mae_score = mean_absolute_error(y_vals, fitted)
         rmse_score = np.sqrt(mean_squared_error(y_vals, fitted))
 
-        # Giá trị dự báo tương lai
+        # Tính toán dự báo tương lai
         future_pred = fit_holt.forecast(n_months_ahead)
         future_pred = np.maximum(future_pred, 50)
 
@@ -649,12 +649,29 @@ with tab3:
         future_dts = pd.date_range(start=last_dt + pd.DateOffset(months=1), periods=n_months_ahead, freq="MS")
         future_periods = [d.strftime("%m/%Y") for d in future_dts]
 
-        # Toàn bộ dòng thời gian chuẩn từ quá khứ đến tương lai (10/2025 -> ... -> 10/2026 -> 11/2026 -> ...)
+        # Toàn bộ dòng thời gian chuẩn từ quá khứ đến tương lai
         full_timeline = list(df_monthly_series["month_year"]) + future_periods
 
         # Tính khoảng tin cậy
         lower_vals = np.maximum(future_pred - 1.28 * rmse_score, 50)
         upper_vals = future_pred + 1.28 * rmse_score
+
+        # ĐIỂM NHẤN: ĐƯA NHẬN ĐỊNH LÊN VỊ TRÍ NỔI BẬT NHẤT TRÊN ĐẦU
+        growth_text = "tăng trưởng nhẹ" if future_pred[-1] >= future_pred[0] else "ổn định"
+        st.markdown(
+            f"""
+            <div style="background: linear-gradient(135deg, #EFF6FF 0%, #ECFDF5 100%); border-left: 5px solid #2563EB; border-radius: 12px; padding: 16px 20px; margin-bottom: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+                <div style="font-weight: 800; font-size: 1.05rem; color: #1E3A8A; display: flex; align-items: center; gap: 8px;">
+                    <span>💡</span> NHẬN ĐỊNH XU HƯỚNG TƯƠNG LAI:
+                </div>
+                <div style="font-size: 0.95rem; color: #1E293B; margin-top: 6px; line-height: 1.6;">
+                    Dựa trên nhịp độ tuyển dụng 13 tháng qua, mô hình dự đoán nhu cầu tuyển dụng IT trong <b>{n_months_ahead} tháng tới (từ {future_periods[0]} đến {future_periods[-1]})</b> có chiều hướng <b>{growth_text}</b>.
+                    Dự kiến số lượng tin tuyển sẽ dao động trong khoảng từ <b>{future_pred[0]:.0f} đến {future_pred[-1]:.0f} tin/tháng</b>, phù hợp với chu kỳ tăng cường nhân sự công nghệ phục vụ dự án cuối năm và đầu năm mới.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
         # Điểm nối giữa điểm cuối thực tế và tương lai
         last_actual_period = df_monthly_series["month_year"].iloc[-1]
@@ -683,7 +700,7 @@ with tab3:
             )
         )
 
-        # 2. Dải vùng tin cậy dự báo (nối từ 10/2026 sang các tháng tương lai)
+        # 2. Dải vùng tin cậy dự báo
         fig_forecast.add_trace(
             go.Scatter(
                 x=plot_forecast_periods + plot_forecast_periods[::-1],
@@ -692,7 +709,7 @@ with tab3:
                 fillcolor="rgba(245, 158, 11, 0.15)",
                 line=dict(color="rgba(255,255,255,0)"),
                 hoverinfo="skip",
-                name="Khoảng tin cậy dự báo (80%)",
+                name="Khoảng dao động dự báo (80%)",
             )
         )
 
@@ -702,7 +719,7 @@ with tab3:
                 x=plot_forecast_periods,
                 y=plot_forecast_vals,
                 mode="lines+markers+text",
-                name="Mô hình dự báo",
+                name="Đường dự báo tương lai",
                 line=dict(color="#D97706", width=3, dash="dash"),
                 marker=dict(size=9, color="#B45309", symbol="diamond"),
                 text=[f"{v:.0f}" for v in plot_forecast_vals],
@@ -740,38 +757,46 @@ with tab3:
         )
         st.plotly_chart(fig_forecast, use_container_width=True)
 
-        # Hộp thông tin đánh giá mô hình khoa học
-        info_c1, info_c2, info_c3 = st.columns([4, 4, 4])
-        with info_c1:
+        # 2 Ô GIẢI THÍCH DỄ HIỂU CHO NGƯỜI KHÔNG CHUYÊN
+        guide_c1, guide_c2 = st.columns([6, 6])
+        with guide_c1:
             st.markdown(
-                f"""
-                <div style="background: #EFF6FF; border: 1px solid #DBEAFE; border-radius: 10px; padding: 12px; font-size: 0.85rem;">
-                    <div style="font-weight: 700; color: #1E40AF; margin-bottom: 4px;">⚙️ Mô Hình Dự Báo:</div>
-                    <div style="color: #1E3A8A;">San bằng hàm mũ có xu thế (Holt's Linear Trend / statsmodels)</div>
+                """
+                <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; font-size: 0.88rem;">
+                    <div style="font-weight: 700; color: #1E293B; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                        <span>🔍</span> Cách Thức Ước Tính:
+                    </div>
+                    <div style="color: #475569; line-height: 1.5;">
+                        Thuật toán tự động học quy luật tăng giảm của <b>13 tháng đã qua</b>, ưu tiên các tháng gần nhất để vẽ ra xu hướng tiếp diễn trong tương lai.
+                    </div>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
-        with info_c2:
+        with guide_c2:
             st.markdown(
                 f"""
-                <div style="background: #FEF3C7; border: 1px solid #FDE68A; border-radius: 10px; padding: 12px; font-size: 0.85rem;">
-                    <div style="font-weight: 700; color: #92400E; margin-bottom: 4px;">🎯 Sai Số Huấn Luyện (MAE):</div>
-                    <div style="color: #78350F;">± {mae_score:.1f} tin tuyển dụng (RMSE: {rmse_score:.1f})</div>
+                <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 18px; font-size: 0.88rem;">
+                    <div style="font-weight: 700; color: #1E293B; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                        <span>🎯</span> Mức Độ Tin Cậy & Dao Động:
+                    </div>
+                    <div style="color: #475569; line-height: 1.5;">
+                        Dải màu cam trên biểu đồ thể hiện <b>khoảng dao động an toàn (~80%)</b>. Nhu cầu thực tế được dự đoán sẽ nằm trong khoảng từ mức sàn đến mức trần này.
+                    </div>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
-        with info_c3:
-            growth_trend = "tăng nhẹ" if future_pred[-1] >= future_pred[0] else "ổn định"
+
+        # MỤC CHI TIẾT KỸ THUẬT DÀNH RIÊNG CHO HỘI ĐỒNG THẦY CÔ (THU GỌN)
+        with st.expander("⚙️ Dành cho phản biện kỹ thuật: Thông số mô hình toán học (MAE, RMSE, Holt's Trend)"):
             st.markdown(
                 f"""
-                <div style="background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 10px; padding: 12px; font-size: 0.85rem;">
-                    <div style="font-weight: 700; color: #065F46; margin-bottom: 4px;">📌 Nhận Định Xu Hướng:</div>
-                    <div style="color: #047857;">Dự kiến nhu cầu {growth_trend} trong các tháng tiếp theo theo chu kỳ tuyển dụng</div>
-                </div>
-                """,
-                unsafe_allow_html=True,
+                - **Thuật toán sử dụng:** Mô hình san bằng hàm mũ tuyến tính Holt (Holt's Linear Exponential Smoothing) từ gói `statsmodels.tsa`.
+                - **Tham số tối ưu:** Hệ số làm mượt mức cơ sở $\\alpha = 0.5$, hệ số làm mượt xu thế $\\beta = 0.3$.
+                - **Sai số tuyệt đối trung bình (MAE):** ± {mae_score:.1f} tin tuyển dụng.
+                - **Sai số bình phương trung bình (RMSE):** {rmse_score:.1f} tin tuyển dụng.
+                """
             )
         st.markdown("</div>", unsafe_allow_html=True)
     else:
