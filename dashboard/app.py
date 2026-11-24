@@ -17,7 +17,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 # 1. CẤU HÌNH TRANG VÀ GIAO DIỆN SÁNG
 # ========================================================
 st.set_page_config(
-    page_title="Phân Tích Tuyển Dụng IT Việt Nam",
+    page_title="Phân Tích & Dự Báo Tuyển Dụng CNTT",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -304,12 +304,12 @@ with st.sidebar:
 st.markdown(
     """
     <div class="hero-container">
-        <div class="hero-tag">ĐỀ TÀI PHÂN TÍCH DỮ LIỆU MÔN HỌC</div>
-        <div class="hero-title">KHẢO SÁT DỮ LIỆU TUYỂN DỤNG IT THU THẬP ĐƯỢC</div>
+        <div class="hero-tag">CHUYÊN NGÀNH: KHOA HỌC DỮ LIỆU</div>
+        <div class="hero-title">PHÂN TÍCH & DỰ BÁO XU HƯỚNG TUYỂN DỤNG NGÀNH CNTT TỪ DỮ LIỆU TIN ĐĂNG VIỆC LÀM</div>
         <div class="hero-desc">
-            Báo cáo thống kê dựa trên tập dữ liệu mẫu gồm <b>4.761 tin tuyển dụng IT</b> thu thập từ 4 trang: ITViec, TopCV, VietnamWorks và LinkedIn.
+            Báo cáo thống kê và mô hình hóa dựa trên tập dữ liệu gồm <b>4.761 tin đăng tuyển dụng ngành CNTT</b> thu thập từ 4 nền tảng (ITViec, TopCV, VietnamWorks, LinkedIn) nhằm xác định các kỹ năng/công nghệ có nhu cầu cao, xu hướng mức lương theo vị trí và dự báo nhu cầu tuyển dụng theo thời gian.
             <div style="font-size: 0.92rem; color: #475569; margin-top: 6px; font-style: italic;">
-                Lưu ý: Dữ liệu chỉ phản ánh các tin tuyển dụng thu thập được trong phạm vi đề tài, mang tính tham khảo và không đại diện cho toàn bộ thị trường IT Việt Nam.
+                Lưu ý: Dữ liệu phân tích dựa trên tập mẫu thu thập trong phạm vi đề tài phục vụ nghiên cứu và tham khảo chuyên môn.
             </div>
         </div>
     </div>
@@ -914,7 +914,7 @@ with tab4:
 st.markdown(
     """
     <div style="text-align: center; color: #475569; font-size: 0.9rem; padding: 24px 0 10px 0; border-top: 1px solid #CBD5E1; margin-top: 20px;">
-        Đề Tài Khảo Sát Dữ Liệu Tuyển Dụng IT • Sử dụng Streamlit & Plotly • Số liệu mang tính tham khảo trong phạm vi tập dữ liệu môn học
+        Đề Tài: Phân Tích & Dự Báo Xu Hướng Tuyển Dụng Ngành CNTT Từ Dữ Liệu Tin Đăng Việc Làm • Chuyên Ngành Khoa Học Dữ Liệu • Xây Dựng Bằng Streamlit & Plotly
     </div>
     """,
     unsafe_allow_html=True,
