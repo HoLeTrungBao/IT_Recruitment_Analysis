@@ -694,6 +694,17 @@ with tab3:
 
         fig_forecast = go.Figure()
 
+        # Xác định vị trí nhãn cho từng điểm để tránh bị đường kẻ đè xuyên qua chữ
+        text_positions = []
+        counts = df_monthly_series["job_count"].values
+        for i in range(len(counts)):
+            if i == 0:
+                text_positions.append("middle left")   # Số 241 nằm ngang bên trái dấu chấm
+            elif counts[i] == 392 or (i > 0 and counts[i-1] - counts[i] > 300):
+                text_positions.append("middle right")  # Số 392 nằm ngang bên phải dấu chấm
+            else:
+                text_positions.append("top center")
+
         # 1. Vẽ đường THỰC TẾ trước
         fig_forecast.add_trace(
             go.Scatter(
@@ -704,7 +715,7 @@ with tab3:
                 line=dict(color="#1D4ED8", width=3.5),
                 marker=dict(size=10, color="#1E40AF"),
                 text=df_monthly_series["job_count"].apply(lambda v: f"<b>{v:,}</b>"),
-                textposition="top center",
+                textposition=text_positions,
                 cliponaxis=False,
                 textfont=dict(size=13, color="#1D4ED8"),
             )
@@ -723,7 +734,8 @@ with tab3:
             )
         )
 
-        # 3. Đường DỰ BÁO nối tiếp
+        # 3. Đường DỰ BÁO nối tiếp (điểm đầu để rỗng tránh đè lên điểm chốt thực tế)
+        forecast_labels = [""] + [f"<b>{v:.0f}</b>" for v in future_pred]
         fig_forecast.add_trace(
             go.Scatter(
                 x=plot_forecast_periods,
@@ -732,7 +744,7 @@ with tab3:
                 name="Đường dự báo tương lai",
                 line=dict(color="#D97706", width=3, dash="dash"),
                 marker=dict(size=10, color="#B45309", symbol="diamond"),
-                text=[f"<b>{v:.0f}</b>" for v in plot_forecast_vals],
+                text=forecast_labels,
                 textposition="top center",
                 cliponaxis=False,
                 textfont=dict(size=13, color="#B45309"),
@@ -742,7 +754,7 @@ with tab3:
         fig_forecast.update_layout(
             **CHART_THEME,
             height=470,
-            margin=dict(t=40, b=85, l=55, r=40),
+            margin=dict(t=40, b=85, l=65, r=40),
             xaxis=dict(
                 type="category",
                 categoryorder="array",
