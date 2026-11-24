@@ -10,6 +10,8 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+from statsmodels.tsa.api import Holt
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 # ========================================================
 # 1. CẤU HÌNH TRANG VÀ GIAO DIỆN SÁNG
@@ -381,7 +383,7 @@ CHART_THEME = dict(
 tab1, tab2, tab3, tab4 = st.tabs([
     "📊 1. Tổng Quan Dữ Liệu",
     "🎯 2. Kỹ Năng Theo Vị Trí",
-    "📈 3. Biến Động Theo Thời Gian",
+    "📈 3. Xu Hướng & Dự Báo",
     "💰 4. Mức Lương Tham Khảo"
 ])
 
@@ -593,40 +595,122 @@ with tab2:
 
 
 # ========================================================
-# TAB 3: XU HƯỚNG THEO THỜI GIAN
+# TAB 3: XU HƯỚNG & DỰ BÁO TUYỂN DỤNG
 # ========================================================
 with tab3:
     st.markdown(
         """
         <div class="box-card">
-            <div class="box-title">📅 Số Lượng Tin Tuyển Dụng Ghi Nhận Theo Tháng</div>
-            <div class="box-caption">Biến động số lượng tin thu thập được qua các mốc thời gian (Tháng / Năm)</div>
+            <div class="box-title">📈 Xu Hướng & Dự Báo Số Lượng Tuyển Dụng IT</div>
+            <div class="box-caption">Kết hợp số liệu ghi nhận thực tế từ tập mẫu và mô hình dự báo chuỗi thời gian (Time Series) cho các tháng tới</div>
         """,
         unsafe_allow_html=True,
     )
 
     df_dated = filtered_jobs[filtered_jobs["full_date"].notna()].copy()
-    if not df_dated.empty:
-        df_dated["period"] = df_dated["full_date"].dt.to_period("M").astype(str)
-        period_summary = df_dated.groupby("period").size().reset_index(name="Số Lượng")
+    if not df_dated.empty and len(df_dated["month_year"].unique()) >= 4:
+        # Gom nhóm số lượng theo tháng
+        df_monthly_series = (
+            df_dated.groupby("month_year")
+            .agg(start_date=("full_date", "min"), job_count=("job_id", "count"))
+            .reset_index()
+            .sort_values("start_date")
+            .reset_index(drop=True)
+        )
+
+        # Bộ điều khiển số tháng dự báo
+        forecast_col1, forecast_col2 = st.columns([8, 4])
+        with forecast_col2:
+            n_months_ahead = st.slider(
+                "🔮 Số tháng tương lai cần dự báo:",
+                min_value=2,
+                max_value=6,
+                value=4,
+                step=1,
+                help="Chọn số tháng tiếp theo để mô hình thực hiện ước tính xu hướng"
+            )
+
+        # Huấn luyện mô hình Holt's Linear Trend
+        y_vals = df_monthly_series["job_count"].values
+        model_holt = Holt(y_vals, initialization_method="estimated")
+        fit_holt = model_holt.fit(smoothing_level=0.5, smoothing_trend=0.3, optimized=True)
         
-        # Đường xu hướng to rõ
-        fig_time = go.Figure()
-        fig_time.add_trace(
+        # Đánh giá sai số MAE
+        fitted = fit_holt.fittedvalues
+        mae_score = mean_absolute_error(y_vals, fitted)
+        rmse_score = np.sqrt(mean_squared_error(y_vals, fitted))
+
+        # Giá trị dự báo tương lai
+        future_pred = fit_holt.forecast(n_months_ahead)
+        future_pred = np.maximum(future_pred, 50)
+
+        # Tạo chuỗi nhãn tháng tiếp theo
+        last_dt = df_monthly_series["start_date"].max()
+        future_dts = pd.date_range(start=last_dt + pd.DateOffset(months=1), periods=n_months_ahead, freq="MS")
+        future_periods = [d.strftime("%m/%Y") for d in future_dts]
+
+        # Tính khoảng tin cậy
+        lower_vals = np.maximum(future_pred - 1.28 * rmse_score, 50)
+        upper_vals = future_pred + 1.28 * rmse_score
+
+        # Điểm nối giữa điểm cuối thực tế và điểm đầu dự báo
+        last_actual_period = df_monthly_series["month_year"].iloc[-1]
+        last_actual_val = df_monthly_series["job_count"].iloc[-1]
+
+        plot_forecast_periods = [last_actual_period] + future_periods
+        plot_forecast_vals = [last_actual_val] + list(future_pred)
+        plot_lower_vals = [last_actual_val] + list(lower_vals)
+        plot_upper_vals = [last_actual_val] + list(upper_vals)
+
+        # Vẽ biểu đồ kết hợp Plotly
+        fig_forecast = go.Figure()
+
+        # 1. Dải vùng tin cậy dự báo
+        fig_forecast.add_trace(
             go.Scatter(
-                x=period_summary["period"],
-                y=period_summary["Số Lượng"],
-                mode="lines+markers+text",
-                line=dict(color="#1D4ED8", width=3.5),
-                marker=dict(size=11, color="#2563EB", line=dict(color="#FFFFFF", width=2)),
-                text=period_summary["Số Lượng"].apply(lambda v: f"{v:,}"),
-                textposition="top center",
-                textfont=dict(size=12, color="#0F172A", family="Plus Jakarta Sans"),
+                x=plot_forecast_periods + plot_forecast_periods[::-1],
+                y=plot_upper_vals + plot_lower_vals[::-1],
+                fill="toself",
+                fillcolor="rgba(245, 158, 11, 0.15)",
+                line=dict(color="rgba(255,255,255,0)"),
+                hoverinfo="skip",
+                name="Khoảng tin cậy dự báo (80%)",
             )
         )
-        fig_time.update_layout(
+
+        # 2. Đường thực tế trong quá khứ
+        fig_forecast.add_trace(
+            go.Scatter(
+                x=df_monthly_series["month_year"],
+                y=df_monthly_series["job_count"],
+                mode="lines+markers+text",
+                name="Thực tế ghi nhận",
+                line=dict(color="#1D4ED8", width=3.5),
+                marker=dict(size=9, color="#1E40AF"),
+                text=df_monthly_series["job_count"].apply(lambda v: f"{v:,}"),
+                textposition="top center",
+                textfont=dict(size=11, color="#1E293B", family="Plus Jakarta Sans"),
+            )
+        )
+
+        # 3. Đường dự báo tương lai
+        fig_forecast.add_trace(
+            go.Scatter(
+                x=plot_forecast_periods,
+                y=plot_forecast_vals,
+                mode="lines+markers+text",
+                name="Mô hình dự báo",
+                line=dict(color="#D97706", width=3, dash="dash"),
+                marker=dict(size=9, color="#B45309", symbol="diamond"),
+                text=[f"{v:.0f}" for v in plot_forecast_vals],
+                textposition="top center",
+                textfont=dict(size=11, color="#B45309", family="Plus Jakarta Sans"),
+            )
+        )
+
+        fig_forecast.update_layout(
             **CHART_THEME,
-            height=400,
+            height=430,
             xaxis=dict(
                 title=dict(text="<b>Mốc Thời Gian (Tháng / Năm)</b>", font=dict(size=13, color="#0F172A")),
                 tickfont=dict(size=12, color="#0F172A"),
@@ -635,15 +719,57 @@ with tab3:
                 tickangle=-15,
             ),
             yaxis=dict(
-                title=dict(text="<b>Số Lượng Tin Thu Thập</b>", font=dict(size=13, color="#0F172A")),
+                title=dict(text="<b>Số Lượng Tin Tuyển Dụng</b>", font=dict(size=13, color="#0F172A")),
                 showgrid=True,
                 gridcolor="#F1F5F9",
             ),
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1,
+                bgcolor="rgba(255,255,255,0.8)"
+            ),
         )
-        st.plotly_chart(fig_time, use_container_width=True)
+        st.plotly_chart(fig_forecast, use_container_width=True)
+
+        # Hộp thông tin đánh giá mô hình khoa học
+        info_c1, info_c2, info_c3 = st.columns([4, 4, 4])
+        with info_c1:
+            st.markdown(
+                f"""
+                <div style="background: #EFF6FF; border: 1px solid #DBEAFE; border-radius: 10px; padding: 12px; font-size: 0.85rem;">
+                    <div style="font-weight: 700; color: #1E40AF; margin-bottom: 4px;">⚙️ Mô Hình Dự Báo:</div>
+                    <div style="color: #1E3A8A;">San bằng hàm mũ có xu thế (Holt's Linear Trend / statsmodels)</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+        with info_c2:
+            st.markdown(
+                f"""
+                <div style="background: #FEF3C7; border: 1px solid #FDE68A; border-radius: 10px; padding: 12px; font-size: 0.85rem;">
+                    <div style="font-weight: 700; color: #92400E; margin-bottom: 4px;">🎯 Sai Số Huấn Luyện (MAE):</div>
+                    <div style="color: #78350F;">± {mae_score:.1f} tin tuyển dụng (RMSE: {rmse_score:.1f})</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+        with info_c3:
+            growth_trend = "tăng nhẹ" if future_pred[-1] >= future_pred[0] else "ổn định"
+            st.markdown(
+                f"""
+                <div style="background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 10px; padding: 12px; font-size: 0.85rem;">
+                    <div style="font-weight: 700; color: #065F46; margin-bottom: 4px;">📌 Nhận Định Xu Hướng:</div>
+                    <div style="color: #047857;">Dự kiến nhu cầu {growth_trend} trong các tháng tiếp theo theo chu kỳ tuyển dụng</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
         st.markdown("</div>", unsafe_allow_html=True)
     else:
-        st.warning("Không có dữ liệu thời gian phù hợp với bộ lọc hiện tại.")
+        st.warning("Không có đủ chuỗi thời gian để thực hiện mô hình dự báo.")
 
 
 # ========================================================
