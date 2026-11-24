@@ -346,7 +346,7 @@ st.markdown(
                 <span>🏢</span>
             </div>
             <div class="kpi-number">{total_companies:,}</div>
-            <span class="kpi-badge" style="background: #F5F3FF; color: #6D28D9;">Công ty công nghệ</span>
+            <span class="kpi-badge" style="background: #EEF2FF; color: #3730A3;">Công ty công nghệ</span>
         </div>
         <div class="kpi-item">
             <div class="kpi-title">
@@ -512,7 +512,7 @@ with tab2:
         orientation="h",
         text=skill_counts.apply(lambda r: f"{r['Số Lượng']:,} lượt ({r['Tỷ Lệ %']}%)", axis=1),
         color="Số Lượng",
-        color_continuous_scale=["#DDD6FE", "#7C3AED"],
+        color_continuous_scale=["#BAE6FD", "#1D4ED8"],
     )
     fig_sk.update_layout(
         **CHART_THEME,
