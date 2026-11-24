@@ -644,16 +644,19 @@ with tab3:
         future_pred = fit_holt.forecast(n_months_ahead)
         future_pred = np.maximum(future_pred, 50)
 
-        # Tạo chuỗi nhãn tháng tiếp theo
+        # Tạo chuỗi nhãn tháng tiếp theo theo đúng thứ tự thời gian tăng dần
         last_dt = df_monthly_series["start_date"].max()
         future_dts = pd.date_range(start=last_dt + pd.DateOffset(months=1), periods=n_months_ahead, freq="MS")
         future_periods = [d.strftime("%m/%Y") for d in future_dts]
+
+        # Toàn bộ dòng thời gian chuẩn từ quá khứ đến tương lai (10/2025 -> ... -> 10/2026 -> 11/2026 -> ...)
+        full_timeline = list(df_monthly_series["month_year"]) + future_periods
 
         # Tính khoảng tin cậy
         lower_vals = np.maximum(future_pred - 1.28 * rmse_score, 50)
         upper_vals = future_pred + 1.28 * rmse_score
 
-        # Điểm nối giữa điểm cuối thực tế và điểm đầu dự báo
+        # Điểm nối giữa điểm cuối thực tế và tương lai
         last_actual_period = df_monthly_series["month_year"].iloc[-1]
         last_actual_val = df_monthly_series["job_count"].iloc[-1]
 
@@ -665,20 +668,7 @@ with tab3:
         # Vẽ biểu đồ kết hợp Plotly
         fig_forecast = go.Figure()
 
-        # 1. Dải vùng tin cậy dự báo
-        fig_forecast.add_trace(
-            go.Scatter(
-                x=plot_forecast_periods + plot_forecast_periods[::-1],
-                y=plot_upper_vals + plot_lower_vals[::-1],
-                fill="toself",
-                fillcolor="rgba(245, 158, 11, 0.15)",
-                line=dict(color="rgba(255,255,255,0)"),
-                hoverinfo="skip",
-                name="Khoảng tin cậy dự báo (80%)",
-            )
-        )
-
-        # 2. Đường thực tế trong quá khứ
+        # 1. Vẽ đường THỰC TẾ trước (10/2025 -> 10/2026)
         fig_forecast.add_trace(
             go.Scatter(
                 x=df_monthly_series["month_year"],
@@ -693,7 +683,20 @@ with tab3:
             )
         )
 
-        # 3. Đường dự báo tương lai
+        # 2. Dải vùng tin cậy dự báo (nối từ 10/2026 sang các tháng tương lai)
+        fig_forecast.add_trace(
+            go.Scatter(
+                x=plot_forecast_periods + plot_forecast_periods[::-1],
+                y=plot_upper_vals + plot_lower_vals[::-1],
+                fill="toself",
+                fillcolor="rgba(245, 158, 11, 0.15)",
+                line=dict(color="rgba(255,255,255,0)"),
+                hoverinfo="skip",
+                name="Khoảng tin cậy dự báo (80%)",
+            )
+        )
+
+        # 3. Đường DỰ BÁO nối tiếp từ điểm cuối thực tế sang tương lai
         fig_forecast.add_trace(
             go.Scatter(
                 x=plot_forecast_periods,
@@ -712,7 +715,10 @@ with tab3:
             **CHART_THEME,
             height=430,
             xaxis=dict(
-                title=dict(text="<b>Mốc Thời Gian (Tháng / Năm)</b>", font=dict(size=13, color="#0F172A")),
+                type="category",
+                categoryorder="array",
+                categoryarray=full_timeline,
+                title=dict(text="<b>Mốc Thời Gian Tuyến Tính (Tháng / Năm)</b>", font=dict(size=13, color="#0F172A")),
                 tickfont=dict(size=12, color="#0F172A"),
                 showgrid=True,
                 gridcolor="#F1F5F9",
